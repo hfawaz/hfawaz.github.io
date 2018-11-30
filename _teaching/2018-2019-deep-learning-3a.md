@@ -8,7 +8,7 @@ date: 2018-11-01
 location: "Mulhouse, France"
 ---
 
-This was an introductory course to deep learning, where the students learned the mathematical foundations of deep neural networks with an application using the Keras API.    	
+This is an introductory course to deep learning, where the students learned the mathematical foundations of deep neural networks with an application to several regression and classification problems using the Keras API.    	
 
 Introduction
 ======
