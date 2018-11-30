@@ -35,6 +35,38 @@ Work experience
 * 2015 - 2015: Intern. 
   *  Web application development, Dar El Handasah, Lebanon.
 
+Grants
+======
+* 2018: Mésocentre of Strasbourg.
+  * 1.6 million GPU computing hours. 
+* 2017: NVIDIA Corporation GPU Grant.
+  * Quadro P6000. 
+* 2017: Coursera Financial Aid.
+  * Deep learning speciality. 
+
+Certifications
+======
+* 2018: Volunteering.
+  * IEEE International conference on Big Data.
+* 2018: Participation. 
+  * International Summer School on Deep Learning.
+* 2017: Participation. 
+  * Cisco CCNA 1, 2, 3 & 4.
+* 2016: Participation. 
+  * Lebanese Collegiate Programming Contest.
+  * Advanced Programming & Algorithms Boot Camp.
+* 2015: Participation. 
+  * Lebanese Collegiate Programming Contest.
+
+Awards
+======
+* 2018: IEEE International Conference on Big Data.
+  * Student Travel Award. 
+* 2016: First place. 
+  * Université Antonine Programming Competition. 
+* 2015: Second place. 
+  * Université Antonine Programming Competition.
+
 Skills
 ======
 * Languages
