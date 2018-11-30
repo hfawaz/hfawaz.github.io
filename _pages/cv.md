@@ -11,30 +11,56 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Machine Learning, Université Haute-Alsace, 2020 (expected).
+  * Time series analysis with surgical data science application. 
+* M.S. in Computer Science, Université de Bourgogne, 2017.
+  * Second Class Hounours. Databases & Artificial Intelligence. 
+* M.S. in Software Engineering, Université Antonine, 2017.
+  * Fourth Class Hounours. Software & Telecommunications Engineering.
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2017 - 2020: PhD candidate.
+  * IRIMAS, Université Haute-Alsace, France. 
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
+* 2018 - 2019: Teacher.
+  * ENSISA, Université Haute-Alsace, France. 
+
+* 2017 - 2017: Intern.
+  * Data Services & Valorisation for Business, Orange Labs, France.
+
+* 2016 - 2016: Freelance. 
+  * Website development - www.mradmcc.com.
+
+* 2015 - 2015: Intern. 
+  *  Web application development, Dar El Handasah, Lebanon.
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Languages
+  * English (toeic-955)
+  * French (B2)
+  * German (B1)
+  * Arabic
+* Development
+  * Python
+  * Java
+  * Slurm Workload Manager
+* Databases
+  * Mysql
+  * Neo4J
+  * Protégé 
+  * Elasticsearch
+* Web Dev
+  * Html
+  * CSS
+  * JavaScript
+  * Apache Web Server
+* Misc
+  * Academic research
+  * Teaching
+  * LATEX typesetting
+  * Publishing
 
 Publications
 ======
