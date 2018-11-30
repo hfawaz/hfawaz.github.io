@@ -12,4 +12,11 @@ Transfer learning for deep neural networks is the process of first training a ba
 
 [Download paper here](https://arxiv.org/abs/1811.01533)
 
-Recommended citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'[bibtex](http://hfawaz.github.io/bibtex/bigdata18.bib)
+```
+@InProceedings{IsmailFawaz2018transfer,
+  Title                    = {Transfer learning for time series classification},
+  Author                   = {Ismail Fawaz, Hassan and Forestier, Germain and Weber, Jonathan and Idoumghar, Lhassane and Muller, Pierre-Alain},
+  booktitle                = {IEEE International Conference on Big Data},
+  Year                     = {2018}
+}
+``` 
