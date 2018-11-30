@@ -38,29 +38,15 @@ Work experience
 Skills
 ======
 * Languages
-  * English (toeic-955)
-  * French (B2)
-  * German (B1)
-  * Arabic
+  * English (toeic-955), French (B2), German (B1) & Arabic.
 * Development
-  * Python
-  * Java
-  * Slurm Workload Manager
+  * Python, Java & Slurm Workload Manager.
 * Databases
-  * Mysql
-  * Neo4J
-  * Protégé 
-  * Elasticsearch
+  * Mysql, Neo4J, Protégé & Elasticsearch.
 * Web Dev
-  * Html
-  * CSS
-  * JavaScript
-  * Apache Web Server
+  * Html, CSS, JavaScript & Apache Web Server.
 * Misc
-  * Academic research
-  * Teaching
-  * LATEX typesetting
-  * Publishing
+  * Academic research, teaching, LATEX typesetting & publishing.
 
 Publications
 ======
@@ -79,7 +65,7 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+  <!-- 
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
