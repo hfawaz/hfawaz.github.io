@@ -2,15 +2,17 @@
 title: "Transfer learning for time series classification"
 collection: publications
 permalink: /publication/bigdata18
-excerpt: 'This paper presents a study of transfer learning for time series classification.'
+excerpt: 'For each dataset in the archive, we pre-trained a model and then fine-tuned it on the other datasets resulting in 7140 different deep neural networks.'
 date: 2018-12-10
 venue: 'IEEE International Conference on Big Data'
 paperurl: 'https://arxiv.org/abs/1811.01533'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+citation: '[bibtex](http://hfawaz.github.io/files/bigdata18.bib)'
 ---
 Transfer learning for deep neural networks is the process of first training a base network on a source dataset, and then transferring the learned features (the network's weights) to a second network to be trained on a target dataset. This idea has been shown to improve deep neural network's generalization capabilities in many computer vision tasks such as image recognition and object localization. Apart from these applications, deep Convolutional Neural Networks (CNNs) have also recently gained popularity in the Time Series Classification (TSC) community. However, unlike for image recognition problems, transfer learning techniques have not yet been investigated thoroughly for the TSC task. This is surprising as the accuracy of deep learning models for TSC could potentially be improved if the model is fine-tuned from a pre-trained neural network instead of training it from scratch. In this paper, we fill this gap by investigating how to transfer deep CNNs for the TSC task. To evaluate the potential of transfer learning, we performed extensive experiments using the UCR archive which is the largest publicly available TSC benchmark containing 85 datasets. For each dataset in the archive, we pre-trained a model and then fine-tuned it on the other datasets resulting in 7140 different deep neural networks. These experiments revealed that transfer learning can improve or degrade the model's predictions depending on the dataset used for transfer. Therefore, in an effort to predict the best source dataset for a given target dataset, we propose a new method relying on Dynamic Time Warping to measure inter-datasets similarities. We describe how our method can guide the transfer to choose the best source dataset leading to an improvement in accuracy on 71 out of 85 datasets. 
 
 [Download paper here](https://arxiv.org/abs/1811.01533)
+
+[Code is available here](https://github.com/hfawaz/bigdata18)
 
 ```
 @InProceedings{IsmailFawaz2018transfer,
