@@ -1,25 +1,26 @@
 ---
 title: "Data augmentation using synthetic data for time series classification with deep residual networks"
 collection: publications
-permalink: /publication/aaltd18
-excerpt: 'Our preliminary experiments reveal that data augmentation can drastically increase deep CNN's accuracy on some datasets and significantly improve the deep model's accuracy when the method is used in an ensemble approach'
-date: 2018-09-14
-venue: 'International Workshop on Advanced Analytics and Learning on Temporal Data, ECML PKDD'
-paperurl: 'https://project.inria.fr/aaldt18/files/2018/08/aaltd18_data_aug.pdf'
-citation: 'Ismail Fawaz, H., Forestier, G., Weber, J., Idoumghar, L., & Muller, P. A. (2018). Data augmentation using synthetic data for time series classification with deep residual networks. <i>International Workshop on Advanced Analytics and Learning on Temporal Data, ECML PKDD</i>'
+permalink: /publication/miccai18
+excerpt: 'In this paper, we presented a deep learning model for classifying surgical skills while providing interpretability'
+date: 2018-09-13
+venue: 'Medical Image Computing and Computer Assisted Intervention'
+paperurl: 'https://link.springer.com/chapter/10.1007%2F978-3-030-00937-3_25'
+citation: 'Ismail Fawaz, H., Forestier, G., Weber, J., Idoumghar, L., & Muller, P. A. (2018). Evaluating surgical skills from kinematic data using convolutional neural networks. <i>Medical Image Computing and Computer Assisted Intervention</i>'
 ---
-Data augmentation in deep neural networks is the process of generating artificial data in order to reduce the variance of the classifier with the goal to reduce the number of errors. This idea has been shown to improve deep neural network's generalization capabilities in many computer vision tasks such as image recognition and object localization. Apart from these applications, deep Convolutional Neural Networks (CNNs) have also recently gained popularity in the Time Series Classification (TSC) community. However, unlike in image recognition problems, data augmentation techniques have not yet been investigated thoroughly for the TSC task. This is surprising as the accuracy of deep learning models for TSC could potentially be improved, especially for small datasets that exhibit overfitting, when a data augmentation method is adopted. In this paper, we fill this gap by investigating the application of a recently proposed data augmentation technique based on the Dynamic Time Warping distance, for a deep learning model for TSC. To evaluate the potential of augmenting the training set, we performed extensive experiments using the UCR TSC benchmark. Our preliminary experiments reveal that data augmentation can drastically increase deep CNN's accuracy on some datasets and significantly improve the deep model's accuracy when the method is used in an ensemble approach. 
+The need for automatic surgical skills assessment is increasing, especially because manual feedback from senior surgeons observing junior surgeons is prone to subjectivity and time consuming. Thus, automating surgical skills evaluation is a very important step towards improving surgical practice. In this paper, we designed a Convolutional Neural Network (CNN) to evaluate surgeon skills by extracting patterns in the surgeon motions performed in robotic surgery. The proposed method is validated on the JIGSAWS dataset and achieved very competitive results with 100% accuracy on the suturing and needle passing tasks. While we leveraged from the CNNs efficiency, we also managed to mitigate its black-box effect using class activation map. This feature allows our method to automatically highlight which parts of the surgical task influenced the skill prediction and can be used to explain the classification and to provide personalized feedback to the trainee. 
 
-[Download paper here](https://arxiv.org/abs/1808.02455)
+[Download paper here](https://arxiv.org/abs/1806.02750)
 
-[Code is available here](https://github.com/hfawaz/aaltd18)
+[Code is available here](https://github.com/hfawaz/miccai18)
 
 Bibtex:
 ```
-@InProceedings{IsmailFawaz2018,
-  Title                    = {Data augmentation using synthetic data for time series classification with deep residual networks},
+@InProceedings{IsmailFawaz2018evaluating,
+  Title                    = {Evaluating surgical skills from kinematic data using convolutional neural networks},
   Author                   = {Ismail Fawaz, Hassan and Forestier, Germain and Weber, Jonathan and Idoumghar, Lhassane and Muller, Pierre-Alain},
-  Booktitle                = {International Workshop on Advanced Analytics and Learning on Temporal Data, {ECML} {PKDD}},
-  Year                     = {2018}
+  booktitle                = {International Conference On Medical Image Computing and Computer Assisted Intervention (MICCAI)},
+  Year                     = {2018},
+  pages = {214--221}
 }
 ```
