@@ -1,9 +1,9 @@
 ---
-title: 'Data augmentation using synthetic data for time series classification with deep residual networks'
+title: "Data augmentation using synthetic data for time series classification with deep residual networks"
 collection: publications
 permalink: /publication/aaltd18
-excerpt: 'Our preliminary experiments reveal that data augmentation can drastically increase deep CNN's accuracy on some datasets and significantly improve the deep model's accuracy when the method is used in an ensemble approach.'
-date: 2010-09-14
+excerpt: 'Our preliminary experiments reveal that data augmentation can drastically increase deep CNN's accuracy on some datasets and significantly improve the deep model's accuracy when the method is used in an ensemble approach'
+date: 2018-09-14
 venue: 'International Workshop on Advanced Analytics and Learning on Temporal Data, ECML PKDD'
 paperurl: 'https://project.inria.fr/aaldt18/files/2018/08/aaltd18_data_aug.pdf'
 citation: 'Ismail Fawaz, H., Forestier, G., Weber, J., Idoumghar, L., & Muller, P. A. (2018). Data augmentation using synthetic data for time series classification with deep residual networks. <i>International Workshop on Advanced Analytics and Learning on Temporal Data, ECML PKDD</i>'
@@ -15,7 +15,6 @@ Data augmentation in deep neural networks is the process of generating artificia
 [Code is available here](https://github.com/hfawaz/aaltd18)
 
 Bibtex:
-
 ```
 @InProceedings{IsmailFawaz2018,
   Title                    = {Data augmentation using synthetic data for time series classification with deep residual networks},
