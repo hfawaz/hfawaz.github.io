@@ -2,7 +2,7 @@
 title: "Data augmentation using synthetic data for time series classification with deep residual networks"
 collection: publications
 permalink: /publication/aaltd18
-excerpt: 'Our preliminary experiments reveal that data augmentation can drastically increase deep CNN's accuracy on some datasets and significantly improve the deep model's accuracy when the method is used in an ensemble approach'
+excerpt: 'Our preliminary experiments reveal that data augmentation can drastically increase deep CNN's accuracy for time series classification'
 date: 2018-09-14
 venue: 'Medical Image Computing and Computer Assisted Intervention'
 paperurl: 'https://link.springer.com/chapter/10.1007%2F978-3-030-00937-3_25'
