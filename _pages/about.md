@@ -10,4 +10,4 @@ redirect_from:
 
 This is Hassan Ismail Fawaz's home on the web! 
 
-Lorem ipsum.
+The website is under construction. 
