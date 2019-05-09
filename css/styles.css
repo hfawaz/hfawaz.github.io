@@ -1,0 +1,9 @@
+nav#main_header {
+    box-shadow: 0.5em 1em 1em -16px;
+    margin: 0.5em;
+    border-radius: 4px;
+}
+
+#home {
+ margin-top: 5em;
+}
