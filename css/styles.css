@@ -1,13 +1,76 @@
 nav#main_header {
- box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
- border: none !important;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
+	border: none !important;
 }
 
 #home {
- margin-top: 5em;
+	margin-top: 5em;
 }
 
 
 #bs-example-navbar-collapse-1 li:hover{
 	box-shadow: #369dd6 inset 0px -4px 0px 0px;
+}
+
+#mobile-img {
+	border-radius: 10000em;
+	border: 1em white;
+	box-shadow: 0px 0px 0px 0.5em #369dd6;
+	width: 16em;
+	height: 16em;
+	margin-bottom: 1em;
+	transform: translate(8em,-8em);
+	position: absolute;
+	right: 50%;
+}
+
+#id_card{
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
+	/* overflow: hidden; */
+	border-radius: 0.5em;
+	text-align: center;
+	margin-top: 7em;
+	position: relative;
+	padding-bottom: 2em;
+}
+
+#hassan_name{
+	margin-top: 4.5em;
+	color: #2c5e99;
+}
+
+div#id_card_left {	
+	background: #359ed9;
+	color: white;
+	padding: 2em;
+	text-align: center;
+}
+
+div#id_card_right {	
+	margin-left: 2em;
+}
+
+.clearfix:after {
+	content: " "; /* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.id_card_chips {
+	background: #00000040;
+	padding: 0.3em;
+	border-radius: 1em;
+	text-align: center;
+}
+
+#location_pin{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+a.id_social_link {
+    display: inline-block;
+    padding: 1em;
 }
