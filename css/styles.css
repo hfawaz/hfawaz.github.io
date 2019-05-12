@@ -1,5 +1,18 @@
+@font-face {
+font-family: "glyphicons";
+src: url("fonts/glyphicons-halflings-regular.eot");
+src: 
+url("fonts/glyphicons-halflings-regular.woff") format("woff"),
+url("fonts/glyphicons-halflings-regular.ttf") format("ttf"),
+url("fonts/glyphicons-halflings-regular.svg") format("svg");
+}
+
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
 nav#main_header {
-	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
+	/* box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14); */
 	border: none !important;
 }
 
@@ -73,4 +86,22 @@ div#id_card_right {
 a.id_social_link {
     display: inline-block;
     padding: 1em;
+}
+
+div#header_logo {float: left;}
+
+div#main_menu {float: right;}
+
+#main_menu ul {
+    display: block;
+}
+
+#main_menu ul li {
+    display: inline-block;
+}
+
+#main_menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
 }
