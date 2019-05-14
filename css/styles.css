@@ -1,10 +1,10 @@
 @font-face {
-font-family: "glyphicons";
-src: url("fonts/glyphicons-halflings-regular.eot");
-src: 
-url("fonts/glyphicons-halflings-regular.woff") format("woff"),
-url("fonts/glyphicons-halflings-regular.ttf") format("ttf"),
-url("fonts/glyphicons-halflings-regular.svg") format("svg");
+	font-family: "glyphicons";
+	src: url("fonts/glyphicons-halflings-regular.eot");
+	src: 
+	url("fonts/glyphicons-halflings-regular.woff") format("woff"),
+	url("fonts/glyphicons-halflings-regular.ttf") format("ttf"),
+	url("fonts/glyphicons-halflings-regular.svg") format("svg");
 }
 
 *{
@@ -12,12 +12,11 @@ url("fonts/glyphicons-halflings-regular.svg") format("svg");
 }
 
 nav#main_header {
-	/* box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14); */
-	border: none !important;
+	vertical-align: middle;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
 }
 
 #home {
-	margin-top: 5em;
 }
 
 
@@ -38,18 +37,19 @@ nav#main_header {
 }
 
 #id_card{
-	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
-	/* overflow: hidden; */
+	/*box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);	
 	border-radius: 0.5em;
 	text-align: center;
-	margin-top: 7em;
+	margin-top: 10em;
 	position: relative;
-	padding-bottom: 2em;
+	padding-bottom: 2em;*/
+	margin-top: 10em;
 }
 
 #hassan_name{
 	margin-top: 4.5em;
 	color: #2c5e99;
+	margin-bottom: 0.5em;
 }
 
 div#id_card_left {	
@@ -84,24 +84,65 @@ div#id_card_right {
 }
 
 a.id_social_link {
-    display: inline-block;
-    padding: 1em;
+	display: inline-block;
+	padding: 1em;
 }
 
-div#header_logo {float: left;}
+div#header_logo {display: inline-block;}
 
-div#main_menu {float: right;}
+div#main_menu {float: right;margin-right: 1em;}
 
 #main_menu ul {
-    display: block;
+	display: block;
+	padding: 0px;
+	margin: 0px;
 }
 
 #main_menu ul li {
-    display: inline-block;
+	display: inline-block;
+	padding: 1em;
+}
+#main_menu ul li:hover {
+
+	box-shadow: inset 0px -4px 0px 0px #369dd6;
 }
 
-#main_menu ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
+#main_menu ul a {
+	display: inline-block;
+	text-decoration: none;
+	color: #9a9a9a;
+}
+
+body {
+	margin: 0px;
+}
+
+div#id_card_content {padding-top: 2em;text-align: center;}
+
+#id_card h4 {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+div#main_container {
+	width: 65%;
+	margin: auto;
+}
+
+#main_container section{
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
+	border-radius: 0.5em;
+	text-align: left;
+	padding: 2em;
+	margin-bottom: 1em;
+	line-height: 2em;
+}
+
+.section_title{
+	margin-top: 0px;
+}
+
+a{
+	color: #369dd6;
 }
