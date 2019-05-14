@@ -13,10 +13,10 @@
 
 nav#main_header {
 	vertical-align: middle;
-	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
-	float: left;
-	height: 100vh;
-	width: 165px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
 }
 
 #home {
@@ -34,9 +34,9 @@ nav#main_header {
 	width: 16em;
 	height: 16em;
 	margin-bottom: 1em;
-	transform: translate(8em,-8em);
+	transform: translate(-50%,-10em);
 	position: absolute;
-	right: 50%;
+	left: 50%;
 }
 
 #id_card{
@@ -46,7 +46,7 @@ nav#main_header {
 	margin-top: 10em;
 	position: relative;
 	padding-bottom: 2em;*/
-	margin-top: 10em;
+	margin-top: 14em;
 }
 
 #hassan_name{
@@ -91,9 +91,9 @@ a.id_social_link {
 	padding: 1em;
 }
 
-div#header_logo {display: inline-block;}
+div#header_logo {display: block;width: 100vw;background: white;box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);padding-left: 1em;}
 
-div#main_menu {float: right;margin-right: 1em;}
+div#main_menu {float: left;width: 256px;background: #fbfbfb;height: 100vh;position: absolute;z-index: -1;padding-top: 1em;}
 
 #main_menu ul {
 	display: block;
@@ -102,18 +102,16 @@ div#main_menu {float: right;margin-right: 1em;}
 }
 
 #main_menu ul li {
-	display: inline-block;
-	padding: 1em;
+	display: block;
+	padding: 1em 1em 1em 2em;
 }
-#main_menu ul li:hover {
-
-	box-shadow: inset 0px -4px 0px 0px #369dd6;
-}
+#main_menu ul li:hover {background: #e0e0e0;}
 
 #main_menu ul a {
-	display: inline-block;
+	display: block;
 	text-decoration: none;
-	color: #9a9a9a;
+	width: 100%;
+	color: #111111cc;
 }
 
 body {
@@ -129,8 +127,10 @@ div#id_card_content {padding-top: 2em;text-align: center;}
 
 
 div#main_container {
-	width: 65%;
+	flex-basis: 100%;
+	text-align: center;
 	margin: auto;
+	display: flex;
 }
 
 #main_container section{
@@ -140,6 +140,7 @@ div#main_container {
 	padding: 2em;
 	margin-bottom: 1em;
 	line-height: 2em;
+	position: relative;
 }
 
 .section_title{
@@ -177,4 +178,15 @@ a {
 
 .button {
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+div#left_spacer {
+    flex-basis: 256px;
+    height: 100vh;
+    flex-grow: 0;
+}
+
+div#main_content_container {
+    flex-basis: 65%;
+    margin: auto;
 }
