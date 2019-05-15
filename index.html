@@ -12,12 +12,16 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="academicons/css/academicons.min.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/material-scrolltop.css">
+
 	
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/menucollapse.js"></script>
-	<script type="text/javascript" src="js/arrow78.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+	<script src="js/menucollapse.js"></script>	
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="js/material-scrolltop.js"></script>
 
 	<body>		
 		<nav id="main_header" class="clearfix">			
@@ -30,7 +34,7 @@
 
 			<div id="main_menu">
 				<ul>
-					<a href="#">
+					<a href="#home">
 						<li>
 							Home
 						<!--ul>
@@ -85,6 +89,10 @@
 		</div>				
 	</nav>
 
+	<!-- fake section to mark the start of the document -->
+	<section class="main_content_section" id="home">	</section>			
+
+
 		<!--section>
 			<gcse:searchresults-only></gcse:searchresults-only>
 		</section-->
@@ -92,7 +100,7 @@
 
 			<div id="left_spacer"></div>
 			<div id="main_content_container">
-				<section id="id_card">				
+				<section class="main_content_section" id="id_card">				
 					<img id="mobile-img" src="images/photo.png" alt="">
 					<div id="id_card_content">
 						<h2 id ="hassan_name" >
@@ -135,7 +143,7 @@
 			</section>
 
 
-			<section id="intro">
+			<section class="main_content_section" id="intro">
 				<div class="container lead">
 					<div>
 
@@ -168,7 +176,7 @@
 				</section>
 
 
-				<section id="publications">
+				<section class="main_content_section" id="publications">
 					<div class="container lead">
 						<div>
 
@@ -326,7 +334,7 @@
 					</div>
 				</section>
 
-				<section id="courses">
+				<section class="main_content_section" id="courses">
 					<div class="container lead">
 						<div>
 
@@ -345,7 +353,7 @@
 				</section>
 
 
-				<section id="awards">
+				<section class="main_content_section" id="awards">
 					<div class="container lead">
 						<div>
 
@@ -373,7 +381,7 @@
 				</section>
 
 
-				<section id="grants">
+				<section class="main_content_section" id="grants">
 					<div class="container lead">
 						<div>
 
@@ -401,7 +409,7 @@
 				</section>
 
 
-				<section id="certifications">
+				<section class="main_content_section" id="certifications">
 					<div class="container lead">
 						<div>
 
@@ -439,7 +447,7 @@
 
 
 
-				<section id="service">
+				<section class="main_content_section" id="service">
 
 					<div class="container lead">
 						<div>
@@ -496,7 +504,7 @@
 
 
 
-				<section id="contact">
+				<section class="main_content_section" id="contact">
 					<div class="container lead">
 						<div>
 
@@ -542,6 +550,7 @@
 					</div>
 				</div>
 
+				<button class="material-scrolltop" type="button"></button>
 				
 				<footer>
 					<small>

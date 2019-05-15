@@ -176,9 +176,7 @@ a {
     text-decoration: none;
 }
 
-.button {
-    box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.5);
-}
+.button {box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);}
 
 div#left_spacer {
     flex-basis: 256px;
@@ -189,4 +187,15 @@ div#left_spacer {
 div#main_content_container {
     flex-basis: 65%;
     margin: auto;
+}
+
+#main_menu ul li.active {background-color: #e0e0e0;}
+
+footer {
+    margin-top: 5em;
+}
+
+.button:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.5);
+    background-color: #369dd6;
 }
