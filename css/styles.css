@@ -93,7 +93,7 @@ a.id_social_link {
 
 div#header_logo {display: block;width: 100vw;background: white;box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);padding-left: 1em;}
 
-div#main_menu {float: left;width: 256px;background: #fbfbfb;height: 100vh;position: absolute;z-index: -1;padding-top: 1em;}
+div#main_menu {float: left;width: 256px;background: #efefef;height: 100vh;position: absolute;z-index: -1;padding-top: 1em;}
 
 #main_menu ul {
 	display: block;
@@ -185,8 +185,8 @@ div#left_spacer {
 }
 
 div#main_content_container {
-    flex-basis: 65%;
-    margin: auto;
+    flex-basis: 50%;
+    margin-left: 10%;
 }
 
 #main_menu ul li.active {background-color: #e0e0e0;}
