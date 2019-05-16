@@ -151,6 +151,13 @@ a{
 	color: #369dd6;
 }
 
+.chip_light_blue {
+    background-color: #369dd6;
+    color: white;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-radius: 0.2em;
+}
+
 .chip_green {
     background-color: #5cb85c;
     color: white;
@@ -185,7 +192,7 @@ div#left_spacer {
 }
 
 div#main_content_container {
-    flex-basis: 50%;
+    flex-basis: 75%;
     margin-left: 10%;
 }
 
@@ -198,4 +205,28 @@ footer {
 .button:hover {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.5);
     background-color: #369dd6;
+}
+
+iframe#twitter-widget-0 {
+    display: flex;
+}
+
+.twitter {
+    display: flex;
+    flex-basis: 25%;
+    position: relative;
+}
+
+.twitter_content::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
+}
+
+.twitter_content {
+    position: fixed;
+    margin-left: 3em;
+    margin-top: 14em;
+    height: 37em;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
