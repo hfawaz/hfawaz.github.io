@@ -152,81 +152,90 @@ a{
 }
 
 .chip_light_blue {
-    background-color: #369dd6;
-    color: white;
-    padding: 0.2em 0.5em 0.2em 0.5em;
-    border-radius: 0.2em;
+	background-color: #369dd6;
+	color: white;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-radius: 0.2em;
 }
 
 .chip_green {
-    background-color: #5cb85c;
-    color: white;
-    padding: 0.2em 0.5em 0.2em 0.5em;
-    border-radius: 0.2em;
+	background-color: #5cb85c;
+	color: white;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-radius: 0.2em;
 }
 
 .chip_yellow {
-    background-color: #f0ad4e;
-    color: white;
-    padding: 0.2em 0.5em 0.2em 0.5em;
-    border-radius: 0.2em;
+	background-color: #f0ad4e;
+	color: white;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-radius: 0.2em;
 }
 
 .chip_blue {
-    background-color: #2c5e99;
-    color: white;
-    padding: 0.2em 0.5em 0.2em 0.5em;
-    border-radius: 0.2em;
+	background-color: #2c5e99;
+	color: white;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-radius: 0.2em;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .button {box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);}
 
 div#left_spacer {
-    flex-basis: 256px;
-    height: 100vh;
-    flex-grow: 0;
+	flex-basis: 256px;
+	height: 100vh;
+	flex-grow: 0;
 }
 
 div#main_content_container {
-    flex-basis: 75%;
-    margin-left: 10%;
+	flex-basis: 75%;
+	margin-left: 10%;
 }
 
 #main_menu ul li.active {background-color: #e0e0e0;}
 
 footer {
-    margin-top: 5em;
+	margin-top: 5em;
 }
 
 .button:hover {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.5);
-    background-color: #369dd6;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.5);
+	background-color: #369dd6;
 }
 
 iframe#twitter-widget-0 {
-    display: flex;
+	display: flex;
 }
 
 .twitter {
-    display: flex;
-    flex-basis: 25%;
-    position: relative;
+	display: flex;
+	flex-basis: 25%;
+	position: relative;
 }
 
 .twitter_content::-webkit-scrollbar { 
-    display: none;  // Safari and Chrome
+	display: none;  // Safari and Chrome
 }
 
 .twitter_content {
-    position: fixed;
-    margin-left: 3em;
-    margin-top: 14em;
-    height: 37em;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+	position: fixed;
+	margin-left: 3em;
+	margin-top: 14em;
+	height: 37em;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+body{
+	font-size:12px;
+}
+
 }
