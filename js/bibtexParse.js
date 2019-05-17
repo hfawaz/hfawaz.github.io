@@ -377,14 +377,13 @@ function readReferencesBib(){
 }
 
 
-function insertArticle(article){
-	console.log(article);
-	var list = $('#Article').next('ul');
-	if(list == null){
-		$('#Article').insertAfter('<ul></ul>');	
-	}
-	var tags = article.entryTags;
-	$(list).append('<li><span class="chip_light_blue">'+tags.acronym+'</span><a href="'+tags.url+'"> "'+tags.title+'"</a>, '+tags.author+', <b>'+tags.journal+'</b></li>');
+function insertArticle(article){	
+	var referencesList = $('#Article').next('ul');
+	if(referencesList.length == 0){		
+		$('#Article').after('<ul></ul>');	
+	}	
+	var tags = article.entryTags;	
+	$('#Article').next('ul').append('<li><span class="chip_light_blue">'+tags.acronym+'</span><a href="'+tags.url+'"> "'+tags.title+'"</a>, '+tags.author+', <b>'+tags.journal+'</b></li>');
 }
 
 readReferencesBib();
