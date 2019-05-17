@@ -383,7 +383,12 @@ function insertArticle(article){
 		$('#Article').after('<ul></ul>');	
 	}	
 	var tags = article.entryTags;	
-	$('#Article').next('ul').append('<li><span class="chip_light_blue">'+tags.acronym+'</span><a href="'+tags.url+'"> "'+tags.title+'"</a>, '+tags.author+', <b>'+tags.journal+'</b></li>');
+	$('#Article').next('ul').append(
+		'<li>\
+		<span class="chip_light_blue">'+tags.acronym+'</span>\
+		<a href="'+tags.url+'"> "'+tags.title+'"</a>, '
+		+tags.author+', \
+		<b>'+tags.journal+','+'Vol.'tags.+'</b></li>');
 }
 
 readReferencesBib();
