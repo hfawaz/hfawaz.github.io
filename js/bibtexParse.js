@@ -368,7 +368,10 @@ function readReferencesBib(){
 			switch(reference.entryType) {
 				case 'Article':
 				insertArticle(reference);
-				break;				
+				break;	
+				case 'InProceedings':
+				insertInProceedings(reference);
+				break;
 				default:
 
 			}	
@@ -388,7 +391,27 @@ function insertArticle(article){
 		<span class="chip_light_blue">'+tags.acronym+'</span>\
 		<a href="'+tags.url+'"> "'+tags.title+'"</a>, '
 		+tags.author+', \
-		<b>'+tags.journal+','+'Vol.'tags.+'</b></li>');
+		<b>'+tags.journal+', '+tags.year+'.</b>\
+		( <a href="'+tags.code+'"><i class="fa" style="font-size:24px">&#xf1c9;</i></a>\
+		, <a href="'+tags.pdf+'"><i class="fa" style="font-size:24px">&#xf1c1;</i></a>\
+		)</li>');
+}
+
+function insertInProceedings(article){	
+	var referencesList = $('#InProceedings').next('ul');
+	if(referencesList.length == 0){		
+		$('#InProceedings').after('<ul></ul>');	
+	}	
+	var tags = article.entryTags;	
+	$('#InProceedings').next('ul').append(
+		'<li>\
+		<span class="chip_light_blue">'+tags.acronym+'\''+tags.year.split('0')[1]+'</span>\
+		<a href="'+tags.url+'"> "'+tags.title+'"</a>, '
+		+tags.author+', \
+		<b>'+tags.booktitle+'.</b>\
+		( <a href="'+tags.code+'"><i class="fa" style="font-size:24px">&#xf1c9;</i></a>\
+		, <a href="'+tags.pdf+'"><i class="fa" style="font-size:24px">&#xf1c1;</i></a>\
+		)</li>');
 }
 
 readReferencesBib();
