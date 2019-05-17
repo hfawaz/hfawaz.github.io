@@ -364,14 +364,29 @@
 function readReferencesBib(){
 	$.get("https://hfawaz.github.io/references.bib",function(data){		
 		var references = bibtexParse.toJSON(data);
+		console.log(references);
 		references.forEach(function(reference){
 			switch(reference.entryType) {
 				case 'Article':
 				insertArticle(reference);
 				break;	
+
 				case 'InProceedings':
-				insertInProceedings(reference);
+				insertInProceedings(reference,'InProceedings');
 				break;
+
+				case 'InWorkshops':
+				insertInProceedings(reference,'InWorkshops');
+				break;
+
+				case 'InProceedingsFR':
+				insertInProceedings(reference,'InProceedingsFR');
+				break;
+
+				case 'InWorkshopsFR':
+				insertInProceedings(reference,'InWorkshopsFR');
+				break;
+
 				default:
 
 			}	
@@ -379,6 +394,10 @@ function readReferencesBib(){
 	});
 }
 
+function makeNameBold(author){
+	author_arr =author.split('Ismail Fawaz, Hassan') 
+	return author_arr[0]+'<b>Ismail Fawaz, Hassan</b>'+author_arr[1]
+}
 
 function insertArticle(article){	
 	var referencesList = $('#Article').next('ul');
@@ -390,25 +409,25 @@ function insertArticle(article){
 		'<li>\
 		<span class="chip_light_blue">'+tags.acronym+'</span>\
 		<a href="'+tags.url+'"> "'+tags.title+'"</a>, '
-		+tags.author+', \
+		+makeNameBold(tags.author)+', \
 		<b>'+tags.journal+', '+tags.year+'.</b>\
 		( <a href="'+tags.code+'"><i class="fa" style="font-size:24px">&#xf1c9;</i></a>\
 		, <a href="'+tags.pdf+'"><i class="fa" style="font-size:24px">&#xf1c1;</i></a>\
 		)</li>');
 }
 
-function insertInProceedings(article){	
-	var referencesList = $('#InProceedings').next('ul');
+function insertInProceedings(article, method){	
+	var referencesList = $('#'+method).next('ul');
 	if(referencesList.length == 0){		
-		$('#InProceedings').after('<ul></ul>');	
+		$('#'+method).after('<ul></ul>');	
 	}	
 	var tags = article.entryTags;	
-	$('#InProceedings').next('ul').append(
+	$('#'+method).next('ul').append(
 		'<li>\
 		<span class="chip_light_blue">'+tags.acronym+'\''+tags.year.split('0')[1]+'</span>\
 		<a href="'+tags.url+'"> "'+tags.title+'"</a>, '
-		+tags.author+', \
-		<b>'+tags.booktitle+'.</b>\
+		+makeNameBold(tags.author)+', \
+		<b>'+tags.booktitle+', '+tags.year+'.</b>\
 		( <a href="'+tags.code+'"><i class="fa" style="font-size:24px">&#xf1c9;</i></a>\
 		, <a href="'+tags.pdf+'"><i class="fa" style="font-size:24px">&#xf1c1;</i></a>\
 		)</li>');
