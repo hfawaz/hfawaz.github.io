@@ -187,13 +187,15 @@ a {
 
 div#left_spacer {
 	flex-basis: 256px;
+	min-width: 256px;
 	height: 100vh;
 	flex-grow: 0;
 }
 
 div#main_content_container {
 	flex-basis: 75%;
-	margin-left: 10%;
+	margin-left: 4%;
+	margin-right: 4%;
 }
 
 #main_menu ul li.active {background-color: #e0e0e0;}
@@ -223,8 +225,7 @@ iframe#twitter-widget-0 {
 
 .twitter_content {
 	position: fixed;
-	margin-left: 3em;
-	margin-top: 14em;
+	margin-top: 5em;
 	height: 37em;
 	overflow: scroll;
 	-ms-overflow-style: none;
@@ -234,8 +235,54 @@ iframe#twitter-widget-0 {
 
 @media screen and (max-width: 1200px) {
 
-body{
-	font-size:12px;
+	body{
+		font-size: 12px;
+	}
+
 }
+
+@media screen and (max-width: 1000px) {
+
+	body{
+		font-size: 12px;
+	}
+
+	.twitter{
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+	body{
+		font-size: 12px;
+	}
+
+	.twitter{
+		display: none;
+	}
+
+	#main_menu{		
+		margin-left: -256px;
+	}
+
+	#left_spacer{
+		display: none;
+	}
+
+	#main_container{
+		display: block;		
+	}
+
+	#main_content_container{
+		display: block;
+		margin-left: 1em;
+		margin-right: 1em;
+		min-width: 100%;
+	}
+
+	
 
 }
