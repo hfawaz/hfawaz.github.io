@@ -1,0 +1,303 @@
+@font-face {
+	font-family: "glyphicons";
+	src: url("fonts/glyphicons-halflings-regular.eot");
+	src: 
+	url("fonts/glyphicons-halflings-regular.woff") format("woff"),
+	url("fonts/glyphicons-halflings-regular.ttf") format("ttf"),
+	url("fonts/glyphicons-halflings-regular.svg") format("svg");
+}
+
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav#main_header {
+	vertical-align: middle;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+}
+
+
+div#menu_toggle_button {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 1em;
+    vertical-align: super;
+}
+
+div#menu_toggle_button img {
+    width: 100%;
+    height: 100%;
+}
+
+#bs-example-navbar-collapse-1 li:hover{
+	box-shadow: #369dd6 inset 0px -4px 0px 0px;
+}
+
+#mobile-img {
+	border-radius: 10000em;
+	border: 1em white;
+	box-shadow: 0px 0px 0px 0.5em #369dd6;
+	width: 16em;
+	height: 16em;
+	margin-bottom: 1em;
+	transform: translate(-50%,-10em);
+	position: absolute;
+	left: 50%;
+}
+
+#id_card{
+	/*box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);	
+	border-radius: 0.5em;
+	text-align: center;
+	margin-top: 10em;
+	position: relative;
+	padding-bottom: 2em;*/
+	margin-top: 14em;
+}
+
+#hassan_name{
+	margin-top: 4.5em;
+	color: #2c5e99;
+	margin-bottom: 0.5em;
+}
+
+div#id_card_left {	
+	background: #359ed9;
+	color: white;
+	padding: 2em;
+	text-align: center;
+}
+
+div#id_card_right {	
+	margin-left: 2em;
+}
+
+.clearfix:after {
+	content: " "; /* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.id_card_chips {
+	background: #00000040;
+	padding: 0.3em;
+	border-radius: 1em;
+	text-align: center;
+}
+
+#location_pin{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+a.id_social_link {
+	display: inline-block;
+	padding: 1em;
+}
+
+div#header_logo {display: block;width: 100vw;background: white;box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);padding-left: 1em;}
+
+div#main_menu {float: left;width: 256px;background: #efefef;height: 100vh;position: absolute;z-index: -1;padding-top: 1em;}
+
+#main_menu ul {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+#main_menu ul li {
+	display: block;
+	padding: 1em 1em 1em 2em;
+}
+#main_menu ul li:hover {background: #e0e0e0;}
+
+#main_menu ul a {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	color: #111111cc;
+}
+
+body {
+	margin: 0px;
+}
+
+div#id_card_content {padding-top: 2em;text-align: center;}
+
+#id_card h4 {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+div#main_container {
+	flex-basis: 100%;
+	text-align: center;
+	margin: auto;
+	display: flex;
+}
+
+#main_container section{
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
+	border-radius: 0.5em;
+	text-align: left;
+	padding: 2em;
+	margin-bottom: 1em;
+	line-height: 2em;
+	position: relative;
+}
+
+.section_title{
+	margin-top: 0px;
+}
+
+a{
+	color: #369dd6;
+}
+
+.chip_light_blue {
+	background-color: #369dd6;
+	color: white;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-radius: 0.2em;
+}
+
+.chip_green {
+	background-color: #5cb85c;
+	color: white;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-radius: 0.2em;
+}
+
+.chip_yellow {
+	background-color: #f0ad4e;
+	color: white;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-radius: 0.2em;
+}
+
+.chip_blue {
+	background-color: #2c5e99;
+	color: white;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-radius: 0.2em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);}
+
+div#left_spacer {
+	flex-basis: 256px;
+	min-width: 256px;
+	height: 100vh;
+	flex-grow: 0;
+}
+
+div#main_content_container {
+	flex-basis: 75%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+#main_menu ul li.active {background-color: #e0e0e0;}
+
+footer {
+	margin-top: 5em;
+}
+
+.button:hover {
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.5);
+	background-color: #369dd6;
+}
+
+iframe#twitter-widget-0 {
+	display: flex;
+}
+
+.twitter {
+	display: flex;
+	flex-basis: 25%;
+	position: relative;
+}
+
+.twitter_content::-webkit-scrollbar { 
+	display: none;  // Safari and Chrome
+}
+
+.twitter_content {
+	position: fixed;
+	margin-top: 5em;
+	height: 37em;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	body{
+		font-size: 12px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	body{
+		font-size: 12px;
+	}
+
+	.twitter{
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+	body{
+		font-size: 12px;
+	}
+
+	.twitter{
+		display: none;
+	}
+
+	div#menu_toggle_button{
+		display: inline-block !important;
+	}
+
+	#main_menu{		
+		margin-left: -256px;
+	}
+
+	#left_spacer{
+		display: none;
+	}
+
+	#main_container{
+		display: block;		
+		padding: 1em;
+	}
+
+	#main_content_container{
+		display: block;
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		min-width: 100%;
+	}
+
+	
+
+}
