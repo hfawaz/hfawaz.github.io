@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<title>[ Hassan Ismail Fawaz @ UHA ]</title>
@@ -15,21 +14,25 @@
 	<link rel="stylesheet" href="css/material-scrolltop.css">
 
 	
-    <script type="text/javascript" src="bibtexParse.js"></script>
+	
 
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-	<script src="js/menucollapse.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>	
 	<script type="text/javascript" src="js/custom.js"></script>
 	<script src="js/material-scrolltop.js"></script>
 	<script src="js/material-scrolltop.js"></script>
 	<script src="js/bibtexParse.js"></script>
 
 	<body>		
-		<nav id="main_header" class="clearfix">			
-			<div id="header_logo">								
-				<a href="http://www.irimas.uha.fr/">
+		<nav id="main_header" class="clearfix">					
+
+			<div id="header_logo">
+
+				<div id="menu_toggle_button">
+					<img src="images/menu_icon.png">
+				</div>
+
+				<a id="logo_link" href="http://www.irimas.uha.fr/">
 					<img width="300" border="0" src="images/logo-irimas.png"/>
 				</a>
 			</div>
@@ -148,323 +151,275 @@
 		<section class="main_content_section" id="intro">
 			<div class="container lead">
 				<div>
+					<p class="lead">I am a PhD student in Computer and Data Science at the <a href="http://www.irimas.uha.fr/">IRIMAS</a> of the <a target="_blank" href="http://www.uha.fr/">Université Haute-Alsace</a>. 
+						I am currently working on machine learning algorithms for time series classification with my brilliant supervisors: <a href="https://germain-forestier.info/"> Germain Forestier</a>, <a href="http://www.jonathan-weber.eu/">Jonathan Weber</a>, <a href="http://www.mage.fst.uha.fr/idoumghar/">Lhassane Idoumghar</a> and <a href="http://pierrealain.muller.free.fr/">Pierre-Alain Muller</a>.
+						I hold an M.Sc. (2017) in Databases and Artificial Intelligence from the <a href="http://www.u-bourgogne.fr/" target="_blank">Université de Bourgogne - Dijon</a> (France) and another M.Sc. (2018) in Software Engineering from the <a href="http://www.ua.edu.lb/french/home" target="_blank">Université Antonine - Beirut</a> (Lebanon). 
+						During my master thesis at <a href="https://www.orange.com/en/home"> Orange Labs - Sophia Antipolis</a> (France) I developed a recommendation engine for a dataset exchange platform by combining machine learning and semantic web data. 
+						As for my final year engineering project <a href="http://ticket.ua.edu.lb/">TICKET Lab - Beirut</a> (Lebanon) I worked on preserving data privacy using linear programming optimization techniques.  
+						I have been a visiting researcher at the <a href="http://ece.eng.wayne.edu/~apandya/caresweb/" target="_blank"> CARES Lab - Detroit</a> (USA). 
+						Since 2018, I have been the instructor of the <a href="#courses">Deep Learning</a> course at the engineering school <a href="http://www.ensisa.uha.fr/" target="_blank">ENSISA</a>.
+					</p>
+					<p>
+						My research interests include <b>Time series analysis</b>, particularly <i>Deep learning; Data augmentation; Transfer learning; Adversarial Attacks and Clustering</i> techniques applied for <b>time series classification</b>.
+					</p>            
 
-
-					<i class="noshow" style="display:none;" id="tab-1">
-						<button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-1-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-right"></span></button>
-					</i>
-
-					<div class="allshow" style="display:none;" id="tab-1-content">
-
-
-						<p class="lead">I am a PhD student in Computer and Data Science at the <a href="http://www.irimas.uha.fr/">IRIMAS</a> of the <a target="_blank" href="http://www.uha.fr/">Université Haute-Alsace</a>. 
-							I am currently working on machine learning algorithms for time series classification with my brilliant supervisors: <a href="https://germain-forestier.info/"> Germain Forestier</a>, <a href="http://www.jonathan-weber.eu/">Jonathan Weber</a>, <a href="http://www.mage.fst.uha.fr/idoumghar/">Lhassane Idoumghar</a> and <a href="http://pierrealain.muller.free.fr/">Pierre-Alain Muller</a>.
-							I hold an M.Sc. (2017) in Databases and Artificial Intelligence from the <a href="http://www.u-bourgogne.fr/" target="_blank">Université de Bourgogne - Dijon</a> (France) and another M.Sc. (2018) in Software Engineering from the <a href="http://www.ua.edu.lb/french/home" target="_blank">Université Antonine - Beirut</a> (Lebanon). 
-							During my master thesis at <a href="https://www.orange.com/en/home"> Orange Labs - Sophia Antipolis</a> (France) I developed a recommendation engine for a dataset exchange platform by combining machine learning and semantic web data. 
-							As for my final year engineering project <a href="http://ticket.ua.edu.lb/">TICKET Lab - Beirut</a> (Lebanon) I worked on preserving data privacy using linear programming optimization techniques.  
-							I have been a visiting researcher at the <a href="http://ece.eng.wayne.edu/~apandya/caresweb/" target="_blank"> CARES Lab - Detroit</a> (USA). 
-							Since 2018, I have been the instructor of the <a href="#courses">Deep Learning</a> course at the engineering school <a href="http://www.ensisa.uha.fr/" target="_blank">ENSISA</a>.
-						</p>
-						<p>
-							My research interests include <b>Time series analysis</b>, particularly <i>Deep learning; Data augmentation; Transfer learning; Adversarial Attacks and Clustering</i> techniques applied for <b>time series classification</b>.
-						</p>            
-
-						<p>
-							<a href="ismail-fawaz.pdf" class="chip_blue button">CV (PDF)</a> <a class="chip_blue button" href="references.bib">Publications (BibTex)</a>
-						</div>
-
+					<p>
+						<a href="ismail-fawaz.pdf" class="chip_blue button">CV (PDF)</a> <a class="chip_blue button" href="references.bib">Publications (BibTex)</a>
 					</div>
-				</div>
-			</section>
 
 
-			<section class="main_content_section" id="publications">
-				<div class="container lead">
-					<div>
-
-						<i class="noshow" style="display:none;" id="tab-3">
-							<button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications<span class="glyphicon glyphicon-chevron-right"></span></button>
-						</i>
-						<div class="allshow" style="display:none;" id="tab-3-content">
+				</div>			
+		</section>
 
 
-							<h2 class="section_title">Publications</h2> 
-							<h4>
+		<section class="main_content_section" id="publications">
+			<div class="container lead">
+				<div>
+					<h2 class="section_title">Publications</h2>
+					<h4>
 
-								<a target="_blank" href="https://en.wikipedia.org/wiki/H-index" class="chip_yellow button">
-									h-index: 4
-								</a>&nbsp;								
+						<a target="_blank" href="https://scholar.google.com/citations?user=oUrGNaoAAAAJ&hl=en" class="chip_yellow button">
+							Citations: 43
+						</a>
+						&nbsp;	&nbsp;	
+						<a target="_blank" href="https://en.wikipedia.org/wiki/H-index" class="chip_yellow button">
+							h-index: 4
+						</a>							
 
-								<a target="_blank" href="https://scholar.google.com/citations?user=oUrGNaoAAAAJ&hl=en" class="chip_yellow button">
-									Citations: 43
-								</a>
+					</h4>
 
+					<h3 id="Article">International Journals</h3>						
 
-							</h4>
+					<h3 id="InProceedings">International Conferences</h3>
 
-							<h3 id="Article">International Journals</h3>						
+					<h3 id="InWorkshops">International Workshops</h3>
 
-							<h3 id="InProceedings">International Conferences</h3>
+					<h3 id="InProceedingsFR">National Conferences</h3>
 
-							<h3 id="InWorkshops">International Workshops</h3>
-
-							<h3 id="InProceedingsFR">National Conferences</h3>
-
-							<h3 id="InWorkshopsFR">National Workshops</h3>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="main_content_section" id="courses">
-				<div class="container lead">
-					<div>
-
-						<i class="noshow" style="display:none;" id="tab-1">
-							<button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-4-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-right"></span></button>
-						</i>
-						<div class="allshow" style="display:none;" id="tab-4-content">
-
-							<h2 class="section_title">Courses</h2>
-							<ul>
-								<li><span class="chip_light_blue">Deep Learning</span> 20 hours for M.Sc. students in Computer Science.</li>
-                                <li><span class="chip_light_blue">Web Programming</span> 24 hours for engineering students in Computer Science.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+					<h3 id="InWorkshopsFR">National Workshops</h3>
 
 
-			<section class="main_content_section" id="awards">
-				<div class="container lead">
-					<div>
-
-						<i class="noshow" style="display:none;" id="tab-1">
-							<button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-5-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-right"></span></button>
-						</i>
-						<div class="allshow" style="display:none;" id="tab-5-content">
-
-
-							<h2 class="section_title">Awards</h2>
-							<ul>
-								<li>
-									<span class="chip_light_blue">IEEE BigData'18</span> <a target="_blank" href="http://cci.drexel.edu/bigdata/bigdata2018/StudentTravelAward.html"> Student Travel Award</a> for the IEEE International Conference on Big Data 2018 at Seattle, USA.</span>
-								</li>
-								<li>
-									<span class="chip_light_blue">UAPC'16</span> First place at the <a href="https://www.facebook.com/events/881156585329299/permalink/892718344173123/">Université Antonine Programming Competition (UAPC) 2016</a> at Beirut, Lebanon.</span>
-								</li>
-								<li>
-									<span class="chip_light_blue">UAPC'15</span> Second place at the <a href="https://www.facebook.com/events/877528025652937/permalink/878052918933781/"> Université Antonine Programming Competition (UAPC) 2015</a> at Beirut, Lebanon.</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-			<section class="main_content_section" id="grants">
-				<div class="container lead">
-					<div>
-
-						<i class="noshow" style="display:none;" id="tab-1">
-							<button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-5-content').toggle();">Grants  <span class="glyphicon glyphicon-chevron-right"></span></button>
-						</i>
-						<div class="allshow" style="display:none;" id="tab-5-content">
-
-
-							<h2 class="section_title">Grants</h2>
-							<ul>
-								<li>
-									<span class="chip_light_blue">Mesocentre of Strasbourg</span> 1.6 million GPU computing hours (2018) on the <a href="https://services-numeriques.unistra.fr/les-services-aux-usagers/hpc.html"> Strasbourg HPC</a>.</span>
-								</li>
-								<li>
-									<span class="chip_light_blue">NVIDIA Corporation GPU Grant</span> <a href="https://developer.nvidia.com/academic_gpu_seeding"> Quadro P6000 (2017)</a>.</span>
-								</li>
-								<li>
-									<span class="chip_light_blue">Coursera Financial Aid</span><a href="https://www.coursera.org/account/accomplishments/certificate/YN8ZWZ6XPWVC"> Deep Learning Speciality (2017)</a>.</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-			<section class="main_content_section" id="certifications">
-				<div class="container lead">
-					<div>
-
-						<i class="noshow" style="display:none;" id="tab-1">
-							<button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-5-content').toggle();">Certifications  <span class="glyphicon glyphicon-chevron-right"></span></button>
-						</i>
-						<div class="allshow" style="display:none;" id="tab-5-content">
-
-
-							<h2 class="section_title">Certifications</h2>
-							<ul>
-								<li>
-									<span class="chip_light_blue">IEEE BigData'18</span> Volunteering at the <a href="http://cci.drexel.edu/bigdata/bigdata2018/index.html"> IEEE International Conference on Big Data (2018)</a>.</span>
-								</li>
-								<li>
-									<span class="chip_light_blue">DeepLearn'18</span> Attending at the <a href="http://grammars.grlmc.com/DeepLearn2018/"> International Summer School on Deep Learning (2018)</a>.</span>
-								</li>
-								<li>
-									<span class="chip_light_blue">CISCO</span> Completing the <a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html"> CISCO CCNA Routing & Switching</a> (2017).</span>
-								</li>
-								<li>
-									<span class="chip_light_blue">LCPC'16</span> Participating at the <a href="http://www.aou.edu.lb/LCPC16/Participants.aspx"> Lebanese Collegiate Programming Contest (2016)</a>.</span>
-								</li>
-								<li>
-									<span class="chip_light_blue">Boot Camp</span> Participating at the <a href="https://gammal.tech/"> Advanced Programming & Algorithms Boot Camp (2016)</a>.</span>
-								</li>
-								<li>
-									<span class="chip_light_blue">LCPC'15</span> Participating at the <a href="http://www.aou.edu.lb/LCPC15/Participants.aspx"> Lebanese Collegiate Programming Contest (2015)</a>.</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-
-			<section class="main_content_section" id="service">
-
-				<div class="container lead">
-					<div>
-
-						<i class="noshow" style="display:none;" id="tab-6">
-							<button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-6-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-right"></span></button>
-						</i>
-						<div class="allshow" style="display:none;" id="tab-6-content">
-
-
-							<h2 class="section_title">Service </h2>
-
-							<p>
-								<h3>Conference Comittees</h3>
-								<ul>
-									<li>
-										<span class="chip_light_blue">ORASIS'19</span>
-										<a href="https://orasis2019.sciencesconf.org/resource/page/id/1">Francophone days of young researchers in computer vision 2019</a>.
-									</li>
-									<li>
-										<span class="chip_light_blue">AE'19</span>
-										<a href="https://iscpif.fr/upcomingevents/conferenceae-inria-oct2019/">The 14th Biennial International Conference on Artificial Evolution 2019</a>.
-									</li>
-
-								</ul>
-
-								<h3>Workshop Committee</h3>
-								<ul>
-									<li>
-										<span class="chip_light_blue">AALTD'19</span>
-										<a href="https://project.inria.fr/aaltd19/">ECML/PKDD Workshop on Advanced Analytics & Learning on Temporal Data</a>.
-									</li>
-								</ul>
-
-								<h3>Reviewer</h3>
-								<ul>
-									<li>
-										<span class="chip_light_blue">IEEE TKDE</span>
-										<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE Transactions of Knowledge and Data Engineering</a>.
-									</li>
-									<li>
-										<span class="chip_light_blue">IEEE JBHI</span>
-										<a href="https://jbhi.embs.org/">IEEE Journal of Biomedical and Health Informatics</a>.
-									</li>
-									<li>
-										<span class="chip_light_blue">MICCAI</span>
-										<a href="http://www.miccai2019.org/">International Conference on Medical Image Computing and Computer Assisted Intervention 2019</a>.
-									</li>
-									<li>
-										<span class="chip_light_blue">IEEE/CAA JAS</span>
-										<a href="http://www.ieee-jas.org/">IEEE/CAA Journal of Automatica Sinica 2019</a>.
-									</li>                
-								</ul>
-
-
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-
-
-			<!-- <section class="main_content_section" id="contact">
-				<div class="container lead">
-					<div>
-
-						<i class="noshow" style="display:none;" id="tab-9">
-							<button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-9-content').toggle();">Contact  <span class="glyphicon glyphicon-chevron-right"></span></button>
-						</i>
-						<div class="allshow" style="display:none;" id="tab-9-content">
-
-
-							<h2 class="section_title">Contact</h2>
-							<div class="container lead">
-								<div align="left" class="col-md-12">
-
-
-									<p width="100px">
-										Hassan Ismail Fawaz<br>
-										ENSISA, Université Haute-Alsace<br>
-										12 rue des Frères Lumières <br> 
-
-										68093 Mulhouse, France<br>
-									</p>
-									Email:
-									<script language="JavaScript">
-
-										document.write("&nbsp;");
-										spiderjam('hassan.ismail-fawaz','uha.fr');
-
-									</script><br>
-									<i style="font-size:24px" class="fa">&#xf08c;</i> <a href="https://www.linkedin.com/in/h-fawaz/">LinkedIn</a>
-									<i style="font-size:24px" class="fa">&#xf092;</i> <a href="https://github.com/hfawaz" ef="">GitHub</a><br>
-									<i style="font-size:24px" class="ai ai-google-scholar-square ai-3x"></i> <a href="https://scholar.google.com/citations?user=oUrGNaoAAAAJ&hl=en">Google Scholar</a>
-									<i style="font-size:24px" class="ai ai-arxiv-square ai-3x"></i> <a href="https://arxiv.org/a/ismailfawaz_h_1.html">ArXiv</a><br>
-									<i style="font-size:24px" class="ai ai-dblp-square ai-3x"></i> <a href="https://dblp.uni-trier.de/pers/hd/f/Fawaz:Hassan_Ismail">dblp</a>
-									<i style="font-size:24px" class="ai ai-orcid-square ai-3x"></i> <a href="https://orcid.org/0000-0003-1384-5996">ORCID</a>
-									<i style="font-size:24px" class="ai ai-researchgate-square ai-3x"></i> <a href="https://www.researchgate.net/profile/Hassan_Ismail_Fawaz2">ResearchGate</a>
-								</div>
-
-							</div>
-
-						</div>
-
-					</section> -->
-				</div>
-
-				<div class="twitter">
-					<div class="twitter_content">
-						<a class="twitter-timeline" href="https://twitter.com/hassanfawaz93?ref_src=twsrc%5Etfw">Tweets by hassanfawaz93</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 	
-					</div>
-					
 				</div>
 			</div>
+		</section>
 
-			<button class="material-scrolltop" type="button"></button>
+		<section class="main_content_section" id="courses">
+			<div class="container lead">
+				<div>
 
-			<footer>
-				<small>
-					<center>
-						© 2015 | D. Zeinalipour. Credits: AR template
-						<a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
-						<div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence: 
-							<a href="https://github.com/dmsl/academic-responsive-template"_blank">
-								https://github.com/dmsl/academic-responsive-template
-							</a> ]
+
+					<h2 class="section_title">Courses</h2>
+					<ul>
+						<li><span class="chip_light_blue">Deep Learning</span> 20 hours for M.Sc. students in Computer Science.</li>
+						<li><span class="chip_light_blue">Web Programming</span> 24 hours for engineering students in Computer Science.</li>
+					</ul>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="main_content_section" id="awards">
+			<div class="container lead">
+				<div>
+
+
+					<h2 class="section_title">Awards</h2>
+					<ul>
+						<li>
+							<span class="chip_light_blue">IEEE BigData'18</span> <a target="_blank" href="http://cci.drexel.edu/bigdata/bigdata2018/StudentTravelAward.html"> Student Travel Award</a> for the IEEE International Conference on Big Data 2018 at Seattle, USA.</span>
+						</li>
+						<li>
+							<span class="chip_light_blue">UAPC'16</span> First place at the <a href="https://www.facebook.com/events/881156585329299/permalink/892718344173123/">Université Antonine Programming Competition (UAPC) 2016</a> at Beirut, Lebanon.</span>
+						</li>
+						<li>
+							<span class="chip_light_blue">UAPC'15</span> Second place at the <a href="https://www.facebook.com/events/877528025652937/permalink/878052918933781/"> Université Antonine Programming Competition (UAPC) 2015</a> at Beirut, Lebanon.</span>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="main_content_section" id="grants">
+			<div class="container lead">
+				<div>
+
+					<h2 class="section_title">Grants</h2>
+					<ul>
+						<li>
+							<span class="chip_light_blue">Mesocentre of Strasbourg</span> 1.6 million GPU computing hours (2018) on the <a href="https://services-numeriques.unistra.fr/les-services-aux-usagers/hpc.html"> Strasbourg HPC</a>.</span>
+						</li>
+						<li>
+							<span class="chip_light_blue">NVIDIA Corporation GPU Grant</span> <a href="https://developer.nvidia.com/academic_gpu_seeding"> Quadro P6000 (2017)</a>.</span>
+						</li>
+						<li>
+							<span class="chip_light_blue">Coursera Financial Aid</span><a href="https://www.coursera.org/account/accomplishments/certificate/YN8ZWZ6XPWVC"> Deep Learning Speciality (2017)</a>.</span>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="main_content_section" id="certifications">
+			<div class="container lead">
+				<div>
+
+
+					<h2 class="section_title">Certifications</h2>
+					<ul>
+						<li>
+							<span class="chip_light_blue">IEEE BigData'18</span> Volunteering at the <a href="http://cci.drexel.edu/bigdata/bigdata2018/index.html"> IEEE International Conference on Big Data (2018)</a>.</span>
+						</li>
+						<li>
+							<span class="chip_light_blue">DeepLearn'18</span> Attending at the <a href="http://grammars.grlmc.com/DeepLearn2018/"> International Summer School on Deep Learning (2018)</a>.</span>
+						</li>
+						<li>
+							<span class="chip_light_blue">CISCO</span> Completing the <a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html"> CISCO CCNA Routing & Switching</a> (2017).</span>
+						</li>
+						<li>
+							<span class="chip_light_blue">LCPC'16</span> Participating at the <a href="http://www.aou.edu.lb/LCPC16/Participants.aspx"> Lebanese Collegiate Programming Contest (2016)</a>.</span>
+						</li>
+						<li>
+							<span class="chip_light_blue">Boot Camp</span> Participating at the <a href="https://gammal.tech/"> Advanced Programming & Algorithms Boot Camp (2016)</a>.</span>
+						</li>
+						<li>
+							<span class="chip_light_blue">LCPC'15</span> Participating at the <a href="http://www.aou.edu.lb/LCPC15/Participants.aspx"> Lebanese Collegiate Programming Contest (2015)</a>.</span>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="main_content_section" id="service">
+
+			<div class="container lead">
+				<div>
+					<h2 class="section_title">Service </h2>
+
+					<p>
+						<span class="chip_light_blue">Conference Committees</span>
+						<ul>
+							<li>
+								<b>ORASIS</b><br>
+								<a href="https://orasis2019.sciencesconf.org/resource/page/id/1">2019</a>
+								[<i>Francophone days of young researchers in computer vision</i>]
+							</li>
+							<li>
+								<b>AE</b><br>
+								<a href="https://iscpif.fr/upcomingevents/conferenceae-inria-oct2019/">2019</a>
+								[<i>The 14th Biennial International Conference on Artificial Evolution</i>]
+							</li>
+
+						</ul>
+						<span class="chip_light_blue">Reviewer</span>
+						<ul>
+							<li>
+								<b>IEEE TKDE</b><br>
+								<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">2019</a>
+								[<i>IEEE Transactions of Knowledge and Data Engineering</i>]
+							</li>
+							<li>
+								<b>MICCAI</b><br>
+								<a href="http://www.miccai2019.org/">2019</a>
+								[<i>The 22nd International Conference on Medical Image Computing and Computer Assisted Intervention</i>]
+							</li>
+							<li>
+								<b>IEEE JAS</b><br>
+								<a href="http://www.ieee-jas.org/">2019</a>
+								[<i>IEEE/CAA Journal of Automatica Sinica</i>]
+							</li>                
+						</ul>
+
+
+
+						<section class="main_content_section" id="service">
+
+							<div class="container lead">
+								<div>
+
+									<i class="noshow" style="display:none;" id="tab-6">
+										<button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-6-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-right"></span></button>
+									</i>
+									<div class="allshow" style="display:none;" id="tab-6-content">
+
+
+										<h2 class="section_title">Service </h2>
+
+										<p>
+											<h3>Conference Comittees</h3>
+											<ul>
+												<li>
+													<span class="chip_light_blue">ORASIS'19</span>
+													<a href="https://orasis2019.sciencesconf.org/resource/page/id/1">Francophone days of young researchers in computer vision 2019</a>.
+												</li>
+												<li>
+													<span class="chip_light_blue">AE'19</span>
+													<a href="https://iscpif.fr/upcomingevents/conferenceae-inria-oct2019/">The 14th Biennial International Conference on Artificial Evolution 2019</a>.
+												</li>
+
+											</ul>
+
+											<h3>Workshop Committee</h3>
+											<ul>
+												<li>
+													<span class="chip_light_blue">AALTD'19</span>
+													<a href="https://project.inria.fr/aaltd19/">ECML/PKDD Workshop on Advanced Analytics & Learning on Temporal Data</a>.
+												</li>
+											</ul>
+
+											<h3>Reviewer</h3>
+											<ul>
+												<li>
+													<span class="chip_light_blue">IEEE TKDE</span>
+													<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE Transactions of Knowledge and Data Engineering</a>.
+												</li>
+												<li>
+													<span class="chip_light_blue">IEEE JBHI</span>
+													<a href="https://jbhi.embs.org/">IEEE Journal of Biomedical and Health Informatics</a>.
+												</li>
+												<li>
+													<span class="chip_light_blue">MICCAI</span>
+													<a href="http://www.miccai2019.org/">International Conference on Medical Image Computing and Computer Assisted Intervention 2019</a>.
+												</li>
+												<li>
+													<span class="chip_light_blue">IEEE/CAA JAS</span>
+													<a href="http://www.ieee-jas.org/">IEEE/CAA Journal of Automatica Sinica 2019</a>.
+												</li>                
+											</ul>
+
+
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+
+
+
+					</div>
+
+					<div class="twitter">
+						<div class="twitter_content">
+							<a class="twitter-timeline" href="https://twitter.com/hassanfawaz93?ref_src=twsrc%5Etfw">Tweets by hassanfawaz93</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 	
 						</div>
-					</center>
-				</small>
-			</footer>
 
-		</body>
+					</div>
+				</div>
 
-		</html>
+				<button class="material-scrolltop" type="button"></button>
+
+				<footer>				
+				</footer>
+
+			</body>
+
+			</html>
