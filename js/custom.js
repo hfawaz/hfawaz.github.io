@@ -121,7 +121,60 @@ $(document).ready(function(){
 
 //scroll to top
 $(document).ready(function() {
-  $('body').materialScrollTop({
+	$('body').materialScrollTop({
     // OPTIONS HERE
-  });
 });
+});
+
+
+
+
+//menu toggle
+
+
+var isMenuOpen = false;
+var lastWindowSize = 100000;
+
+$(window).resize(function() {
+	var windowSize = $(window).width();	
+	if ( windowSize < 800 && lastWindowSize >= 800) {
+		isMenuOpen = false;
+		closeMenu();
+	}else if( windowSize > 800 && lastWindowSize <= 800 ){
+		isMenuOpen = true;
+		openMenu();
+	}
+
+	lastWindowSize = windowSize;
+
+});
+
+
+$(document).ready(function(){
+	$('#menu_toggle_button').click(function(){
+		if(isMenuOpen){			
+			closeMenu();
+		}else{
+			openMenu();			
+		}
+		isMenuOpen = !isMenuOpen;
+
+	})
+})
+
+function closeMenu(){
+	$('#main_menu').animate({
+		marginLeft: -256
+	},
+	100
+	)
+}
+
+
+function openMenu(){
+	$('#main_menu').animate({
+		marginLeft: 0
+	},
+	100
+	)
+}
