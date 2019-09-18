@@ -368,7 +368,11 @@ function readReferencesBib(){
 		references.forEach(function(reference){
 			switch(reference.entryType) {
 				case 'Article':
-				insertArticle(reference);
+				insertArticle(reference, 'Article');
+				break;	
+				
+				case 'UnderReview':
+				insertArticle(reference, 'UnderReview');
 				break;	
 
 				case 'InProceedings':
@@ -399,13 +403,13 @@ function makeNameBold(author){
 	return author_arr[0]+'<b>Ismail Fawaz, Hassan</b>'+author_arr[1]
 }
 
-function insertArticle(article){	
-	var referencesList = $('#Article').next('ul');
+function insertArticle(article, method){	
+	var referencesList = $('#'+method).next('ul');
 	if(referencesList.length == 0){		
-		$('#Article').after('<ul></ul>');	
+		$('#'+method).after('<ul></ul>');	
 	}	
 	var tags = article.entryTags;	
-	$('#Article').next('ul').append(
+	$('#'+method).next('ul').append(
 		'<li>\
 		<span class="chip_light_blue">'+tags.acronym+'</span>\
 		<a href="'+tags.url+'"> "'+tags.title+'"</a>, '
