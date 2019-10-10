@@ -415,9 +415,9 @@ function insertArticle(article, method){
 		<a href="'+tags.url+'"> "'+tags.title+'"</a>, '
 		+makeNameBold(tags.author)+', \
 		<b>'+tags.journal+', '+tags.year+'.</b>\
-		( <a href="'+tags.code+'"><i class="fa" style="font-size:24px">&#xf1c9;</i></a>\
-		, <a href="'+tags.pdf+'"><i class="fa" style="font-size:24px">&#xf1c1;</i></a>\
-		)</li>');
+		<a href="'+tags.code+'"><i class="fa" style="font-size:24px">&#xf1c9;</i></a>\
+		 <a href="'+tags.pdf+'"><i class="fa" style="font-size:24px">&#xf1c1;</i></a>\
+		</li>');
 }
 
 function insertInProceedings(article, method){	
@@ -431,10 +431,10 @@ function insertInProceedings(article, method){
 		<span class="chip_light_blue">'+tags.acronym+'\''+tags.year.split('0')[1]+'</span>\
 		<a href="'+tags.url+'"> "'+tags.title+'"</a>, '
 		+makeNameBold(tags.author)+', \
-		<b>'+tags.booktitle+', '+tags.year+'.</b>\
-		( <a href="'+tags.code+'"><i class="fa" style="font-size:24px">&#xf1c9;</i></a>\
-		, <a href="'+tags.pdf+'"><i class="fa" style="font-size:24px">&#xf1c1;</i></a>\
-		)</li>');
+		<b>'+tags.booktitle+', '+tags.year+'. </b>\
+		<a href="'+tags.code+'"><i class="fa" style="font-size:24px">&#xf1c9;</i></a>\
+		 <a href="'+tags.pdf+'"><i class="fa" style="font-size:24px">&#xf1c1;</i></a>\
+		</li>');
 }
 
 readReferencesBib();

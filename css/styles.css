@@ -101,9 +101,23 @@ a.id_social_link {
 	padding: 1em;
 }
 
-div#header_logo {display: block;width: 100vw;background: white;box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);padding-left: 1em;}
+div#header_logo {width: 100vw;background: white;box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);padding-left: 1em;}
 
 div#main_menu {float: left;width: 256px;background: #efefef;height: 100vh;position: absolute;z-index: -1;padding-top: 1em;}
+
+/*div#main_menu_hassan {float: right;width: 256px;background: #efefef;height: 100vh;position: absolute;z-index: -1;padding-top: 1em;}*/
+
+div#links_container {float: right; flex-basis: 100%; position: relative; right: 30px;
+	display: flex;
+	flex-basis: 25%;}
+
+div#links_container:-webkit-scrollbar { 
+	display: none;  // Safari and Chrome
+}
+/*
+div#links_container::-webkit-scrollbar { 
+	display: none;  // Safari and Chrome
+}*/
 
 #main_menu ul {
 	display: block;
@@ -289,6 +303,9 @@ iframe#twitter-widget-0 {
 	#main_container{
 		display: block;		
 		padding: 1em;
+	}
+	div#links_container{
+		display: none;
 	}
 
 	#main_content_container{
