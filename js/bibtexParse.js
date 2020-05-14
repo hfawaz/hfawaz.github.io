@@ -426,9 +426,10 @@ function insertInProceedings(article, method){
 		$('#'+method).after('<ul></ul>');	
 	}	
 	var tags = article.entryTags;	
+	var yeartoadd = tags.year.charAt(2)+tags.year.charAt(3);
 	$('#'+method).next('ul').append(
 		'<li>\
-		<span class="chip_light_blue">'+tags.acronym+'\''+tags.year.split('0')[1]+'</span>\
+		<span class="chip_light_blue">'+tags.acronym+'\''+yeartoadd+'</span>\
 		<a href="'+tags.url+'"> "'+tags.title+'"</a>, '
 		+makeNameBold(tags.author)+', \
 		<b>'+tags.booktitle+', '+tags.year+'. </b>\
