@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.2)  2 MAY 2023 17:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.2)  2 MAY 2023 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1643,7 +1643,7 @@ Package logreq Info: Writing requests to 'mmayer.run.xml'.
 Here is how much of TeX's memory you used:
  33339 strings out of 476315
  672455 string characters out of 5786725
- 1902068 words of memory out of 5000000
+ 1903068 words of memory out of 5000000
  53290 multiletter control sequences out of 15000+600000
  803906 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1653,7 +1653,7 @@ Here is how much of TeX's memory you used:
 oland/lato/Lato-Bold.pfb><C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/typoland/lato/Lato-BoldItalic.pfb><C:/Users/Hassan/AppData/Local/Programs/
 MiKTeX/fonts/type1/typoland/lato/Lato-Regular.pfb>
-Output written on mmayer.pdf (1 page, 973056 bytes).
+Output written on mmayer.pdf (1 page, 973109 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
