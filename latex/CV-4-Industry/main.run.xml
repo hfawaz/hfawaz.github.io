@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>mmayer.bcf</file>
+      <file>main.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>mmayer.bbl</file>
+      <file>main.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -60,26 +60,26 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>mmayer</infile>
+      <infile>main</infile>
     </cmdline>
     <input>
-      <file>mmayer.bcf</file>
+      <file>main.bcf</file>
     </input>
     <output>
-      <file>mmayer.bbl</file>
+      <file>main.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>mmayer.bbl</file>
+      <file>main.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>mmayer.bcf</file>
+      <file>main.bcf</file>
     </requires>
     <requires type="editable">
-      <file>../../references.bib</file>
+      <file>sample.bib</file>
     </requires>
   </external>
 </requests>
