@@ -29,6 +29,7 @@
 
 % Change the page layout if you need to
 \geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\usepackage{biblatex}
 
 % Change the font if you want to, depending on whether
 % you're using pdflatex or xelatex/lualatex
@@ -65,7 +66,7 @@
 \renewcommand{\ratingmarker}{\faCircle}
 
 %% sample.bib contains your publications
-\addbibresource{sample.bib}
+\addbibresource{../../references.bib}
 
 \begin{document}
 \name{Hassan ISMAIL FAWAZ}
@@ -99,11 +100,32 @@
 \AtBeginEnvironment{itemize}{\small}
 % \begin{fullwidth}
 
-
 \cvsection[page1sidebar]{Experiences}
-\cvevent{Senior Machine Learning Engineer}{Ericsson}{May 2022 -- Present}     {Paris, France}
+
+\cvevent{Senior Machine Learning Engineer}{Beyond Limits}{Feb 2024 -- Present}     {Al Khobar, KSA}
+
 \begin{itemize}
-    \item \textbf{Tech Lead} for in-house research project on \textbf{transfer learning}
+	\item  Maintain and develop Large Language Models (\textbf{LLMs}) in production (\textbf{GenAI} / LLMOps)
+	\item Benchmark and evaluate various \textbf{vector databases} \\(e.g. OpenSearch, Weaviate, Qdrant) for information retrieval
+	\item Run various experiments for advanced \textbf{Retrieval Augmented Generation (RAG)} systems
+	\item Fine tuning \textbf{embedding} models on private data using \textbf{contrastive} learning approaches
+	\item Evaluate various techniques for fine tuning LLMs such as \textbf{QLORA} with \textbf{Mistral}, \textbf{LLama}, \textbf{Gemma}
+
+\end{itemize}
+
+\divider 
+
+\cvevent{Senior Machine Learning Engineer}{Ericsson}{May 2022 -- Jan 2024}     {Paris, France}
+\begin{itemize}
+	\item \textbf{Data Architect}: Scaling \textbf{MLOps} framework for deep learning
+	\vspace{0.3em}
+	\begin{itemize}
+		\item Build on top of managed Elastic \textbf{K8s} in \textbf{AWS}
+		\item Setup \textbf{CI/CD} pipelines for infrastructure as code (\textbf{IAAC}) 
+		\item Implement \textbf{experiment tracking} and serving using \textbf{MLFlow}
+		\item Ensure \textbf{reproducibility} via \textbf{Docker} and \textbf{Kubeflow}
+	\end{itemize}
+    \item \textbf{Tech Lead}: In-house research \href{https://github.com/EricssonResearch/UDA-4-TSC}{project} on \textbf{transfer learning}
     \vspace{0.3em}
     \begin{itemize}
     	\item[-] Setup \textbf{best practices} for \textbf{Deep Learning} experimentation
@@ -112,15 +134,16 @@
         \item[-] \textbf{Scale up Deep Learning experiments} on \textbf{Kubernetes}
         \item[-] Define the research project \textbf{roadmap} \& team responsibilities
         \item[-] Lead a monthly \textbf{reading group} on Artificial Intelligence
+        \item[-] Animate training \textbf{workshops} for software best practices
     \end{itemize}
     \item \textbf{Machine Learning Engineer}: developing a microservice
     \vspace{0.3em}
     \begin{itemize}
         \item[-] Follow \textbf{software engineering} best practices
-        \item[-] Code review, unit \& integration tests, \textbf{CI/CD}
-        \item[-] Dealing with \textbf{Kafka} based communication system 
-        \item[-] Develop \textbf{ML Ops} \& model \textbf{Life Cycle Management} (LCM) 
-        \item[-] Implement and investigate various \textbf{design patterns}
+        \item[-] Review code, unit \& integration tests, \textbf{CI/CD}
+        \item[-] Interact with \textbf{Kafka} based communication system 
+        \item[-] Develop \textbf{ML Ops} \& model \textbf{Life Cycle Management} (LCM)
+        \item[-] Implement and investigate various design patterns
     \end{itemize}
 	
 	\item \textbf{Data Engineer}: develop big data processing pipelines 
@@ -132,48 +155,59 @@
 	
 \end{itemize}
 
-
 \divider
 
 \cvevent{Machine Learning Engineer}{Besedo}{Oct 2020 -- April 2022}     {Paris, France}
 \begin{itemize}
-    \item  Content moderation using Machine Learning
-    \vspace{0.5em}
-    \begin{itemize}
-        \item[-] Benchmark latest \textbf{Computer Vision} \textbf{Deep Learning} models
-        \item[-] \textbf{Guide \& mentor} junior data scientists and linguistics
-        \item[-] Evaluate \textbf{NLP} \textbf{transformer} models for \textbf{text classification}  
-        \item[-] Develop \textbf{microservices} for live computer vision inference 
-        \item[-] \textbf{Reduce latency} using quantization, pruning, JIT \& tensorRT
-        \item[-] \textbf{Monitor} model \textbf{performance} and decay (e.g. accuracy)
-        \item[-] Evaluate concept \& data \textbf{drift}, covariate \& label \textbf{shift}
-        \item[-] \textbf{Orchestrate} and automate model training using Airflow 
-        \item[-] Contribute to \textbf{HuggingFace}'s open source datasets (\href{https://github.com/pulls?q=is%3Apr+author%3Ahfawaz+archived%3Afalse+is%3Aclosed+huggingface+is%3Amerged}{link})
-        \item[-] Deliver \textbf{proof-of-concepts} for ML models using \textbf{Streamlit}
-    \end{itemize}
+	\item  Content moderation using Machine Learning
+	\vspace{0.5em}
+	\begin{itemize}
+		\item[-] Benchmark latest \textbf{Computer Vision} \textbf{Deep Learning} models
+		\item[-] \textbf{Guide \& mentor} junior data scientists and linguistics
+		\item[-] Evaluate \textbf{NLP} \textbf{transformer} models for \textbf{text classification}  
+		\item[-] Develop \textbf{microservices} for live computer vision inference 
+		\item[-] \textbf{Reduce latency} using quantization, pruning, JIT \& tensorRT
+		\item[-] \textbf{Monitor} model \textbf{performance} and decay (e.g. accuracy)
+		\item[-] Evaluate concept \& data \textbf{drift}, covariate \& label \textbf{shift}
+		\item[-] \textbf{Orchestrate} and automate model training using Airflow 
+		\item[-] Contribute to \textbf{HuggingFace}'s open source datasets (\href{https://github.com/pulls?q=is%3Apr+author%3Ahfawaz+archived%3Afalse+is%3Aclosed+huggingface+is%3Amerged}{link})
+		\item[-] Deliver \textbf{proof-of-concepts} for ML models using \textbf{Streamlit}
+	\end{itemize}
 \end{itemize}
 
 \divider
 
-\cvevent{Software Developer Intern}{Orange Labs}{March 2017 -- September 2017}     {Nice, France}
+
+\cvevent{Visiting Machine Learning Researcher}{Monash University}{Nov 2019 -- Dec 2019}     {Melbourne, Australia}
+{Classifying satellite image time series.}\\
+\divider
+
+\cvevent{Deep Learning Lecturer}{Université Haute-Alsace}{Sep 2018 -- 2021}     {Mulhouse, France}
+{Giving an advanced course on  deep neural networks.}\\
+
+\divider
+
+\cvevent{Software Developer Intern}{Orange Labs}{Mar 2017 -- Sep 2017}     {Nice, France}
 \textbf{Java} recommendation system based on \textbf{RDF triplet data}
 
-\cvsection{Data Science Skills}
-\cvskill{Computer Vision, NLP \& Time Series} {5}
-\cvskill{Pytorch, Scikit-learn, Pandas \& HuggingFace}{5}
-\cvskill{Hydra, Tensorboard \& Data Version Control}{5}
-\cvskill{Linear Algebra, Geometry \& Probability}{4}
-\cvskill{Writing, Presenting \& Knowledge Sharing} {4}
+\divider
+
+\cvevent{Freelance Web Development}{MradMCC}{Mar 2016 -- Aug 2016}{Beirut, Lebanon}
+{Creating a WordPress website that can be found \href{http://www.mradmcc.com/home/}{here}.}
+
+\divider
+
+\cvsection{Journal Publications}
+\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
 
 
 
-% \cvevent{Visiting Machine Learning Researcher}{Monash University}{Nov 2019 -- Dec 2019}     {Melbourne, Australia}
-% {Classifying satellite image time series.}\\
-% \divider
 
-% \cvevent{Deep Learning Lecturer}{Université Haute-Alsace}{Sep 2018 -- 2021}     {Mulhouse, France}
-% {Giving an advanced course on  deep neural networks.}\\
-% \divider
+%\nocite{*}
+%\citation{Meyer2000}
+%\fullcite{Meyer2000}
+%\citation{Meyer2000}
+%\printbibliography
 
 % \cvevent{Machine Learning \& Semantic Web Intern}{Orange Labs}{Mar 2017 -- Sep 2017}     {Sophia Antipolis, France}
 % {Designing a dataset recommendation engine.}\\
@@ -197,8 +231,7 @@
 % % \hbox {Perctange= 89.76\%}
 % \divider
 
-% \cvevent{Freelance Web Development}{MradMCC}{Mar 2016 -- Aug 2016}     {Beirut, Lebanon}
-% {Creating a WordPress website that can be found \href{http://www.mradmcc.com/home/}{here}.}
+
 
 % \divider
 %\cvskill{German}{3}
@@ -226,22 +259,20 @@
 
 \clearpage
 
-% \cvsection[page2sidebar]{Publications}
-
+%\cvsection[page2sidebar]{Publications}
+%
 \nocite{*}
+%
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+%
+%\divider
+%
+%\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+%
+%\divider
+%
+%\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
 
-% \end{fullwidth}
-
-
-% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-% \divider
-
-% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
-
-% \divider
-
-% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
 
 % %% If the NEXT page doesn't start with a \cvsection but you'd
 % %% still like to add a sidebar, then use this command on THIS

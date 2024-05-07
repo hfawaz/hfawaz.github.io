@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.2)  8 MAY 2024 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.2)  8 MAY 2024 00:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./mmayer.tex
-(mmayer.tex
+**./hassan.tex
+(hassan.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-04-20> (altacv.cls
 Document Class: altacv 2018/12/01 AltaCV v1.1.5, yet another alternative class 
@@ -1440,8 +1440,8 @@ ftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count434
 \l__pdf_internal_box=\box76
-) (mmayer.aux)
-\openout1 = `mmayer.aux'.
+) (hassan.aux)
+\openout1 = `hassan.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
@@ -1540,19 +1540,19 @@ Package biblatex Warning: Initial guess for file encoding (ascii)
 
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `mmayer.bcf'.
+\openout4 = `hassan.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'mmayer.bbl' found.
-(mmayer.bbl)
+Package biblatex Info: ... file 'hassan.bbl' found.
+(hassan.bbl)
 Package biblatex Info: Reference section=0 on input line 71.
 Package biblatex Info: Reference segment=0 on input line 71.
 \c@mv@tabular=\count441
 \c@mv@boldtabular=\count442
 Package hyperref Info: Link coloring ON on input line 71.
- (mmayer.out) (mmayer.out)
+ (hassan.out) (hassan.out)
 \@outlinefile=\write5
-\openout5 = `mmayer.out'.
+\openout5 = `hassan.out'.
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 96.
@@ -1814,14 +1814,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--25
  In-ter-na-tional
  []
 
-) [2] (mmayer.aux)
+) [2] (hassan.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `mmayer.out' has not changed.
+Package rerunfilecheck Info: File `hassan.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'mmayer.run.xml'.
-\openout1 = `mmayer.run.xml'.
+Package logreq Info: Writing requests to 'hassan.run.xml'.
+\openout1 = `hassan.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -1838,7 +1838,7 @@ oland/lato/Lato-Bold.pfb><C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/typoland/lato/Lato-BoldItalic.pfb><C:/Users/Hassan/AppData/Local/Programs/
 MiKTeX/fonts/type1/typoland/lato/Lato-Italic.pfb><C:/Users/Hassan/AppData/Local
 /Programs/MiKTeX/fonts/type1/typoland/lato/Lato-Regular.pfb>
-Output written on mmayer.pdf (2 pages, 1005512 bytes).
+Output written on hassan.pdf (2 pages, 1005497 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)

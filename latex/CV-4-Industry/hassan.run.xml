@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>mmayer.bcf</file>
+      <file>hassan.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>mmayer.bbl</file>
+      <file>hassan.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -64,19 +64,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>mmayer</infile>
+      <infile>hassan</infile>
     </cmdline>
     <input>
-      <file>mmayer.bcf</file>
+      <file>hassan.bcf</file>
     </input>
     <output>
-      <file>mmayer.bbl</file>
+      <file>hassan.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>mmayer.bbl</file>
+      <file>hassan.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>mmayer.bcf</file>
+      <file>hassan.bcf</file>
     </requires>
     <requires type="editable">
       <file>../../references.bib</file>

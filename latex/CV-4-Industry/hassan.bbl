@@ -1,0 +1,1270 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{Ismail-Fawaz2023ShapeDBAGeneratingEffective}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=aed092eb8dd216bf5b402e1f03e59230}{%
+           family={Ismail-Fawaz},
+           familyi={I\bibinithyphendelim F\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38e6377ce4126588cd39f597d3506e80}{%
+           family={Petitjean},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3ffa557eb77f09ef2558f8236c5223c}{%
+           family={Devanne},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f08e2413f70481eba52a73d540bbd56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b34f2376d6ba632f2dd6c2b2c1705008}{%
+           family={Berretti},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7314401735e1e0e28ce9e22de68863d3}{%
+           family={Webb},
+           familyi={W\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc65cded0a66478bedee9d01de87924d}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{818491f1d1520bad4ec149d2e3942ae9}
+      \strng{fullhash}{99f0476e7f9cba5bde1be29c55a7950c}
+      \strng{bibnamehash}{818491f1d1520bad4ec149d2e3942ae9}
+      \strng{authorbibnamehash}{818491f1d1520bad4ec149d2e3942ae9}
+      \strng{authornamehash}{818491f1d1520bad4ec149d2e3942ae9}
+      \strng{authorfullhash}{99f0476e7f9cba5bde1be29c55a7950c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ECML/PKDD Workshop on Advanced Analytics and Learning on Temporal Data}
+      \field{title}{ShapeDBA: Generating Effective Time Series Prototypes using ShapeDTW Barycenter Averaging}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/pdf/2309.16353.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2309.16353
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2309.16353
+      \endverb
+    \endentry
+    \entry{Pialla2023Timeseriesadversarial}{article}{}
+      \name{author}{10}{}{%
+        {{un=2,uniquepart=given,hash=f06750558f60c65e10777a7afa0ed936}{%
+           family={Pialla},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3ffa557eb77f09ef2558f8236c5223c}{%
+           family={Devanne},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f08e2413f70481eba52a73d540bbd56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efd4492ebf3aefccbb5d56598ee78824}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9321e8d1643ee83e91c824901a16787}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={P-A.},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6426353966abe4c8a52610d8772c30eb}{%
+           family={Bergmeir},
+           familyi={B\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=564633c48bf0a232efcfc27ab4276ec5}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={D-F.},
+           giveni={D\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7314401735e1e0e28ce9e22de68863d3}{%
+           family={Webb},
+           familyi={W\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc65cded0a66478bedee9d01de87924d}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fc9fffb790681458ac4b5ad826c7d81a}
+      \strng{fullhash}{57cfc912c270e69ac56396cf7a1820e2}
+      \strng{bibnamehash}{fc9fffb790681458ac4b5ad826c7d81a}
+      \strng{authorbibnamehash}{fc9fffb790681458ac4b5ad826c7d81a}
+      \strng{authornamehash}{fc9fffb790681458ac4b5ad826c7d81a}
+      \strng{authorfullhash}{57cfc912c270e69ac56396cf7a1820e2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Data Science and Analytics}
+      \field{title}{Time series adversarial attacks: an investigation of smooth perturbations and defense approaches}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{file}
+      \verb https://germain-forestier.info/publis/jdsa2023.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s41060-023-00438-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s41060-023-00438-0
+      \endverb
+    \endentry
+    \entry{pialla2022smooth}{inproceedings}{}
+      \name{author}{10}{}{%
+        {{un=2,uniquepart=given,hash=adcc93b8466500d3f8adbd8ffe414d48}{%
+           family={Pialla},
+           familyi={P\bibinitperiod},
+           given={Gautier},
+           giveni={G\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8748e57756ed14fb34eadce7a7918218}{%
+           family={Devanne},
+           familyi={D\bibinitperiod},
+           given={Maxime},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb7be81f0574878d688bb03f0abb8502}{%
+           family={Bergmeir},
+           familyi={B\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d67d8cf0c11995175e99c8f63889a34c}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50c1daaede1672d2a67b86113af967f2}{%
+           family={Webb},
+           familyi={W\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{28f8fd65d544bb49cee176a0be041228}
+      \strng{fullhash}{7ebf9557f5f57c251d5df4d7251d990d}
+      \strng{bibnamehash}{28f8fd65d544bb49cee176a0be041228}
+      \strng{authorbibnamehash}{28f8fd65d544bb49cee176a0be041228}
+      \strng{authornamehash}{28f8fd65d544bb49cee176a0be041228}
+      \strng{authorfullhash}{7ebf9557f5f57c251d5df4d7251d990d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Pacific-Asia Conference on Knowledge Discovery and Data Mining}
+      \field{title}{Smooth Perturbations for Time Series Adversarial Attacks}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{file}
+      \verb https://germain-forestier.info/publis/pakdd2022.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-05933-9_38
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-05933-9_38
+      \endverb
+    \endentry
+    \entry{ismailFawaz2020incpetionTime}{article}{}
+      \name{author}{10}{ul=2}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=899df7e3e43e3177538b45c86bd9f037}{%
+           family={Lucas},
+           familyi={L\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e5afdd66f3d52c264c03e3b5c510701}{%
+           family={Pelletier},
+           familyi={P\bibinitperiod},
+           given={Charlotte},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4948e91023afddce3c621dd38f00be19}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=021b501817a8d003c9b230aaed364b70}{%
+           family={Webb},
+           familyi={W\bibinitperiod},
+           given={Geoffrey\bibnamedelima I.},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=270fff17f2b0edbcb28e6c8dc2d70c64}{%
+           family={Petitjean},
+           familyi={P\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{34588c3a78d2fc208248cd4abbcbc2b3}
+      \strng{fullhash}{8d4d6fb863a53d9aceacc943491fe90f}
+      \strng{bibnamehash}{34588c3a78d2fc208248cd4abbcbc2b3}
+      \strng{authorbibnamehash}{34588c3a78d2fc208248cd4abbcbc2b3}
+      \strng{authornamehash}{34588c3a78d2fc208248cd4abbcbc2b3}
+      \strng{authorfullhash}{8d4d6fb863a53d9aceacc943491fe90f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data Mining and Knowledge Discovery}
+      \field{title}{InceptionTime: Finding AlexNet for Time Series Classification}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/pdf/1909.04939.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007%2Fs10618-020-00710-y
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007%2Fs10618-020-00710-y
+      \endverb
+    \endentry
+    \entry{mathis2020knowledge}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=aebb4eb3ba1460afef5c594314e32245}{%
+           family={Mathis},
+           familyi={M\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e4a088ce615fa698edf37678a3997f6}{%
+           family={Khamis},
+           familyi={K\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0409b6670a9fdb8d74398a437c8340a3}
+      \strng{fullhash}{0409b6670a9fdb8d74398a437c8340a3}
+      \strng{bibnamehash}{0409b6670a9fdb8d74398a437c8340a3}
+      \strng{authorbibnamehash}{0409b6670a9fdb8d74398a437c8340a3}
+      \strng{authornamehash}{0409b6670a9fdb8d74398a437c8340a3}
+      \strng{authorfullhash}{0409b6670a9fdb8d74398a437c8340a3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems Extended Abstracts}
+      \field{title}{Knowledge-driven Biometric Authentication in Virtual Reality}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{file}
+      \verb http://fmathis.com/publications/mathis2020chi2.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/abs/10.1145/3334480.3382799
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/abs/10.1145/3334480.3382799
+      \endverb
+    \endentry
+    \entry{rakhshani2020neural}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=b66b1cd7d4a51d49c03546dcdd197669}{%
+           family={Rakhshani},
+           familyi={R\bibinitperiod},
+           given={Hojjat},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f5d27577ec773c55be2b41d894bb970}{%
+           family={Lepagnot},
+           familyi={L\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0478cc937d3758790771eb1f98d77b2e}{%
+           family={Brévilliers},
+           familyi={B\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3666a39f21d50e8e5bd4f400e8d25b39}
+      \strng{fullhash}{0232739b7f70509000cc2d4a9eb8eba7}
+      \strng{bibnamehash}{3666a39f21d50e8e5bd4f400e8d25b39}
+      \strng{authorbibnamehash}{3666a39f21d50e8e5bd4f400e8d25b39}
+      \strng{authornamehash}{3666a39f21d50e8e5bd4f400e8d25b39}
+      \strng{authorfullhash}{0232739b7f70509000cc2d4a9eb8eba7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Joint Conference on Neural Networks}
+      \field{title}{Neural architecture search for time series classification}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{file}
+      \verb https://germain-forestier.info/publis/ijcnn2020.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9206721
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9206721
+      \endverb
+    \endentry
+    \entry{ismailfawaz2019accurate}{article}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Assisted Radiology and Surgery}
+      \field{title}{Accurate and interpretable evaluation of surgical skills from kinematic data using fully convolutional neural networks}
+      \field{volume}{14}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{1611\bibrangedash 1617}
+      \range{pages}{7}
+      \verb{file}
+      \verb https://arxiv.org/pdf/1908.07319.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11548-019-02039-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11548-019-02039-4
+      \endverb
+    \endentry
+    \entry{IsmailFawaz2019adversarial}{inproceedings}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Joint Conference on Neural Networks}
+      \field{title}{Adversarial Attacks on Deep Neural Networks for Time Series Classification}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/pdf/1903.07054.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8851936
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8851936
+      \endverb
+    \endentry
+    \entry{IsmailFawaz2019tsdays}{inworkshopsfr}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Journées sur les données temporelles}
+      \field{title}{Apprentissage par transfert pour la classification de séries temporelles}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{file}
+      \verb https://project.inria.fr/tsdays/files/2019/03/MadnessOnLine.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://project.inria.fr/tsdays/files/2019/03/MadnessOnLine.pdf
+      \endverb
+      \verb{url}
+      \verb https://project.inria.fr/tsdays/files/2019/03/MadnessOnLine.pdf
+      \endverb
+    \endentry
+    \entry{IsmailFawaz2019augmentation}{inproceedingsfr}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Journées Francophones Extraction et Gestion des Connaissances}
+      \field{title}{Augmentation de données utilisant des données synthétiques pour la classification de séries temporelles par réseaux profonds résiduels}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{file}
+      \verb https://germain-forestier.info/publis/egc2019.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://editions-rnti.fr/?inprocid=1002514
+      \endverb
+      \verb{url}
+      \verb https://editions-rnti.fr/?inprocid=1002514
+      \endverb
+    \endentry
+    \entry{ismailfawaz2018deep}{article}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data Mining and Knowledge Discovery}
+      \field{title}{Deep learning for time series classification: a review}
+      \field{volume}{33}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{917\bibrangedash 963}
+      \range{pages}{47}
+      \verb{file}
+      \verb https://arxiv.org/pdf/1809.04356.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007%2Fs10618-019-00619-1
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007%2Fs10618-019-00619-1
+      \endverb
+    \endentry
+    \entry{IsmailFawaz2019deep}{inproceedings}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Joint Conference on Neural Networks}
+      \field{title}{Deep Neural Network Ensembles for Time Series Classification}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/pdf/1903.06602.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8852316
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8852316
+      \endverb
+    \endentry
+    \entry{IsmailFawaz2019automatic}{inproceedings}{}
+      \name{author}{6}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=270fff17f2b0edbcb28e6c8dc2d70c64}{%
+           family={Petitjean},
+           familyi={P\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5ba2ab56e78f11ffe4d0d0a193c9a25}
+      \strng{fullhash}{9d3616e747f801792d2c92171065c686}
+      \strng{bibnamehash}{c5ba2ab56e78f11ffe4d0d0a193c9a25}
+      \strng{authorbibnamehash}{c5ba2ab56e78f11ffe4d0d0a193c9a25}
+      \strng{authornamehash}{c5ba2ab56e78f11ffe4d0d0a193c9a25}
+      \strng{authorfullhash}{9d3616e747f801792d2c92171065c686}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Artificial Intelligence in Medicine}
+      \field{title}{Automatic alignment of surgical videos using kinematic data}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/pdf/1904.07302.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://aime19.aimedicine.info/
+      \endverb
+      \verb{url}
+      \verb http://aime19.aimedicine.info/
+      \endverb
+    \endentry
+    \entry{Forestier2018Surgicalmotionanalysis}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=270fff17f2b0edbcb28e6c8dc2d70c64}{%
+           family={Petitjean},
+           familyi={P\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01683118ae120eb9c37bf46f2288df1b}{%
+           family={Senin},
+           familyi={S\bibinitperiod},
+           given={Pavel},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46c43880dbb09ab68707232e13446b50}{%
+           family={Despinoy},
+           familyi={D\bibinitperiod},
+           given={Fabien},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=afcce51163b175b017ee545f61e7b192}{%
+           family={Huaulmé},
+           familyi={H\bibinitperiod},
+           given={Arnaud},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a568ce1756a8c673c6a84e9d161605b}{%
+           family={Jannin},
+           familyi={J\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c74098623be0bd909ac01fe69d539d4c}
+      \strng{fullhash}{f00c4ed45db0fcfd0c28603436fca917}
+      \strng{bibnamehash}{c74098623be0bd909ac01fe69d539d4c}
+      \strng{authorbibnamehash}{c74098623be0bd909ac01fe69d539d4c}
+      \strng{authornamehash}{c74098623be0bd909ac01fe69d539d4c}
+      \strng{authorfullhash}{f00c4ed45db0fcfd0c28603436fca917}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artificial Intelligence in Medicine}
+      \field{title}{Surgical motion analysis using discriminative interpretable patterns}
+      \field{volume}{81}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{3\bibrangedash 11}
+      \range{pages}{9}
+      \verb{file}
+      \verb https://germain-forestier.info/publis/aim2018.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0933365717306681
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0933365717306681
+      \endverb
+    \endentry
+    \entry{ismailFawaz2018data}{inworkshops}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Workshop on Advanced Analytics and Learning on Temporal Data, ECML/PKDD}
+      \field{title}{Data augmentation using synthetic data for time series classification with deep residual networks}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/pdf/1808.02455.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://project.inria.fr/aaldt18/accepted-papers/
+      \endverb
+      \verb{url}
+      \verb https://project.inria.fr/aaldt18/accepted-papers/
+      \endverb
+    \endentry
+    \entry{IsmailFawaz2018evaluating}{inproceedings}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference On Medical Image Computing and Computer Assisted Intervention}
+      \field{title}{Evaluating surgical skills from kinematic data using convolutional neural networks}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{214\bibrangedash 221}
+      \range{pages}{8}
+      \verb{file}
+      \verb https://arxiv.org/pdf/1806.02750.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-030-00937-3_25
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-030-00937-3_25
+      \endverb
+    \endentry
+    \entry{IsmailFawaz2018gdr}{inworkshopsfr}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Rencontre annuelle MADIC: Sciences des Données et Santé}
+      \field{title}{Evaluating surgical skills from kinematic data using convolutional neural networks}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{file}
+      \verb https://www.madics.fr/wp-content/uploads/2018/07/ismail_fawaz_hassan-pres.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.madics.fr/wp-content/uploads/2018/07/ismail_fawaz_hassan-pres.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.madics.fr/wp-content/uploads/2018/07/ismail_fawaz_hassan-pres.pdf
+      \endverb
+    \endentry
+    \entry{IsmailFawaz2018transfer}{inproceedings}{}
+      \name{author}{5}{ul=4}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc574d00402a54e3441aab7924f60c6}{%
+           family={Forestier},
+           familyi={F\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9d8ad55a0e41f6e52142507ae4cf56}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d350ee2220fd81c99504110da25de7df}{%
+           family={Idoumghar},
+           familyi={I\bibinitperiod},
+           given={Lhassane},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf881384e0d7c8971ea9353d846fdaba}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Pierre-Alain},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{fullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \strng{bibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorbibnamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authornamehash}{c6dc89f6d6924fd3934b85db93976955}
+      \strng{authorfullhash}{3d59e100991a7a89c7ba06c317fb4599}
+      \field{extraname}{10}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Conference on Big Data}
+      \field{title}{Transfer learning for time series classification}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{1367\bibrangedash 1376}
+      \range{pages}{10}
+      \verb{file}
+      \verb https://arxiv.org/pdf/1811.01533.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8621990
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8621990
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
