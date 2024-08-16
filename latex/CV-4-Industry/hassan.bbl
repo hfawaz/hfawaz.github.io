@@ -1016,7 +1016,7 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0933365717306681
       \endverb
     \endentry
-    \entry{ismailFawaz2018data}{inworkshops}{}
+    \entry{ismailFawaz2018data}{inproceedings}{}
       \name{author}{5}{ul=4}{%
         {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
            family={Ismail\bibnamedelima Fawaz},

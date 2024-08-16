@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.2)  16 AUG 2024 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.2)  16 AUG 2024 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1769,7 +1769,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--25
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/lato-TLF/m/n/10 (2018b). ``Eval-u-at-ing sur-gi-cal skills from kine-
+\T1/lato-TLF/m/n/10 (2018a). ``Data aug-men-ta-tion us-ing syn-thetic data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/lato-TLF/m/n/10 for time se-ries clas-si-fi-ca-tion with deep resid-ual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/lato-TLF/m/n/10 net-works''. In: \T1/lato-TLF/m/it/10 In-ter-na-tional Work
+-shop on Ad-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/lato-TLF/m/it/10 vanced An-a-lyt-ics and Learn-ing on Tem-po-ral Data,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[][][][][]\T1/lato-TLF/m/n/10 (2018b). ``Eval-u-at-ing sur-gi-cal skills from k
+ine-
  []
 
 
@@ -1812,22 +1834,22 @@ Package logreq Info: Writing requests to 'hassan.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33637 strings out of 476315
- 680345 string characters out of 5786725
+ 33640 strings out of 476315
+ 680458 string characters out of 5786725
  1902068 words of memory out of 5000000
- 53566 multiletter control sequences out of 15000+600000
+ 53568 multiletter control sequences out of 15000+600000
  826784 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,8n,120p,1153b,1495s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,8n,120p,1153b,1492s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome
 /FontAwesome.pfb><C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/type1/typ
 oland/lato/Lato-Bold.pfb><C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/typoland/lato/Lato-BoldItalic.pfb><C:/Users/Hassan/AppData/Local/Programs/
 MiKTeX/fonts/type1/typoland/lato/Lato-Italic.pfb><C:/Users/Hassan/AppData/Local
 /Programs/MiKTeX/fonts/type1/typoland/lato/Lato-Regular.pfb>
-Output written on hassan.pdf (2 pages, 1005667 bytes).
+Output written on hassan.pdf (2 pages, 1008430 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 17 named destinations out of 1000 (max. 500000)
+ 84 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
