@@ -1,0 +1,298 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.5cm,right=10.5cm,marginparwidth=8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\usepackage{biblatex}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\usepackage{url}
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{../../references.bib}
+
+\begin{document}
+\name{Dr. Hassan ISMAIL FAWAZ}
+\tagline{Time Series Expert | PhD in Artificial Intelligence}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.7cm}{photo.png}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{hassanismailfawaz@gmail.com}
+%   \phone{+33769186977}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Saudi Arabia}
+%  \homepage{marissamayr.tumblr.com/}
+%  \twitter{@marissamayer}
+ \github{\href{https://github.com/hfawaz}{hfawaz}}
+%   \linkedin{https://www.linkedin.com/in/h-fawaz/}
+%\homepage{\href{https://hfawaz.github.io}{hfawaz.github.io}}
+% 
+\faGraduationCap~~\href{https://scholar.google.com/citations?user=oUrGNaoAAAAJ&hl=en}{publications}
+   % I'm just making this up though.
+%   \orcid{https://orcid.org/0000-0003-1384-5996} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+% \begin{fullwidth}
+
+\cvsection[page1sidebar]{Experiences}
+
+\cvevent{Senior Machine Learning Engineer}{Beyond Limits}{Feb 2024 -- Present}     {Al Khobar, Saudi Arabia}
+
+\begin{itemize}
+	\item Scaling up and \textbf{load balancing} Large Language Models (\textbf{LLMs})
+	\item \textbf{Project Lead} at the client's site for a large oil and gas operator
+	\item \textbf{Data} pipelines for \textbf{completion} and \textbf{instruction tuning} 
+	\item Maintain and develop LLMs in production (\textbf{GenAI} / LLMOps)
+%	\item Benchmark and evaluate various \textbf{vector databases} \\(e.g. OpenSearch, Weaviate, Qdrant) for information retrieval
+%	\item Run various experiments for advanced \textbf{Retrieval Augmented Generation (RAG)} systems
+%	\item Fine tune \textbf{embedding} models on private data using \textbf{contrastive} learning approaches
+%	\item Evaluate various techniques for fine tuning LLMs such as \textbf{QLORA} with \textbf{Mistral}, \textbf{LLama}, \textbf{Gemma}
+
+\end{itemize}
+
+\divider 
+
+\cvevent{Senior Machine Learning Engineer}{Ericsson}{May 2022 -- Jan 2024}     {Paris, France}
+\begin{itemize}
+	
+	\item \textbf{Data Scientist}: Clustering and forecasting \textbf{time series} data
+	\vspace{0.3em}
+	\begin{itemize}
+		\item[-] \textbf{Predict} the future incoming traffic based on historical data
+		\item[-] Develop \textbf{local \& global} models for forecasting 
+		\item[-] \textbf{Clustering} using \textbf{k-shape} and k-means with \textbf{DTW} 
+		\item[-] \textbf{Forecasting} using Arima, Prophet, LSTMs \& RandomForest 
+		\item[-] \textbf{Spark} for extracting \& normalizing \textbf{parquet} data 
+	\end{itemize}
+
+	\item \textbf{Tech Lead}: \href{https://github.com/EricssonResearch/UDA-4-TSC}{Domain Adaptation for time series classification}
+	\vspace{0.3em}
+	\begin{itemize}
+		\item[-] Implement SOTA models for time series \textbf{domain adaptation}
+		\item[-] Benchmark various \textbf{neural network} architectures for time series classification (e.g. \textbf{CNNs}, \textbf{RNNs}, \textbf{Inception})
+		\item[-] \textbf{Scale up Deep Learning experiments} on \textbf{Kubernetes}
+		\item[-] Define the research project \textbf{roadmap} \& team responsibilities
+		\item[-] Setup \textbf{best practices} for \textbf{Deep Learning} experimentation
+		\item[-] Code review \& \textbf{mentoring} of PhD students \& data scientists
+%		\item[-] Lead a monthly \textbf{reading group} on Artificial Intelligence
+%		\item[-] Animate training \textbf{workshops} for software best practices
+	\end{itemize}
+
+
+	\item \textbf{Machine Learning Engineer}: time-series anomaly detection
+	\vspace{0.3em}
+	\begin{itemize}
+		\item[-] Predict \textbf{time series data anomaly} based on historical events
+		\item[-] Detected \textbf{anomaly} (high-cpu usage) will trigger autoscaling
+		\item[-] Implement statistical model based on \textbf{Kolmogorov–Smirnov}
+		\item[-] Follow \textbf{software engineering} best practices
+		\item[-] Review code, unit \& integration tests, \textbf{CI/CD}
+		\item[-] Interact with \textbf{Kafka} based communication system 
+		\item[-] Develop \textbf{ML Ops} \& model \textbf{Life Cycle Management} (LCM)
+		\item[-] Implement and investigate various design patterns
+	\end{itemize}
+
+	\item \textbf{Data Architect}: Scaling \textbf{MLOps} framework for deep learning
+	\vspace{0.3em}
+	\begin{itemize}
+		\item Build on top of managed Elastic \textbf{K8s} in \textbf{AWS}
+		\item Setup \textbf{CI/CD} pipelines for infrastructure as code (\textbf{IAAC}) 
+		\item Implement \textbf{experiment tracking} and serving using \textbf{MLFlow}
+		\item Ensure \textbf{reproducibility} via \textbf{Docker} and \textbf{Kubeflow}
+	\end{itemize}
+    
+	
+	
+\end{itemize}
+
+\divider
+
+\cvevent{Machine Learning Engineer}{Besedo}{Oct 2020 -- April 2022}     {Paris, France}
+\begin{itemize}
+	\item[-]  Content moderation using Machine Learning
+	\item[-] Benchmark latest \textbf{Computer Vision} \textbf{Deep Learning} models
+	\item[-] \textbf{Guide \& mentor} junior data scientists and linguistics
+	\item[-] Evaluate \textbf{NLP} \textbf{transformer} models for \textbf{text classification}  
+	\item[-] Develop \textbf{microservices} for live computer vision inference 
+	\item[-] \textbf{Reduce latency} using quantization, pruning, JIT \& tensorRT
+	\item[-] \textbf{Monitor} model \textbf{performance} and decay (e.g. accuracy)
+	\item[-] Evaluate concept \& data \textbf{drift}, covariate \& label \textbf{shift}
+	\item[-] \textbf{Orchestrate} and automate model training using Airflow 
+	\item[-] Contribute to \textbf{HuggingFace}'s open source datasets (\href{https://github.com/pulls?q=is%3Apr+author%3Ahfawaz+archived%3Afalse+is%3Aclosed+huggingface+is%3Amerged}{link})
+	\item[-] Deliver \textbf{proof-of-concepts} for ML models using \textbf{Streamlit}
+\end{itemize}
+
+\divider
+
+
+\cvevent{Visiting Machine Learning Researcher}{Monash University}{Nov 2019 -- Dec 2019}     {Melbourne, Australia}
+{Classifying satellite image \textbf{time series}.}\\
+\divider
+
+\cvevent{Deep Learning Lecturer}{Université Haute-Alsace}{Sep 2018 -- 2021}     {Mulhouse, France}
+{Giving an advanced course on  deep neural networks.}\\
+
+\divider
+
+\cvevent{Software Developer Intern}{Orange Labs}{Mar 2017 -- Sep 2017}     {Nice, France}
+\textbf{Java} recommendation system based on \textbf{RDF triplet data}
+
+\divider
+
+\cvevent{Freelance Web Development}{MradMCC}{Mar 2016 -- Aug 2016}{Beirut, Lebanon}
+{Creating a WordPress website that can be found \href{http://www.mradmcc.com/home/}{here}.}
+
+\divider
+
+\cvsection{Journal Publications}
+\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+
+
+
+%\nocite{*}
+%\citation{Meyer2000}
+%\fullcite{Meyer2000}
+%\citation{Meyer2000}
+%\printbibliography
+
+% \cvevent{Machine Learning \& Semantic Web Intern}{Orange Labs}{Mar 2017 -- Sep 2017}     {Sophia Antipolis, France}
+% {Designing a dataset recommendation engine.}\\
+% \divider
+
+% \cvevent{Data Privacy \& Optimization}{Université Antonine}{Jun 2016 -- Aug 2016}  {Beirut, Lebanon}
+% {Developing data anonymization technique with CPLEX.}\\
+% \divider
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+
+% \cvevent{Université de Bourgogne}{Masters in Databases \& Artificial Intelligence}{Sep 2016 -- Sep 2017}{Dijon, France}
+% % \hbox {Rank= 2/30}
+% \divider
+
+% \cvevent{Université Antonine}{Masters in Software Engineering}{Sep 2012 -- Sep 2017}{Beirut, Lebanon}
+% % \hbox {Perctange= 89.76\%}
+% \divider
+
+
+
+% \divider
+%\cvskill{German}{3}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+\clearpage
+
+%\cvsection[page2sidebar]{Publications}
+%
+\nocite{*}
+%
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+%
+%\divider
+%
+%\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+%
+%\divider
+%
+%\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}

@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'time-series.blg'
+[133] biber-MSWIN64:340> INFO - === 
+[165] Biber.pm:419> INFO - Reading 'time-series.bcf'
+[272] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[286] Biber.pm:4419> INFO - Processing section 0
+[300] Biber.pm:4610> INFO - Looking for bibtex file '../../references.bib' for section 0
+[345] bibtex.pm:1713> INFO - LaTeX decoding ...
+[378] bibtex.pm:1519> INFO - Found BibTeX data source '../../references.bib'
+[583] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[584] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[584] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[584] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[609] bbl.pm:660> INFO - Writing 'time-series.bbl' with encoding 'UTF-8'
+[632] bbl.pm:763> INFO - Output to time-series.bbl
