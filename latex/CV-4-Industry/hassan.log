@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.2)  9 SEP 2025 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.2)  10 OCT 2025 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1580,6 +1580,17 @@ ut line 96.
 metwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
+LaTeX Font Info:    Trying to load font information for U+fontawesomethree on i
+nput line 96.
+
+(C:\Users\Hassan\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontaweso
+methree.fd
+File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
+)
+
+LaTeX Font Warning: Font shape `U/fontawesomethree/b/n' undefined
+(Font)              using `U/fontawesomethree/m/n' instead on input line 96.
+
 
 LaTeX Font Warning: Font shape `U/fontawesomeone/b/n' undefined
 (Font)              using `U/fontawesomeone/m/n' instead on input line 96.
@@ -1622,9 +1633,31 @@ san/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lato/a_cl4kdn.enc}{C:/Users/H
 assan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/fontawesomeone.
 enc}{C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/
 fontawesometwo.enc}{C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
-ps/lato/a_rt66h3.enc} <./photo.png>] (page2sidebar.tex
+ps/fontawesome/fontawesomethree.enc}{C:/Users/Hassan/AppData/Local/Programs/MiK
+TeX/fonts/enc/dvips/lato/a_rt66h3.enc} <./photo.png>] (page2sidebar.tex
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 25.
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[][][][]\T1/lato-TLF/m/n/10 Ismail Fawaz, Has-san, Ganesh Del Grosso, et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/lato-TLF/m/n/10 (2025). ``Deep un-su-per-vised do-main adap-ta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/lato-TLF/m/n/10 for time se-ries clas-si-fi-ca-tion: a bench-mark: HI
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/lato-TLF/m/n/10 Fawaz et al.'' In: \T1/lato-TLF/m/it/10 Data Min-ing and Kn
+owl-edge Dis-
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
 [][][][]\T1/lato-TLF/m/n/10 Ismail-Fawaz, A. et al. (2023). ``ShapeDBA:
@@ -1807,22 +1840,22 @@ Package logreq Info: Writing requests to 'hassan.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33637 strings out of 476315
- 680345 string characters out of 5786725
- 1903068 words of memory out of 5000000
- 53566 multiletter control sequences out of 15000+600000
- 826784 words of font info for 65 fonts, out of 8000000 for 9000
+ 33656 strings out of 476315
+ 681049 string characters out of 5786725
+ 1902068 words of memory out of 5000000
+ 53579 multiletter control sequences out of 15000+600000
+ 826962 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,8n,120p,1153b,1495s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,8n,120p,1153b,1649s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome
 /FontAwesome.pfb><C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/type1/typ
 oland/lato/Lato-Bold.pfb><C:/Users/Hassan/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/typoland/lato/Lato-BoldItalic.pfb><C:/Users/Hassan/AppData/Local/Programs/
 MiKTeX/fonts/type1/typoland/lato/Lato-Italic.pfb><C:/Users/Hassan/AppData/Local
 /Programs/MiKTeX/fonts/type1/typoland/lato/Lato-Regular.pfb>
-Output written on hassan.pdf (2 pages, 1005822 bytes).
+Output written on hassan.pdf (2 pages, 1007984 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 17 named destinations out of 1000 (max. 500000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

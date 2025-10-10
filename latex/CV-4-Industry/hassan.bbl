@@ -19,6 +19,65 @@
 
 \refsection{0}
   \datalist[entry]{ydnt/global//global/global}
+    \entry{Ismail-Fawaz2025DeepUnsupervised}{inproceedings}{}
+      \name{author}{5}{ul=2}{%
+        {{un=0,uniquepart=base,hash=685ec3b02f9aa64c2818d70b3d5734b9}{%
+           family={Ismail\bibnamedelima Fawaz},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8c3b2393878c37d211678c323632cb7}{%
+           family={Del\bibnamedelima Grosso},
+           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a11caf478b27bb221402cbdefce33d65}{%
+           family={Kerdoncuff},
+           familyi={K\bibinitperiod},
+           given={Tanguy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4d8fafd33302a0f755ca64eb9ff12313}{%
+           family={Boisbunon},
+           familyi={B\bibinitperiod},
+           given={Aurélie},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=965fb190a4e04c3a20161686ae056875}{%
+           family={Saffar},
+           familyi={S\bibinitperiod},
+           given={Illyyne},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{638afe8f2fab6c2138ed7381d17105b5}
+      \strng{fullhash}{95d5b371907881fb88ad7203b19d8ffc}
+      \strng{bibnamehash}{638afe8f2fab6c2138ed7381d17105b5}
+      \strng{authorbibnamehash}{638afe8f2fab6c2138ed7381d17105b5}
+      \strng{authornamehash}{638afe8f2fab6c2138ed7381d17105b5}
+      \strng{authorfullhash}{95d5b371907881fb88ad7203b19d8ffc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Data Mining and Knowledge Discovery}
+      \field{title}{Deep unsupervised domain adaptation for time series classification: a benchmark: HI Fawaz et al.}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/pdf/2312.09857
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s10618-025-01108-4
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s10618-025-01108-4
+      \endverb
+    \endentry
     \entry{Ismail-Fawaz2023ShapeDBAGeneratingEffective}{inproceedings}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=aed092eb8dd216bf5b402e1f03e59230}{%

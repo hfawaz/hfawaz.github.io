@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'hassan.blg'
-[146] biber-MSWIN64:340> INFO - === 
-[178] Biber.pm:419> INFO - Reading 'hassan.bcf'
-[285] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[299] Biber.pm:4419> INFO - Processing section 0
-[311] Biber.pm:4610> INFO - Looking for bibtex file '../../references.bib' for section 0
-[359] bibtex.pm:1713> INFO - LaTeX decoding ...
-[396] bibtex.pm:1519> INFO - Found BibTeX data source '../../references.bib'
-[608] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[608] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[608] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
-[608] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[635] bbl.pm:660> INFO - Writing 'hassan.bbl' with encoding 'UTF-8'
-[660] bbl.pm:763> INFO - Output to hassan.bbl
+[166] biber-MSWIN64:340> INFO - === 
+[200] Biber.pm:419> INFO - Reading 'hassan.bcf'
+[311] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[325] Biber.pm:4419> INFO - Processing section 0
+[338] Biber.pm:4610> INFO - Looking for bibtex file '../../references.bib' for section 0
+[389] bibtex.pm:1713> INFO - LaTeX decoding ...
+[430] bibtex.pm:1519> INFO - Found BibTeX data source '../../references.bib'
+[700] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[700] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[700] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[700] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[729] bbl.pm:660> INFO - Writing 'hassan.bbl' with encoding 'UTF-8'
+[754] bbl.pm:763> INFO - Output to hassan.bbl
