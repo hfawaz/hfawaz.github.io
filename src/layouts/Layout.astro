@@ -4,6 +4,8 @@ import '@fontsource-variable/newsreader';
 import '@fontsource-variable/newsreader/wght-italic.css';
 import '../styles/global.css';
 import { profile } from '../data/profile';
+import { Image } from 'astro:assets';
+import portrait from '../assets/portrait.png';
 interface Props {
   title?: string;
   description?: string;
@@ -48,9 +50,15 @@ const navigation = [
     </a>
     <header class="site-header wrap">
       <a class="wordmark" href="/" aria-label="Hassan Ismail Fawaz home">
-        <span class="monogram" aria-hidden="true">
-          hf.
-        </span>
+        <Image
+          class="header-portrait"
+          src={portrait}
+          alt=""
+          width={78}
+          height={78}
+          format="webp"
+          loading="eager"
+        />
         <span>Hassan Ismail Fawaz</span>
       </a>
       <nav aria-label="Main navigation">

@@ -170,17 +170,13 @@ em {
   font-weight: 600;
   text-decoration: none;
 }
-.monogram {
-  font-family: var(--serif);
-  font-size: 1.7rem;
-  letter-spacing: -0.08em;
+.header-portrait {
   width: 39px;
   height: 39px;
+  flex-shrink: 0;
   border: 1px solid #bcc8b9;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  padding-right: 3px;
+  object-fit: cover;
 }
 .site-header nav {
   display: flex;
@@ -810,10 +806,9 @@ em {
   .wordmark {
     font-size: 0.8rem;
   }
-  .monogram {
+  .header-portrait {
     width: 32px;
     height: 32px;
-    font-size: 1.4rem;
   }
   .site-header nav {
     width: 100%;
