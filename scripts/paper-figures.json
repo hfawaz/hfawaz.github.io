@@ -1,0 +1,26 @@
+[
+  {
+    "name": "inception-module",
+    "arxiv": "1909.04939v3",
+    "page": 6,
+    "figure": 2,
+    "crop": [103, 68, 509, 228],
+    "sha256": "d66038b26f93c3bf2ecd80aa6930908c0cfb35dbc1fd752a4240bd6b33ee07c8"
+  },
+  {
+    "name": "classifier-comparison",
+    "arxiv": "1809.04356v4",
+    "page": 22,
+    "figure": 7,
+    "crop": [115, 67, 497, 150],
+    "sha256": "4147882e3b71a4b5b360cbb72da7be65f3c9883c4300b72c6f399049106dfe3d"
+  },
+  {
+    "name": "domain-shifts",
+    "arxiv": "2312.09857v3",
+    "page": 4,
+    "figure": 1,
+    "crop": [151, 70, 468, 216],
+    "sha256": "9222b8544c843fb14b7a695a6d0b7a1dd886ea4a32aab58966f196d74a6c41fc"
+  }
+]

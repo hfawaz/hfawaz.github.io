@@ -79,7 +79,14 @@ export const projects = [
     url: 'https://github.com/hfawaz/InceptionTime',
     label: 'Explore the code',
     paper: 'ismailFawaz2020incpetionTime',
-    visual: 'waves',
+    figure: {
+      src: '/figures/inception-module.svg',
+      width: 406,
+      height: 160,
+      alt: 'Inception module with a bottleneck, parallel convolutions of different lengths, and max pooling.',
+      caption: 'Fig. 2 \u00b7 Inside an Inception module',
+      pdf: 'https://arxiv.org/pdf/1909.04939v3#page=6',
+    },
   },
   {
     number: '02',
@@ -90,7 +97,14 @@ export const projects = [
     url: 'https://github.com/hfawaz/dl-4-tsc',
     label: 'Explore the benchmark',
     paper: 'ismailfawaz2018deep',
-    visual: 'grid',
+    figure: {
+      src: '/figures/classifier-comparison.svg',
+      width: 382,
+      height: 83,
+      alt: 'Critical difference diagram comparing nine deep learning classifiers on the UCR/UEA time series archive, with ResNet and FCN ranked highest.',
+      caption: 'Fig. 7 \u00b7 Comparing nine deep classifiers',
+      pdf: 'https://arxiv.org/pdf/1809.04356v4#page=22',
+    },
   },
   {
     number: '03',
@@ -101,6 +115,13 @@ export const projects = [
     url: 'https://github.com/EricssonResearch/UDA-4-TSC',
     label: 'Explore the benchmark',
     paper: 'Ismail-Fawaz2025DeepUnsupervised',
-    visual: 'domains',
+    figure: {
+      src: '/figures/domain-shifts.svg',
+      width: 317,
+      height: 146,
+      alt: 'Source and target time series illustrating temporal shift along the time axis and feature shift in signal values.',
+      caption: 'Fig. 1 \u00b7 Temporal and feature shifts',
+      pdf: 'https://arxiv.org/pdf/2312.09857v3#page=4',
+    },
   },
 ];

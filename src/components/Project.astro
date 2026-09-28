@@ -9,63 +9,33 @@ const repository = repositoryImpact(project.url);
 ---
 
 <article class="project-card">
-  <div class:list={['project-art', project.visual]} aria-hidden="true">
-    <span class="project-number">{project.number} / RESEARCH NOTES</span>
-    <svg viewBox="0 0 320 130" fill="none">
-      {project.visual === 'waves' && (
-        <>
-          <path d="M0 70h35l13-35 18 68 20-84 18 89 18-48 19 10h179" />
-          <path
-            class="faint"
-            d="M0 92h23l25-40 18 65 20-78 18 82 18-38 19 9h179"
-          />
-          <path
-            class="faint"
-            d="M0 45h35l13-28 18 51 20-60 18 70 18-44 19 11h179"
-          />
-        </>
-      )}
-      {project.visual === 'grid' && (
-        <>
-          {[0, 1, 2, 3, 4].map((row) =>
-            [0, 1, 2, 3, 4, 5, 6, 7].map((col) => (
-              <rect
-                x={35 + col * 32}
-                y={5 + row * 25}
-                width="19"
-                height="13"
-                rx="2"
-                opacity={0.15 + ((row * 3 + col * 7) % 8) / 10}
-              />
-            )),
-          )}
-        </>
-      )}
-      {project.visual === 'domains' && (
-        <>
-          <circle cx="95" cy="65" r="48" />
-          <circle cx="225" cy="65" r="48" />
-          <path d="M124 65h71m-10-10 10 10-10 10" />
-          {[0, 1, 2, 3, 4].map((n) => (
-            <>
-              <circle
-                class="dot"
-                cx={72 + (n % 3) * 19}
-                cy={43 + Math.floor(n / 3) * 27}
-                r="4"
-              />
-              <circle
-                class="dot"
-                cx={203 + (n % 3) * 19}
-                cy={52 + Math.floor(n / 3) * 25}
-                r="4"
-              />
-            </>
-          ))}
-        </>
-      )}
-    </svg>
-  </div>
+  <figure class="project-figure">
+    <a
+      class="project-art"
+      href={project.figure.src}
+      aria-label={`View full-size figure: ${project.figure.alt}`}
+    >
+      <span class="project-number" aria-hidden="true">
+        {project.number} / FROM THE PAPER
+      </span>
+      <img
+        src={project.figure.src}
+        alt={project.figure.alt}
+        width={project.figure.width}
+        height={project.figure.height}
+        loading="lazy"
+        decoding="async"
+      />
+    </a>
+    <figcaption>
+      <a
+        href={project.figure.pdf}
+        aria-label={`${project.figure.caption} — ${project.title} paper (PDF)`}
+      >
+        {project.figure.caption} <span aria-hidden="true">↗</span>
+      </a>
+    </figcaption>
+  </figure>
   <div class="project-content">
     {repository && (
       <a

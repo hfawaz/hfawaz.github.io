@@ -346,11 +346,18 @@ em {
   display: flex;
   flex-direction: column;
 }
+.project-figure {
+  margin: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
 .project-art {
-  height: 190px;
-  background: #e5ebdf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
   position: relative;
-  padding: 45px 12px 10px;
+  padding: 45px 16px 14px;
 }
 .project-number {
   position: absolute;
@@ -360,34 +367,23 @@ em {
   letter-spacing: 0.15em;
   color: #4b6853;
 }
-.project-art svg {
+.project-art img {
+  display: block;
   width: 100%;
   height: 100%;
-  stroke: #52775c;
-  stroke-width: 1.6;
+  object-fit: contain;
 }
-.project-art .faint {
-  opacity: 0.3;
+.project-figure figcaption {
+  padding: 0 20px 14px;
+  font-size: 0.6rem;
+  line-height: 1.5;
+  color: var(--muted);
 }
-.project-art.grid {
-  background: #e9e7dd;
+.project-figure figcaption a {
+  text-decoration: none;
 }
-.project-art.grid svg {
-  fill: #746f59;
-  stroke: none;
-}
-.project-art.grid .project-number {
-  color: #625d49;
-}
-.project-art.domains {
-  background: #e0e8e9;
-}
-.project-art.domains svg {
-  stroke: #57777b;
-}
-.project-art.domains .dot {
-  fill: #57777b;
-  stroke: none;
+.project-figure figcaption a:hover {
+  text-decoration: underline;
 }
 .project-content {
   padding: 25px;

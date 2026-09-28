@@ -149,3 +149,26 @@ The Hugging Face contribution list in `src/data/impact.ts` links the three merge
 PRs referenced by the CV: DBpedia-14 (#1116), Yelp Review Full (#1315), and Amazon
 Polarity (#1389). These are dataset integrations, not claims of dataset authorship.
 The official Keras tutorial credits `hfawaz` as its author.
+
+## Paper figures
+
+Project cards use original vector figures extracted from the papers' PDFs:
+
+| Project                       | Figure                              | Source                                                     |
+| ----------------------------- | ----------------------------------- | ---------------------------------------------------------- |
+| InceptionTime                 | Fig. 2, Inception module            | [PDF, page 6](https://arxiv.org/pdf/1909.04939v3#page=6)   |
+| Deep learning for time series | Fig. 7, classifier comparison       | [PDF, page 22](https://arxiv.org/pdf/1809.04356v4#page=22) |
+| Learning across domains       | Fig. 1, temporal and feature shifts | [PDF, page 4](https://arxiv.org/pdf/2312.09857v3#page=4)   |
+
+Click a figure to view the full-size SVG; its caption links to the original PDF.
+The SVGs in `public/figures/` preserve the original colors, paths, and labels;
+text is outlined so it does not depend on installed fonts. Only the surrounding
+page text and margins are cropped. These figures retain their source attribution
+to the paper authors; they are not newly illustrated artwork.
+
+`scripts/paper-figures.json` records versioned arXiv IDs, source PDF hashes, page
+numbers, and crop rectangles (PDF points, measured from the top-left).
+To regenerate, download those exact PDF versions, install `PyMuPDF==1.28.2`
+in a separate Python environment, then run
+`python scripts/extract-paper-figures.py /path/to/pdfs`.
+SVGs are committed, so normal website builds need neither Python nor PDF tools.
