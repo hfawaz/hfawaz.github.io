@@ -1,8 +1,8 @@
 # Hassan Ismail Fawaz — portfolio
 
 A static Astro + TypeScript website for GitHub Pages. Pages and publications are
-rendered at build time; a small browser script adds publication search and year
-filtering. Content, navigation, and BibTeX remain available without JavaScript.
+rendered at build time; small browser scripts add publication search, year
+filtering, and current GitHub star counts. Content, navigation, and BibTeX remain available without JavaScript.
 Fonts are served locally. No backend, API keys, or database are required.
 
 ## Run locally
@@ -114,7 +114,20 @@ InceptionTime, and the transfer learning paper.
 
 The GitHub total sums public, non-fork repositories owned by `hfawaz`.
 Collaborations such as `EricssonResearch/UDA-4-TSC` have their own star badges
-but are excluded from the owned-repository total. Refresh GitHub counts with:
+but are excluded from the owned-repository total. Browser JavaScript fetches the
+public GitHub REST API on pages that display stars, updating totals and project
+badges together. Successful results are cached in the visitor's browser for one
+hour to reduce API usage. Counts have a checked timestamp; failed requests,
+rate limits, or disabled JavaScript leave the dated build-time snapshot visible.
+No scheduled GitHub Actions job, backend, or browser API key is used.
+
+To test live updates locally, run `npm run dev`, open http://localhost:4321/,
+and inspect the `api.github.com` requests in DevTools → Network. Reloads within
+one hour use the cache. Remove `portfolio-github-v1` from DevTools → Application →
+Local Storage to force a new fetch. Browser tests mock success, pagination,
+API failures, caching, and unavailable storage so checks never depend on GitHub.
+
+Optionally refresh the committed fallback snapshot with:
 
 ```bash
 npm run refresh:github
@@ -122,7 +135,13 @@ npm run refresh:github
 
 This command keeps the existing data if a request fails. It optionally uses
 `GITHUB_TOKEN` for a higher API rate limit. Review and commit the updated snapshot
-before deployment. Normal builds and visitors do not depend on external APIs.
+before deployment. Normal builds do not depend on external APIs; browser requests
+progressively enhance the dated fallback counts.
+
+Google Scholar citations remain a dated snapshot: its profile page does not
+allow cross-origin browser requests. Live Google Scholar updates would require a
+separately hosted proxy endpoint. The Semantic Scholar author profile was checked
+but contains unrelated publications, so it is not substituted for Google Scholar.
 
 Update Google Scholar totals, per-paper counts, and `scholar.checkedAt` together
 after checking the linked profile and papers. Dates are shown beside the metrics.

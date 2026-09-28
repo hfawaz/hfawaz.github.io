@@ -2,6 +2,10 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { readFileSync } from 'node:fs';
 
+test.beforeEach(async ({ page }) => {
+  await page.route('https://api.github.com/**', (route) => route.abort());
+});
+
 const sourceBib = readFileSync(
   new URL('../references.bib', import.meta.url),
   'utf8',

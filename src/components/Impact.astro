@@ -18,7 +18,7 @@ import {
       <small>Google Scholar · all time</small>
     </a>
     <a class="impact-stat" href={impact.github.source} data-impact="stars">
-      <strong>{number(githubStars)}</strong>
+      <strong data-github-total>{number(githubStars)}</strong>
       <span>
         GitHub stars <span aria-hidden="true">↗</span>
       </span>
@@ -41,6 +41,7 @@ import {
   </div>
   <p class="metrics-note">
     Citations checked {checkedDate(impact.scholar.checkedAt)} · GitHub stars
-    checked {checkedDate(impact.github.checkedAt)}
+    checked{' '}
+    <span data-github-updated>{checkedDate(impact.github.checkedAt)}</span>
   </p>
 </section>

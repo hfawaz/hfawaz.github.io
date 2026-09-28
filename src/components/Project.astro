@@ -70,10 +70,12 @@ const repository = repositoryImpact(project.url);
     {repository && (
       <a
         class="star-badge"
+        data-github-repo={repository.name}
         href={`${repository.url}/stargazers`}
         title={`GitHub stars checked ${checkedDate(impact.github.checkedAt)}`}
       >
-        <span aria-hidden="true">☆</span> {number(repository.stars)} stars
+        <span aria-hidden="true">☆</span>{' '}
+        <span data-github-stars>{number(repository.stars)}</span> stars
       </a>
     )}
     <p class="eyebrow">{project.category}</p>
