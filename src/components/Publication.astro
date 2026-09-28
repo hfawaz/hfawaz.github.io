@@ -1,0 +1,44 @@
+---
+import type { publications } from '../data/publications';
+interface Props {
+  paper: (typeof publications)[number];
+  compact?: boolean;
+}
+const { paper, compact = false } = Astro.props;
+---
+
+<article
+  class:list={['publication', { compact }]}
+  id={paper.id}
+  data-publication
+  data-search={paper.searchText}
+  data-year={paper.year}
+>
+  <div class="paper-year">
+    {paper.year}
+    <span>{paper.acronym}</span>
+  </div>
+  <div class="paper-body">
+    <h3>{paper.url ? <a href={paper.url}>{paper.title}</a> : paper.title}</h3>
+    {!compact && <p class="authors">{paper.authors}</p>}
+    <p class="venue">{paper.venue}</p>
+    <div class="paper-links">
+      {paper.pdf && (
+        <a href={paper.pdf} aria-label={`PDF: ${paper.title}`}>
+          PDF <span aria-hidden="true">↗</span>
+        </a>
+      )}
+      {paper.code && (
+        <a href={paper.code} aria-label={`Code: ${paper.title}`}>
+          Code <span aria-hidden="true">↗</span>
+        </a>
+      )}
+      {!compact && (
+        <details>
+          <summary>BibTeX</summary>
+          <pre><code>{paper.bibtex}</code></pre>
+        </details>
+      )}
+    </div>
+  </div>
+</article>
