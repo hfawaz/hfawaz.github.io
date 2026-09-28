@@ -14,7 +14,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "playwright test",
-    "test:dev": "playwright test --config playwright.dev.config.ts"
+    "test:dev": "playwright test --config playwright.dev.config.ts",
+    "refresh:github": "node scripts/refresh-github.mjs && prettier --write src/data/impact.json"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "5.3.0",

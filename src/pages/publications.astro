@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Publication from '../components/Publication.astro';
 import { publications } from '../data/publications';
 import { profile } from '../data/profile';
+import { impact, number, checkedDate } from '../data/impact';
 const years = [...new Set(publications.map((paper) => paper.year))];
 ---
 
@@ -24,6 +25,25 @@ const years = [...new Set(publications.map((paper) => paper.year))];
         </a>
       </div>
     </header>
+    <aside class="research-summary" aria-label="Citation statistics">
+      <div>
+        <strong>{number(impact.scholar.citations)}</strong>
+        <span>citations</span>
+      </div>
+      <div>
+        <strong>{impact.scholar.hIndex}</strong>
+        <span>h-index</span>
+      </div>
+      <div>
+        <strong>{impact.scholar.i10Index}</strong>
+        <span>i10-index</span>
+      </div>
+      <p>
+        <a href={impact.scholar.source}>Google Scholar ↗</a>
+        <br />
+        All-time metrics · checked {checkedDate(impact.scholar.checkedAt)}
+      </p>
+    </aside>
     <form class="publication-filters" role="search" hidden>
       <div class="search-field">
         <label for="paper-search">Search publications</label>

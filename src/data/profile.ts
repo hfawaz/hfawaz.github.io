@@ -29,6 +29,7 @@ export const profile = {
       label: 'Semantic Scholar',
       url: 'https://www.semanticscholar.org/author/Hassan-Ismail-Fawaz/19302914',
     },
+    { label: 'Hugging Face', url: 'https://huggingface.co/hfawaz' },
     { label: 'X / Twitter', url: 'https://twitter.com/hassanfawaz93' },
   ],
 };
@@ -74,7 +75,7 @@ export const projects = [
     category: 'TIME SERIES · DEEP LEARNING',
     title: 'InceptionTime',
     description:
-      'Exploring deep learning architectures for time series classification, inspired by the success of convolutional networks in computer vision.',
+      'An ensemble of deep convolutional networks for scalable time series classification, with an open-source implementation of the research.',
     url: 'https://github.com/hfawaz/InceptionTime',
     label: 'Explore the code',
     paper: 'ismailFawaz2020incpetionTime',
@@ -85,7 +86,7 @@ export const projects = [
     category: 'RESEARCH · REPRODUCIBILITY',
     title: 'Deep learning for time series',
     description:
-      'A review and accompanying code for comparing deep learning approaches to time series classification.',
+      'An open-source benchmark accompanying our review: 8,730 trained models evaluated across 97 time series datasets.',
     url: 'https://github.com/hfawaz/dl-4-tsc',
     label: 'Explore the benchmark',
     paper: 'ismailfawaz2018deep',

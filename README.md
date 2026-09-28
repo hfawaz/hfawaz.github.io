@@ -103,3 +103,30 @@ remain acknowledged in the footer. The new layout is implemented in Astro.
 
 The existing MIT-licensed BibTeX parser is reused at build time in
 `src/lib/bibtex.js`; its license is in `src/lib/BIBTEX-LICENSE.txt`.
+
+## Impact and contributions
+
+`src/data/impact.json` contains dated Google Scholar and GitHub snapshots.
+Citation counts refer to Google Scholar (not publisher or Semantic Scholar counts).
+Paper entries are keyed by the citation IDs from `references.bib`; unverified
+counts are omitted, not shown as zero. The homepage features the review,
+InceptionTime, and the transfer learning paper.
+
+The GitHub total sums public, non-fork repositories owned by `hfawaz`.
+Collaborations such as `EricssonResearch/UDA-4-TSC` have their own star badges
+but are excluded from the owned-repository total. Refresh GitHub counts with:
+
+```bash
+npm run refresh:github
+```
+
+This command keeps the existing data if a request fails. It optionally uses
+`GITHUB_TOKEN` for a higher API rate limit. Review and commit the updated snapshot
+before deployment. Normal builds and visitors do not depend on external APIs.
+
+Update Google Scholar totals, per-paper counts, and `scholar.checkedAt` together
+after checking the linked profile and papers. Dates are shown beside the metrics.
+The Hugging Face contribution list in `src/data/impact.ts` links the three merged
+PRs referenced by the CV: DBpedia-14 (#1116), Yelp Review Full (#1315), and Amazon
+Polarity (#1389). These are dataset integrations, not claims of dataset authorship.
+The official Keras tutorial credits `hfawaz` as its author.

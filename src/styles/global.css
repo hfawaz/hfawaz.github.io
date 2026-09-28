@@ -999,3 +999,372 @@ em {
     scroll-behavior: auto !important;
   }
 }
+
+/* Research and community impact */
+.impact-strip {
+  border-block: 1px solid var(--line);
+  padding: 30px 0 16px;
+}
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.impact-stat {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 4px 24px;
+  border-left: 1px solid var(--line);
+}
+.impact-stat:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+.impact-stat strong {
+  font-family: var(--serif);
+  font-size: 3.4rem;
+  font-weight: 450;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  color: var(--green);
+  margin-bottom: 9px;
+}
+.impact-stat > span {
+  font-size: 0.83rem;
+  font-weight: 600;
+}
+.impact-stat small {
+  font-size: 0.67rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.metrics-note {
+  font-size: 0.62rem;
+  color: var(--muted);
+  margin: 22px 0 0;
+}
+.publication.has-citations {
+  grid-template-columns: 100px minmax(0, 1fr) 105px;
+}
+.paper-impact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-decoration: none;
+  gap: 5px;
+  padding-top: 3px;
+}
+.paper-impact strong {
+  font-family: var(--serif);
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: var(--green);
+  line-height: 1;
+}
+.paper-impact > span {
+  font-size: 0.66rem;
+  color: var(--muted);
+}
+.compact .paper-impact strong {
+  font-size: 2.5rem;
+}
+.star-badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #c8d5c4;
+  color: var(--green);
+  background: var(--soft);
+  padding: 4px 9px;
+  border-radius: 4px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+.star-badge > span {
+  font-size: 1rem;
+  line-height: 1;
+}
+.research-summary {
+  background: var(--soft);
+  border-radius: 5px;
+  padding: 25px 28px;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  margin-bottom: 30px;
+}
+.research-summary > div {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.research-summary strong {
+  font-family: var(--serif);
+  font-size: 2.3rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: var(--green);
+}
+.research-summary span {
+  font-size: 0.78rem;
+}
+.research-summary p {
+  font-size: 0.67rem;
+  color: var(--muted);
+  margin: 0 0 0 auto;
+}
+.contribution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.contribution-card {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.keras-contribution {
+  background: #f0eee5;
+}
+.huggingface-contribution {
+  background: #edf0e6;
+}
+.contribution-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.contribution-heading .eyebrow {
+  margin: 0;
+  font-size: 0.58rem;
+}
+.contribution-symbol {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  font-weight: 650;
+  font-size: 0.85rem;
+  color: var(--green);
+}
+.keras-contribution .contribution-symbol {
+  color: #934732;
+}
+.contribution-card h3 {
+  font-family: var(--serif);
+  font-weight: 450;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  margin-bottom: 18px;
+}
+.contribution-card > p {
+  font-size: 0.84rem;
+  color: #4d5e51;
+  margin-bottom: 26px;
+}
+.contribution-card > .text-link {
+  margin-top: auto;
+  align-self: flex-start;
+}
+.dataset-contributions {
+  list-style: none;
+  margin: auto 0 0;
+  padding: 0;
+}
+.dataset-contributions li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #ced7c7;
+  padding: 13px 0;
+}
+.dataset-contributions li:last-child {
+  padding-bottom: 0;
+}
+.dataset-contributions a {
+  font-size: 0.8rem;
+  font-weight: 550;
+  text-decoration: none;
+}
+.dataset-contributions .contribution-proof {
+  font-size: 0.66rem;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.community-note {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 24px;
+}
+.community-note .eyebrow {
+  font-size: 0.58rem;
+  margin: 0;
+  color: var(--muted);
+}
+.community-note > a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+.community-note p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.github-summary {
+  border-block: 1px solid var(--line);
+  padding: 24px 0;
+  margin-bottom: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.github-summary p {
+  margin: 0;
+  font-size: 0.84rem;
+}
+.github-summary strong {
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: var(--green);
+  margin-right: 8px;
+}
+.github-summary > span {
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+.repository-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+}
+.repository-list > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+  padding: 21px 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+.repo-stars {
+  font-size: 0.76rem;
+  color: var(--green);
+  font-weight: 500;
+  white-space: nowrap;
+}
+@media (max-width: 1000px) {
+  .impact-stat {
+    padding-inline: 16px;
+  }
+  .impact-stat strong {
+    font-size: 2.9rem;
+  }
+  .impact-stat > span {
+    font-size: 0.76rem;
+  }
+  .impact-stat small {
+    font-size: 0.63rem;
+  }
+  .research-summary {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .research-summary p {
+    margin-left: 0;
+  }
+}
+@media (max-width: 760px) {
+  .impact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 0;
+  }
+  .impact-stat {
+    padding: 0 0 0 20px;
+  }
+  .impact-stat:nth-child(3) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .impact-stat strong {
+    font-size: 2.9rem;
+  }
+  .impact-stat > span {
+    font-size: 0.76rem;
+  }
+  .metrics-note {
+    font-size: 0.6rem;
+    line-height: 1.8;
+  }
+  .publication.has-citations {
+    grid-template-columns: 60px minmax(0, 1fr);
+  }
+  .paper-impact {
+    grid-column: 2;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 7px;
+    padding-top: 0;
+  }
+  .paper-impact strong,
+  .compact .paper-impact strong {
+    font-size: 1.6rem;
+  }
+  .contribution-grid {
+    grid-template-columns: 1fr;
+  }
+  .contribution-card {
+    padding: 26px 22px;
+  }
+  .contribution-card h3 {
+    font-size: 2.2rem;
+  }
+  .contribution-heading .eyebrow {
+    font-size: 0.55rem;
+  }
+  .community-note {
+    gap: 10px 16px;
+  }
+  .research-summary {
+    padding: 22px;
+    gap: 16px 25px;
+  }
+  .research-summary strong {
+    font-size: 2rem;
+  }
+  .research-summary > div {
+    gap: 7px;
+  }
+  .research-summary p {
+    flex-basis: 100%;
+  }
+  .github-summary {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .repository-list {
+    grid-template-columns: 1fr;
+  }
+}

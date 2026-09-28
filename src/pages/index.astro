@@ -4,6 +4,8 @@ import portrait from '../assets/portrait.png';
 import Layout from '../layouts/Layout.astro';
 import Project from '../components/Project.astro';
 import Publication from '../components/Publication.astro';
+import Impact from '../components/Impact.astro';
+import OpenSource from '../components/OpenSource.astro';
 import { profile, projects } from '../data/profile';
 import { selectedPublications } from '../data/publications';
 ---
@@ -22,8 +24,8 @@ import { selectedPublications } from '../data/publications';
           <em>applied AI.</em>
         </h1>
         <p class="hero-intro">
-          I’m Hassan, an AI expert and researcher turning advances in machine
-          learning into useful systems.
+          I’m Hassan, an AI expert and researcher building widely cited
+          research, open-source tools, and practical machine learning systems.
         </p>
         <p class="hero-current">
           Currently {profile.role} at{' '}
@@ -71,34 +73,12 @@ import { selectedPublications } from '../data/publications';
         </div>
       </div>
     </section>
-    <div class="focus-strip">
-      <span class="eyebrow">AREAS OF FOCUS</span>
-      <span>Generative AI</span>
-      <span>Deep learning</span>
-      <span>Time series</span>
-      <span>Applied research</span>
-    </div>
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">01 / SELECTED WORK</p>
-          <h2 id="work-title">From questions to code.</h2>
-        </div>
-        <a class="text-link" href="/work/">
-          More about my work <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-      <div class="project-grid">
-        {projects.map((project) => (
-          <Project project={project} />
-        ))}
-      </div>
-    </section>
+    <Impact />
     <section class="section" id="publications" aria-labelledby="papers-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">02 / RESEARCH</p>
-          <h2 id="papers-title">Selected publications.</h2>
+          <p class="eyebrow">01 / RESEARCH IMPACT</p>
+          <h2 id="papers-title">Papers with lasting impact.</h2>
         </div>
         <a class="text-link" href="/publications/">
           All publications <span aria-hidden="true">↗</span>
@@ -110,9 +90,26 @@ import { selectedPublications } from '../data/publications';
         ))}
       </div>
     </section>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / OPEN-SOURCE PROJECTS</p>
+          <h2 id="work-title">Research you can build on.</h2>
+        </div>
+        <a class="text-link" href="/work/">
+          More about my work <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="project-grid">
+        {projects.map((project) => (
+          <Project project={project} />
+        ))}
+      </div>
+    </section>
+    <OpenSource numbered />
     <section class="about-band" aria-labelledby="about-title">
       <div>
-        <p class="eyebrow">03 / A LITTLE BACKGROUND</p>
+        <p class="eyebrow">04 / A LITTLE BACKGROUND</p>
         <h2 id="about-title">
           Research foundations.
           <br />

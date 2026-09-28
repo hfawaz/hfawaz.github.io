@@ -1,0 +1,169 @@
+{
+  "scholar": {
+    "checkedAt": "2026-09-28",
+    "source": "https://scholar.google.com/citations?user=oUrGNaoAAAAJ&hl=en",
+    "citations": 9648,
+    "hIndex": 15,
+    "i10Index": 16,
+    "papers": {
+      "ismailfawaz2018deep": {
+        "count": 5155,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:UebtZRa9Y70C",
+        "title": "Deep learning for time series classification: a review"
+      },
+      "ismailFawaz2020incpetionTime": {
+        "count": 2606,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:isC4tDSrTZIC",
+        "title": "InceptionTime: Finding Alexnet for time series classification"
+      },
+      "IsmailFawaz2018transfer": {
+        "count": 474,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:Wp0gIr-vW9MC",
+        "title": "Transfer learning for time series classification"
+      },
+      "ismailFawaz2018data": {
+        "count": 293,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:_Qo2XoVZTnwC",
+        "title": "Data augmentation using synthetic data for time series classification with deep residual networks"
+      },
+      "IsmailFawaz2019adversarial": {
+        "count": 265,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:g5m5HwL7SMYC",
+        "title": "Adversarial attacks on deep neural networks for time series classification"
+      },
+      "IsmailFawaz2018evaluating": {
+        "count": 174,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:mB3voiENLucC",
+        "title": "Evaluating surgical skills from kinematic data using convolutional neural networks"
+      },
+      "ismailfawaz2019accurate": {
+        "count": 163,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:L8Ckcad2t8MC",
+        "title": "Accurate and interpretable evaluation of surgical skills from kinematic data using fully convolutional neural networks"
+      },
+      "IsmailFawaz2019deep": {
+        "count": 124,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:4OULZ7Gr8RgC",
+        "title": "Deep neural network ensembles for time series classification"
+      },
+      "mathis2020knowledge": {
+        "count": 121,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:hMod-77fHWUC",
+        "title": "Knowledge-driven Biometric Authentication in Virtual Reality"
+      },
+      "Forestier2018Surgicalmotionanalysis": {
+        "count": 82,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:9yKSN-GCB0IC",
+        "title": "Surgical motion analysis using discriminative interpretable patterns"
+      },
+      "rakhshani2020neural": {
+        "count": 38,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:YFjsv_pBGBYC",
+        "title": "Neural Architecture Search for Time Series Classification"
+      },
+      "pialla2022smooth": {
+        "count": 31,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:SeFeTyx0c_EC",
+        "title": "Smooth perturbations for time series adversarial attacks"
+      },
+      "Pialla2023Timeseriesadversarial": {
+        "count": 27,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:u_35RYKgDlwC",
+        "title": "Time series adversarial attacks: an investigation of smooth perturbations and defense approaches"
+      },
+      "Ismail-Fawaz2023ShapeDBAGeneratingEffective": {
+        "count": 19,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:zA6iFVUQeVQC",
+        "title": "ShapeDBA: Generating Effective Time Series Prototypes using ShapeDTW Barycenter Averaging"
+      },
+      "Ismail-Fawaz2025DeepUnsupervised": {
+        "count": 14,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:fPk4N6BV_jEC",
+        "title": "Deep Unsupervised Domain Adaptation for Time Series Classification: a Benchmark"
+      },
+      "IsmailFawaz2019automatic": {
+        "count": 8,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=oUrGNaoAAAAJ&pagesize=100&citation_for_view=oUrGNaoAAAAJ:4TOpqqG69KYC",
+        "title": "Automatic alignment of surgical videos using kinematic data"
+      }
+    }
+  },
+  "github": {
+    "checkedAt": "2026-09-28",
+    "source": "https://github.com/hfawaz?tab=repositories",
+    "repositories": [
+      {
+        "name": "hfawaz/dl-4-tsc",
+        "stars": 1659,
+        "url": "https://github.com/hfawaz/dl-4-tsc"
+      },
+      {
+        "name": "hfawaz/InceptionTime",
+        "stars": 752,
+        "url": "https://github.com/hfawaz/InceptionTime"
+      },
+      {
+        "name": "hfawaz/bigdata18",
+        "stars": 381,
+        "url": "https://github.com/hfawaz/bigdata18"
+      },
+      {
+        "name": "hfawaz/cd-diagram",
+        "stars": 310,
+        "url": "https://github.com/hfawaz/cd-diagram"
+      },
+      {
+        "name": "hfawaz/aaltd18",
+        "stars": 183,
+        "url": "https://github.com/hfawaz/aaltd18"
+      },
+      {
+        "name": "hfawaz/ijcnn19ensemble",
+        "stars": 112,
+        "url": "https://github.com/hfawaz/ijcnn19ensemble"
+      },
+      {
+        "name": "hfawaz/ijcnn19attacks",
+        "stars": 81,
+        "url": "https://github.com/hfawaz/ijcnn19attacks"
+      },
+      {
+        "name": "hfawaz/miccai18",
+        "stars": 22,
+        "url": "https://github.com/hfawaz/miccai18"
+      },
+      {
+        "name": "hfawaz/DreamTime",
+        "stars": 9,
+        "url": "https://github.com/hfawaz/DreamTime"
+      },
+      {
+        "name": "hfawaz/ijcars19",
+        "stars": 9,
+        "url": "https://github.com/hfawaz/ijcars19"
+      },
+      {
+        "name": "hfawaz/aime19",
+        "stars": 8,
+        "url": "https://github.com/hfawaz/aime19"
+      },
+      {
+        "name": "hfawaz/hfawaz.github.io",
+        "stars": 1,
+        "url": "https://github.com/hfawaz/hfawaz.github.io"
+      },
+      {
+        "name": "hfawaz/tamakkan.github.io",
+        "stars": 0,
+        "url": "https://github.com/hfawaz/tamakkan.github.io"
+      }
+    ],
+    "collaborations": [
+      {
+        "name": "EricssonResearch/UDA-4-TSC",
+        "stars": 31,
+        "url": "https://github.com/EricssonResearch/UDA-4-TSC"
+      }
+    ]
+  }
+}

@@ -62,9 +62,9 @@ export const publications = entries
   .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
 
 export const selectedIds = [
-  'Ismail-Fawaz2025DeepUnsupervised',
-  'ismailFawaz2020incpetionTime',
   'ismailfawaz2018deep',
+  'ismailFawaz2020incpetionTime',
+  'IsmailFawaz2018transfer',
 ];
 export const selectedPublications = selectedIds.map((id) => {
   const paper = publications.find((publication) => publication.id === id);

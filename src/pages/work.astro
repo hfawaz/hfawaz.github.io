@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Project from '../components/Project.astro';
+import OpenSource from '../components/OpenSource.astro';
+import { impact, number, githubStars, checkedDate } from '../data/impact';
 import { experience, projects } from '../data/profile';
 ---
 
@@ -16,6 +18,16 @@ import { experience, projects } from '../data/profile';
       </h1>
       <p>Building on research to solve problems with machine learning.</p>
     </header>
+    <aside class="github-summary">
+      <p>
+        <strong>{number(githubStars)}</strong> GitHub stars across my public
+        repositories
+      </p>
+      <span>
+        Checked {checkedDate(impact.github.checkedAt)} ·{' '}
+        <a href={impact.github.source}>View repositories ↗</a>
+      </span>
+    </aside>
     <section class="section first-section" aria-labelledby="projects-title">
       <div class="section-heading">
         <div>
@@ -29,6 +41,37 @@ import { experience, projects } from '../data/profile';
         ))}
       </div>
     </section>
+    <section
+      class="section repository-section"
+      aria-labelledby="repositories-title"
+    >
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MORE OPEN-SOURCE TOOLS</p>
+          <h2 id="repositories-title">Built to be shared.</h2>
+        </div>
+      </div>
+      <div class="repository-list">
+        {impact.github.repositories
+          .filter((repo) =>
+            [
+              'hfawaz/bigdata18',
+              'hfawaz/cd-diagram',
+              'hfawaz/aaltd18',
+              'hfawaz/ijcnn19ensemble',
+            ].includes(repo.name),
+          )
+          .map((repo) => (
+            <a href={repo.url}>
+              <span>{repo.name.split('/')[1]}</span>
+              <span class="repo-stars">
+                <span aria-hidden="true">☆</span> {number(repo.stars)} stars
+              </span>
+            </a>
+          ))}
+      </div>
+    </section>
+    <OpenSource />
     <section class="section" aria-labelledby="experience-title">
       <div class="section-heading">
         <div>
@@ -51,36 +94,6 @@ import { experience, projects } from '../data/profile';
             </div>
           </article>
         ))}
-      </div>
-    </section>
-    <section class="about-band">
-      <div>
-        <p class="eyebrow">SHARING KNOWLEDGE</p>
-        <h2>
-          Open source.
-          <br />
-          <em>Open learning.</em>
-        </h2>
-      </div>
-      <div>
-        <p>
-          Alongside research, I’ve contributed to resources for learning and
-          applying deep learning to time series.
-        </p>
-        <div class="stacked-links">
-          <a
-            class="text-link"
-            href="https://keras.io/examples/timeseries/timeseries_classification_from_scratch/"
-          >
-            Time series classification with Keras ↗
-          </a>
-          <a
-            class="text-link"
-            href="https://github.com/uea-machine-learning/sktime-dl"
-          >
-            sktime-dl on GitHub ↗
-          </a>
-        </div>
       </div>
     </section>
   </div>

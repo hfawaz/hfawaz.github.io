@@ -118,3 +118,60 @@ test('missing pages show a useful 404', async ({ page }) => {
   expect(response?.status()).toBe(404);
   await expect(page.getByRole('link', { name: 'Back to home' })).toBeVisible();
 });
+
+test('research metrics link to the matching paper and unknown counts stay absent', async ({
+  page,
+}) => {
+  const snapshot = JSON.parse(
+    readFileSync(new URL('../src/data/impact.json', import.meta.url), 'utf8'),
+  );
+  await page.goto('/');
+  await expect(page.locator('[data-impact="citations"] strong')).toHaveText(
+    snapshot.scholar.citations.toLocaleString('en-US'),
+  );
+  const paper = snapshot.scholar.papers.ismailfawaz2018deep;
+  await expect(
+    page.locator('#ismailfawaz2018deep .paper-impact'),
+  ).toHaveAttribute('href', paper.url);
+  await expect(
+    page.locator('#ismailfawaz2018deep .paper-impact strong'),
+  ).toHaveText(paper.count.toLocaleString('en-US'));
+  await expect(
+    page.locator(
+      '.star-badge[href="https://github.com/hfawaz/dl-4-tsc/stargazers"]',
+    ),
+  ).toBeVisible();
+  await page.goto('/publications/');
+  await expect(page.locator('#IsmailFawaz2018gdr .paper-impact')).toHaveCount(
+    0,
+  );
+});
+
+test('Keras authorship and all three Hugging Face integrations have source links', async ({
+  page,
+}) => {
+  await page.goto('/');
+  const section = page.locator('#open-source');
+  await expect(
+    section.getByRole('link', { name: 'Read the Keras tutorial' }),
+  ).toHaveAttribute(
+    'href',
+    'https://keras.io/examples/timeseries/timeseries_classification_from_scratch/',
+  );
+  for (const [name, number] of [
+    ['DBpedia-14', '1116'],
+    ['Yelp Review Full', '1315'],
+    ['Amazon Polarity', '1389'],
+  ]) {
+    await expect(
+      section.getByRole('link', { name: `Merged pull request for ${name}` }),
+    ).toHaveAttribute(
+      'href',
+      `https://github.com/huggingface/datasets/pull/${number}`,
+    );
+  }
+  await page.goto('/work/#open-source');
+  await expect(
+    page.getByRole('heading', { name: 'Making knowledge usable.' }),
+  ).toBeVisible();
+});

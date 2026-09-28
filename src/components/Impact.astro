@@ -1,0 +1,46 @@
+---
+import {
+  impact,
+  number,
+  checkedDate,
+  githubStars,
+  datasets,
+} from '../data/impact';
+---
+
+<section class="impact-strip" aria-label="Research and open-source impact">
+  <div class="impact-grid">
+    <a class="impact-stat" href={impact.scholar.source} data-impact="citations">
+      <strong>{number(impact.scholar.citations)}</strong>
+      <span>
+        Research citations <span aria-hidden="true">↗</span>
+      </span>
+      <small>Google Scholar · all time</small>
+    </a>
+    <a class="impact-stat" href={impact.github.source} data-impact="stars">
+      <strong>{number(githubStars)}</strong>
+      <span>
+        GitHub stars <span aria-hidden="true">↗</span>
+      </span>
+      <small>Across my public repositories</small>
+    </a>
+    <a class="impact-stat" href={impact.scholar.source} data-impact="h-index">
+      <strong>{impact.scholar.hIndex}</strong>
+      <span>
+        h-index <span aria-hidden="true">↗</span>
+      </span>
+      <small>Google Scholar · all time</small>
+    </a>
+    <a class="impact-stat" href="/work/#open-source" data-impact="datasets">
+      <strong>{datasets.length}</strong>
+      <span>
+        Hugging Face datasets <span aria-hidden="true">↗</span>
+      </span>
+      <small>Contributed to the datasets library</small>
+    </a>
+  </div>
+  <p class="metrics-note">
+    Citations checked {checkedDate(impact.scholar.checkedAt)} · GitHub stars
+    checked {checkedDate(impact.github.checkedAt)}
+  </p>
+</section>

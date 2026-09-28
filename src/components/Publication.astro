@@ -1,14 +1,16 @@
 ---
 import type { publications } from '../data/publications';
+import { paperImpact, number, checkedDate, impact } from '../data/impact';
 interface Props {
   paper: (typeof publications)[number];
   compact?: boolean;
 }
 const { paper, compact = false } = Astro.props;
+const citation = paperImpact(paper.id);
 ---
 
 <article
-  class:list={['publication', { compact }]}
+  class:list={['publication', { compact, 'has-citations': !!citation }]}
   id={paper.id}
   data-publication
   data-search={paper.searchText}
@@ -41,4 +43,17 @@ const { paper, compact = false } = Astro.props;
       )}
     </div>
   </div>
+  {citation && (
+    <a
+      class="paper-impact"
+      href={citation.url}
+      aria-label={`${number(citation.count)} Google Scholar citations for ${paper.title}`}
+      title={`Google Scholar · checked ${checkedDate(impact.scholar.checkedAt)}`}
+    >
+      <strong>{number(citation.count)}</strong>
+      <span>
+        citations <span aria-hidden="true">↗</span>
+      </span>
+    </a>
+  )}
 </article>
