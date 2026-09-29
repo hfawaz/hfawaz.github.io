@@ -1482,10 +1482,10 @@ em {
 }
 
 .getbetter-button {
-  padding: 8px 18px;
-  gap: 16px;
+  padding: 6px 18px;
+  gap: 12px;
 }
 .getbetter-button img {
-  width: 112px;
+  width: 72px;
   height: auto;
 }
