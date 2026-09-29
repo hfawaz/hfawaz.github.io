@@ -4,12 +4,12 @@ import Layout from '../layouts/Layout.astro';
 import Project from '../components/Project.astro';
 import OpenSource from '../components/OpenSource.astro';
 import { impact, number, githubStars, checkedDate } from '../data/impact';
-import { experience, projects } from '../data/profile';
+import { experience, projects, product } from '../data/profile';
 ---
 
 <Layout
   title="Work"
-  description="Selected machine learning research, open-source projects, and industry experience from Hassan Ismail Fawaz."
+  description="Creator of GetBetter. Explore AI products, machine learning research, open-source projects, and industry experience from Hassan Ismail Fawaz."
 >
   <div class="wrap">
     <header class="page-intro">
@@ -19,6 +19,19 @@ import { experience, projects } from '../data/profile';
       </h1>
       <p>Building on research to solve problems with machine learning.</p>
     </header>
+    <section class="product-feature" aria-labelledby="product-title">
+      <div>
+        <p class="eyebrow">PRODUCT · {product.role.toUpperCase()}</p>
+        <h2 id="product-title">{product.name}</h2>
+        <p class="product-tagline">{product.tagline}</p>
+      </div>
+      <div>
+        <p>{product.description}</p>
+        <a class="button primary" href={product.url}>
+          Visit {product.name} <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
     <aside class="github-summary">
       <p>
         <strong data-github-total>{number(githubStars)}</strong> GitHub stars

@@ -62,6 +62,15 @@ export const profile = {
   ],
 };
 
+export const product = {
+  name: 'GetBetter',
+  url: 'https://getbetter.live/',
+  role: 'Creator',
+  tagline: 'AI coaching for Rocket League.',
+  description:
+    'I created GetBetter to turn Rocket League replay data into actionable coaching. It analyzes key moments in a match, offers feedback on kickoffs, shooting, saves, and recovery, and helps players track their progress.',
+};
+
 export const experience = [
   {
     company: 'GOSI',

@@ -7,7 +7,7 @@ import Project from '../components/Project.astro';
 import Publication from '../components/Publication.astro';
 import Impact from '../components/Impact.astro';
 import OpenSource from '../components/OpenSource.astro';
-import { profile, projects } from '../data/profile';
+import { profile, projects, product } from '../data/profile';
 import { selectedPublications } from '../data/publications';
 ---
 
@@ -32,6 +32,10 @@ import { selectedPublications } from '../data/publications';
           Currently {profile.role} at{' '}
           <a href={profile.organizationUrl}>{profile.organization}</a>.
           Previously Beyond Limits, Ericsson, and Besedo.
+        </p>
+        <p class="hero-current">
+          Creator of <a href={product.url}>{product.name}</a>, an AI coach that
+          turns Rocket League replays into practical feedback.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="/work/">

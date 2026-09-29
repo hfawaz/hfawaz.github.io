@@ -1454,3 +1454,29 @@ em {
   width: 20px;
   height: 20px;
 }
+
+.product-feature {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 32px 64px;
+  padding: clamp(24px, 4vw, 48px);
+  margin-bottom: 32px;
+  border: 1px solid #c8d5c4;
+  border-radius: 6px;
+  background: var(--soft);
+}
+.product-feature .eyebrow {
+  color: var(--green);
+}
+.product-tagline {
+  margin: 16px 0 0;
+  font-size: 1.05rem;
+}
+.product-feature > div > p:not(.eyebrow):not(.product-tagline) {
+  margin-bottom: 24px;
+}
+@media (max-width: 760px) {
+  .product-feature {
+    grid-template-columns: 1fr;
+  }
+}

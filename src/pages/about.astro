@@ -1,7 +1,7 @@
 ---
 import Icon from '../components/Icon.astro';
 import Layout from '../layouts/Layout.astro';
-import { profile } from '../data/profile';
+import { profile, product } from '../data/profile';
 import academic from '../data/academic.json';
 ---
 
@@ -38,6 +38,11 @@ import academic from '../data/academic.json';
             large language models and retrieval-augmented generation at Beyond
             Limits, machine learning for wireless networks at Ericsson, and
             automatic content moderation at Besedo.
+          </p>
+          <p>
+            I’m also the creator of <a href={product.url}>{product.name}</a>, an
+            AI coaching platform for Rocket League. It turns match replays into
+            specific feedback and helps players track their progress.
           </p>
           <p>
             In September 2020, I earned my PhD in Computer and Data Science at{' '}
