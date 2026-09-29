@@ -1494,6 +1494,6 @@ em {
 .getbetter-button img {
   width: 112px;
   height: auto;
-  /* Preserve the original button layout while displaying a 72px logo. */
-  transform: scale(calc(72 / 112));
+  /* Preserve the original button layout while displaying an 84px logo. */
+  transform: scale(calc(84 / 112));
 }
