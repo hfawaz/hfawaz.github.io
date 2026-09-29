@@ -1484,12 +1484,12 @@ em {
 .getbetter-button {
   padding: 8px 18px;
   gap: 16px;
-  background: #031009;
-  border-color: #031009;
+  background: #082719;
+  border-color: #082719;
 }
 .getbetter-button:hover {
-  background: #0a2115;
-  border-color: #0a2115;
+  background: #103b28;
+  border-color: #103b28;
 }
 .getbetter-button img {
   width: 112px;
