@@ -1482,8 +1482,10 @@ em {
 }
 
 .getbetter-button {
-  padding: 6px 18px;
-  gap: 12px;
+  width: 177px;
+  min-height: 70px;
+  padding: 8px 18px;
+  gap: 16px;
 }
 .getbetter-button img {
   width: 72px;
