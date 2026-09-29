@@ -5,7 +5,7 @@ export const profile = {
   organizationUrl: 'https://gosi.gov.sa/',
   location: 'Riyadh, Saudi Arabia',
   email: 'hassanismailfawaz@gmail.com',
-  cv: '/latex/CV-4-Industry/hassan.pdf',
+  cv: '/cv.pdf',
   description:
     'AI expert and machine learning researcher working across generative AI, deep learning, and time series. Based in Riyadh, Saudi Arabia.',
   links: [

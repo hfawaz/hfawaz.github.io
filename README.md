@@ -55,17 +55,17 @@ It is unrelated to the `getbetter` environment.
 
 ## Update content
 
-| Content                                                   | File                                    |
-| --------------------------------------------------------- | --------------------------------------- |
-| Role, contact, profile links, experience, projects        | `src/data/profile.ts`                   |
-| Publication source (including PDFs and code links)        | `references.bib`                        |
-| Featured publication IDs                                  | `src/data/publications.ts`              |
-| Teaching, awards, visits, grants, certifications, service | `src/data/academic.json`                |
-| Biography                                                 | `src/pages/about.astro`                 |
-| Homepage copy                                             | `src/pages/index.astro`                 |
-| Colors, type, responsive layouts                          | `src/styles/global.css`                 |
-| Portrait                                                  | `src/assets/portrait.png`               |
-| Public CV                                                 | `public/latex/CV-4-Industry/hassan.pdf` |
+| Content                                                   | File                       |
+| --------------------------------------------------------- | -------------------------- |
+| Role, contact, profile links, experience, projects        | `src/data/profile.ts`      |
+| Publication source (including PDFs and code links)        | `references.bib`           |
+| Featured publication IDs                                  | `src/data/publications.ts` |
+| Teaching, awards, visits, grants, certifications, service | `src/data/academic.json`   |
+| Biography                                                 | `src/pages/about.astro`    |
+| Homepage copy                                             | `src/pages/index.astro`    |
+| Colors, type, responsive layouts                          | `src/styles/global.css`    |
+| Portrait                                                  | `src/assets/portrait.png`  |
+| Public CV                                                 | `public/cv.pdf`            |
 
 After recompiling the CV from its existing LaTeX sources, replace the public PDF
 as well. The `/references.bib` download is generated from the root source file,

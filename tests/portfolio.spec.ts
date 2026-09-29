@@ -91,7 +91,7 @@ test('all local links, images, downloads, and anchors resolve', async ({
   for (const path of paths)
     expect((await request.get(path)).status(), path).toBe(200);
   expect(await (await request.get('/references.bib')).text()).toBe(sourceBib);
-  const cv = await request.get('/latex/CV-4-Industry/hassan.pdf');
+  const cv = await request.get('/cv.pdf');
   expect(await cv.body()).toEqual(
     readFileSync(new URL('../latex/CV-4-Industry/hassan.pdf', import.meta.url)),
   );
@@ -179,3 +179,23 @@ test('Keras authorship and all three Hugging Face integrations have source links
     page.getByRole('heading', { name: 'Making knowledge usable.' }),
   ).toBeVisible();
 });
+
+// A direct API request does not reproduce Astro's HTML-navigation route guard.
+// Exercise real clicks so a legacy root file cannot silently break the public CV.
+for (const [route, selector] of [
+  ['/', '.nav-cv'],
+  ['/about/', '.button.primary'],
+]) {
+  test(`CV opens as a PDF when clicked from ${route}`, async ({ page }) => {
+    await page.goto(route);
+    const link = page.locator(selector);
+    await expect(link).toHaveAttribute('href', '/cv.pdf');
+    const responsePromise = page.waitForResponse(
+      (response) => new URL(response.url()).pathname === '/cv.pdf',
+    );
+    await link.click();
+    const response = await responsePromise;
+    expect(response.status()).toBe(200);
+    expect(response.headers()['content-type']).toContain('application/pdf');
+  });
+}
