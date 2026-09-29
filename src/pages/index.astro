@@ -38,8 +38,18 @@ import { selectedPublications } from '../data/publications';
           turns Rocket League replays into practical feedback.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="/work/">
-            Explore my work <span aria-hidden="true">↗</span>
+          <a
+            class="button primary getbetter-button"
+            href={product.url}
+            aria-label="Visit GetBetter"
+          >
+            <img
+              src="/getbetter.svg"
+              alt="GetBetter"
+              width="805"
+              height="375"
+            />
+            <span aria-hidden="true">↗</span>
           </a>
           <a
             class="button secondary icon-link"

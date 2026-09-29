@@ -1480,3 +1480,12 @@ em {
     grid-template-columns: 1fr;
   }
 }
+
+.getbetter-button {
+  padding: 8px 18px;
+  gap: 16px;
+}
+.getbetter-button img {
+  width: 112px;
+  height: auto;
+}
