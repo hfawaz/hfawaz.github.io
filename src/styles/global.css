@@ -1482,12 +1482,12 @@ em {
 }
 
 .getbetter-button {
-  width: 177px;
-  min-height: 70px;
   padding: 8px 18px;
   gap: 16px;
 }
 .getbetter-button img {
-  width: 72px;
+  width: 112px;
   height: auto;
+  /* Preserve the original button layout while displaying a 72px logo. */
+  transform: scale(calc(72 / 112));
 }
