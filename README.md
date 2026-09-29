@@ -160,7 +160,7 @@ Project cards use original vector figures extracted from the papers' PDFs:
 | Deep learning for time series | Fig. 7, classifier comparison       | [PDF, page 22](https://arxiv.org/pdf/1809.04356v4#page=22) |
 | Learning across domains       | Fig. 1, temporal and feature shifts | [PDF, page 4](https://arxiv.org/pdf/2312.09857v3#page=4)   |
 
-Click a figure to view the full-size SVG; its caption links to the original PDF.
+Click a figure to open its code repository; its caption links to the original PDF.
 The SVGs in `public/figures/` preserve the original colors, paths, and labels;
 text is outlined so it does not depend on installed fonts. Only the surrounding
 page text and margins are cropped. These figures retain their source attribution
