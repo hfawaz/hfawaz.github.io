@@ -1,4 +1,5 @@
 ---
+import Icon from './Icon.astro';
 import { datasets } from '../data/impact';
 interface Props {
   numbered?: boolean;
@@ -16,15 +17,15 @@ const { numbered = false } = Astro.props;
       <p class="eyebrow">{numbered ? '03 / ' : ''}OPEN-SOURCE CONTRIBUTIONS</p>
       <h2 id="open-source-title">Making knowledge usable.</h2>
     </div>
-    <a class="text-link" href="https://github.com/hfawaz">
-      Find me on GitHub <span aria-hidden="true">↗</span>
+    <a class="text-link icon-link" href="https://github.com/hfawaz">
+      <Icon name="github" /> Find me on GitHub <span aria-hidden="true">↗</span>
     </a>
   </div>
   <div class="contribution-grid">
     <article class="contribution-card keras-contribution">
       <div class="contribution-heading">
         <span class="contribution-symbol" aria-hidden="true">
-          K
+          <Icon name="keras" />
         </span>
         <span class="eyebrow">KERAS · TUTORIAL AUTHOR</span>
       </div>
@@ -39,16 +40,17 @@ const { numbered = false } = Astro.props;
         evaluating the model.
       </p>
       <a
-        class="text-link"
+        class="text-link icon-link"
         href="https://keras.io/examples/timeseries/timeseries_classification_from_scratch/"
       >
-        Read the Keras tutorial <span aria-hidden="true">↗</span>
+        <Icon name="keras" /> Read the Keras tutorial{' '}
+        <span aria-hidden="true">↗</span>
       </a>
     </article>
     <article class="contribution-card huggingface-contribution">
       <div class="contribution-heading">
         <span class="contribution-symbol" aria-hidden="true">
-          HF
+          <Icon name="huggingface" />
         </span>
         <span class="eyebrow">HUGGING FACE · DATASET CONTRIBUTOR</span>
       </div>
@@ -64,15 +66,16 @@ const { numbered = false } = Astro.props;
       <ul class="dataset-contributions">
         {datasets.map((dataset) => (
           <li>
-            <a href={dataset.url}>
+            <a class="icon-link" href={dataset.url}>
+              <Icon name="huggingface" />
               {dataset.name} <span aria-hidden="true">↗</span>
             </a>
             <a
-              class="contribution-proof"
+              class="contribution-proof icon-link"
               href={dataset.pullRequest}
               aria-label={`Merged pull request for ${dataset.name}`}
             >
-              Merged PR <span aria-hidden="true">↗</span>
+              <Icon name="github" /> Merged PR <span aria-hidden="true">↗</span>
             </a>
           </li>
         ))}
@@ -81,7 +84,11 @@ const { numbered = false } = Astro.props;
   </div>
   <div class="community-note">
     <span class="eyebrow">ALSO CONTRIBUTED TO</span>
-    <a href="https://github.com/uea-machine-learning/sktime-dl">
+    <a
+      class="icon-link"
+      href="https://github.com/uea-machine-learning/sktime-dl"
+    >
+      <Icon name="github" />
       sktime-dl <span aria-hidden="true">↗</span>
     </a>
     <p>Deep learning with Keras for the sktime ecosystem.</p>

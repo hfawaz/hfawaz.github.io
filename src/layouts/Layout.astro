@@ -1,4 +1,5 @@
 ---
+import Icon from '../components/Icon.astro';
 import '@fontsource-variable/dm-sans';
 import '@fontsource-variable/newsreader';
 import '@fontsource-variable/newsreader/wght-italic.css';
@@ -70,7 +71,8 @@ const navigation = [
             {label}
           </a>
         ))}
-        <a class="nav-cv" href={profile.cv}>
+        <a class="nav-cv icon-link" href={profile.cv}>
+          <Icon name="pdf" />
           CV <span aria-hidden="true">↗</span>
           <span class="sr-only"> (PDF)</span>
         </a>
@@ -87,9 +89,15 @@ const navigation = [
         <p>Research, engineering, and everything in between.</p>
       </div>
       <div class="footer-links">
-        <a href={`mailto:${profile.email}`}>Email ↗</a>
-        <a href={profile.links[1].url}>GitHub ↗</a>
-        <a href={profile.links[2].url}>LinkedIn ↗</a>
+        <a class="icon-link" href={`mailto:${profile.email}`}>
+          <Icon name="email" /> Email ↗
+        </a>
+        <a class="icon-link" href={profile.links[1].url}>
+          <Icon name="github" /> GitHub ↗
+        </a>
+        <a class="icon-link" href={profile.links[2].url}>
+          <Icon name="linkedin" /> LinkedIn ↗
+        </a>
       </div>
       <div class="footer-bottom">
         <span>

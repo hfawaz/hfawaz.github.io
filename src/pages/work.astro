@@ -1,4 +1,5 @@
 ---
+import Icon from '../components/Icon.astro';
 import Layout from '../layouts/Layout.astro';
 import Project from '../components/Project.astro';
 import OpenSource from '../components/OpenSource.astro';
@@ -26,7 +27,10 @@ import { experience, projects } from '../data/profile';
       <span>
         Checked{' '}
         <span data-github-updated>{checkedDate(impact.github.checkedAt)}</span>{' '}
-        · <a href={impact.github.source}>View repositories ↗</a>
+        ·{' '}
+        <a class="icon-link" href={impact.github.source}>
+          <Icon name="github" /> View repositories ↗
+        </a>
       </span>
     </aside>
     <section class="section first-section" aria-labelledby="projects-title">
@@ -64,7 +68,9 @@ import { experience, projects } from '../data/profile';
           )
           .map((repo) => (
             <a href={repo.url}>
-              <span>{repo.name.split('/')[1]}</span>
+              <span>
+                <Icon name="github" /> {repo.name.split('/')[1]}
+              </span>
               <span class="repo-stars" data-github-repo={repo.name}>
                 <span aria-hidden="true">☆</span>{' '}
                 <span data-github-stars>{number(repo.stars)}</span> stars

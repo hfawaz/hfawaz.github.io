@@ -1364,3 +1364,70 @@ em {
     grid-template-columns: 1fr;
   }
 }
+
+/* Locally bundled SVG logos and action icons. Text labels remain accessible. */
+.icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  flex: 0 0 auto;
+  line-height: 0;
+  vertical-align: -0.2em;
+}
+.icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.icon-scholar {
+  color: #4285f4;
+}
+.icon-github {
+  color: #24292f;
+}
+.icon-linkedin {
+  color: #0a66c2;
+}
+.icon-keras {
+  color: #d00000;
+}
+.icon-pdf {
+  color: #b34235;
+}
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.text-link.icon-link,
+.button.icon-link {
+  gap: 0.55rem;
+}
+.button.primary .icon {
+  color: inherit;
+}
+.social-links .icon,
+.footer-links .icon {
+  width: 18px;
+  height: 18px;
+}
+.contribution-symbol {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+}
+.contribution-symbol .icon {
+  width: 30px;
+  height: 30px;
+}
+.contribution-symbol .icon-huggingface {
+  width: 38px;
+  height: 36px;
+}
+.contact-band .icon {
+  width: 1em;
+  height: 1em;
+}
+.impact-stat > span > .icon {
+  margin-right: 0.25em;
+}

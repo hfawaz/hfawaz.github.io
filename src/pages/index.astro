@@ -1,4 +1,5 @@
 ---
+import Icon from '../components/Icon.astro';
 import { Image } from 'astro:assets';
 import portrait from '../assets/portrait.png';
 import Layout from '../layouts/Layout.astro';
@@ -36,13 +37,17 @@ import { selectedPublications } from '../data/publications';
           <a class="button primary" href="/work/">
             Explore my work <span aria-hidden="true">↗</span>
           </a>
-          <a class="button secondary" href={`mailto:${profile.email}`}>
-            Get in touch <span aria-hidden="true">↗</span>
+          <a
+            class="button secondary icon-link"
+            href={`mailto:${profile.email}`}
+          >
+            <Icon name="email" /> Get in touch <span aria-hidden="true">↗</span>
           </a>
         </div>
         <div class="social-links">
           {profile.links.slice(0, 3).map((link) => (
-            <a href={link.url}>
+            <a class="icon-link" href={link.url}>
+              <Icon name={link.icon} />
               {link.label} <span aria-hidden="true">↗</span>
             </a>
           ))}
@@ -134,7 +139,8 @@ import { selectedPublications } from '../data/publications';
         <br />
         with a conversation.
       </h2>
-      <a class="text-link" href={`mailto:${profile.email}`}>
+      <a class="text-link icon-link" href={`mailto:${profile.email}`}>
+        <Icon name="email" />
         {profile.email} <span aria-hidden="true">↗</span>
       </a>
     </section>

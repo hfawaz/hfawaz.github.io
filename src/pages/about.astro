@@ -1,4 +1,5 @@
 ---
+import Icon from '../components/Icon.astro';
 import Layout from '../layouts/Layout.astro';
 import { profile } from '../data/profile';
 import academic from '../data/academic.json';
@@ -22,7 +23,8 @@ import academic from '../data/academic.json';
             <a href={`#${section.id}`}>{section.title}</a>
           ))}
         </nav>
-        <a class="button primary" href={profile.cv}>
+        <a class="button primary icon-link" href={profile.cv}>
+          <Icon name="pdf" />
           Download CV (PDF) ↗
         </a>
       </aside>
@@ -99,7 +101,8 @@ import academic from '../data/academic.json';
           <h2>Find me elsewhere.</h2>
           <div class="profile-links">
             {profile.links.map((link) => (
-              <a class="text-link" href={link.url}>
+              <a class="text-link icon-link" href={link.url}>
+                <Icon name={link.icon} />
                 {link.label} ↗
               </a>
             ))}

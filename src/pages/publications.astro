@@ -1,4 +1,5 @@
 ---
+import Icon from '../components/Icon.astro';
 import Layout from '../layouts/Layout.astro';
 import Publication from '../components/Publication.astro';
 import { publications } from '../data/publications';
@@ -19,8 +20,11 @@ const years = [...new Set(publications.map((paper) => paper.year))];
       </h1>
       <p>Deep learning, time series, and the questions that connect them.</p>
       <div class="social-links">
-        <a href={profile.links[0].url}>Google Scholar ↗</a>
-        <a href="/references.bib" download>
+        <a class="icon-link" href={profile.links[0].url}>
+          <Icon name="scholar" /> Google Scholar ↗
+        </a>
+        <a class="icon-link" href="/references.bib" download>
+          <Icon name="code" />
           Download all BibTeX ↓
         </a>
       </div>
@@ -39,7 +43,9 @@ const years = [...new Set(publications.map((paper) => paper.year))];
         <span>i10-index</span>
       </div>
       <p>
-        <a href={impact.scholar.source}>Google Scholar ↗</a>
+        <a class="icon-link" href={impact.scholar.source}>
+          <Icon name="scholar" /> Google Scholar ↗
+        </a>
         <br />
         All-time metrics · checked {checkedDate(impact.scholar.checkedAt)}
       </p>

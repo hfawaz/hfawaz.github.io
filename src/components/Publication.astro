@@ -1,4 +1,5 @@
 ---
+import Icon from './Icon.astro';
 import type { publications } from '../data/publications';
 import { paperImpact, number, checkedDate, impact } from '../data/impact';
 interface Props {
@@ -26,13 +27,21 @@ const citation = paperImpact(paper.id);
     <p class="venue">{paper.venue}</p>
     <div class="paper-links">
       {paper.pdf && (
-        <a href={paper.pdf} aria-label={`PDF: ${paper.title}`}>
-          PDF <span aria-hidden="true">↗</span>
+        <a
+          class="icon-link"
+          href={paper.pdf}
+          aria-label={`PDF: ${paper.title}`}
+        >
+          <Icon name="pdf" /> PDF <span aria-hidden="true">↗</span>
         </a>
       )}
       {paper.code && (
-        <a href={paper.code} aria-label={`Code: ${paper.title}`}>
-          Code <span aria-hidden="true">↗</span>
+        <a
+          class="icon-link"
+          href={paper.code}
+          aria-label={`Code: ${paper.title}`}
+        >
+          <Icon name="code" /> Code <span aria-hidden="true">↗</span>
         </a>
       )}
       {!compact && (
@@ -52,7 +61,7 @@ const citation = paperImpact(paper.id);
     >
       <strong>{number(citation.count)}</strong>
       <span>
-        citations <span aria-hidden="true">↗</span>
+        <Icon name="scholar" /> citations <span aria-hidden="true">↗</span>
       </span>
     </a>
   )}

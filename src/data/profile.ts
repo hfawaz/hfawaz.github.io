@@ -11,26 +11,54 @@ export const profile = {
   links: [
     {
       label: 'Google Scholar',
+      icon: 'scholar' as const,
       url: 'https://scholar.google.com/citations?user=oUrGNaoAAAAJ&hl=en',
     },
-    { label: 'GitHub', url: 'https://github.com/hfawaz' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/h-fawaz/' },
-    { label: 'ORCID', url: 'https://orcid.org/0000-0003-1384-5996' },
-    { label: 'arXiv', url: 'https://arxiv.org/a/ismailfawaz_h_1.html' },
+    {
+      label: 'GitHub',
+      icon: 'github' as const,
+      url: 'https://github.com/hfawaz',
+    },
+    {
+      label: 'LinkedIn',
+      icon: 'linkedin' as const,
+      url: 'https://www.linkedin.com/in/h-fawaz/',
+    },
+    {
+      label: 'ORCID',
+      icon: 'globe' as const,
+      url: 'https://orcid.org/0000-0003-1384-5996',
+    },
+    {
+      label: 'arXiv',
+      icon: 'globe' as const,
+      url: 'https://arxiv.org/a/ismailfawaz_h_1.html',
+    },
     {
       label: 'dblp',
+      icon: 'globe' as const,
       url: 'https://dblp.uni-trier.de/pers/hd/f/Fawaz:Hassan_Ismail',
     },
     {
       label: 'ResearchGate',
+      icon: 'globe' as const,
       url: 'https://www.researchgate.net/profile/Hassan_Ismail_Fawaz2',
     },
     {
       label: 'Semantic Scholar',
+      icon: 'globe' as const,
       url: 'https://www.semanticscholar.org/author/Hassan-Ismail-Fawaz/19302914',
     },
-    { label: 'Hugging Face', url: 'https://huggingface.co/hfawaz' },
-    { label: 'X / Twitter', url: 'https://twitter.com/hassanfawaz93' },
+    {
+      label: 'Hugging Face',
+      icon: 'huggingface' as const,
+      url: 'https://huggingface.co/hfawaz',
+    },
+    {
+      label: 'X / Twitter',
+      icon: 'globe' as const,
+      url: 'https://twitter.com/hassanfawaz93',
+    },
   ],
 };
 
