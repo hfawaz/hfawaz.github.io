@@ -1,0 +1,426 @@
+[
+  {
+    "id": "visiting",
+    "title": "Visiting researcher",
+    "groups": [
+      {
+        "title": "",
+        "items": [
+          {
+            "text": "Monash One month visiting François Petitjean at Monash University and discussing time series classification and beyond (2019).",
+            "links": [
+              {
+                "label": "François Petitjean",
+                "url": "https://www.francois-petitjean.com/"
+              },
+              {
+                "label": "Monash University",
+                "url": "https://www.monash.edu/"
+              }
+            ]
+          },
+          {
+            "text": "Google One day visiting Neil Zeghidour at Google Brain and discussing deep learning for audio and time series data (2019).",
+            "links": [
+              {
+                "label": "Neil Zeghidour",
+                "url": "https://scholar.google.com/citations?user=fiJamZ0AAAAJ&hl=en&oi=ao"
+              },
+              {
+                "label": "Google Brain",
+                "url": "https://ai.google/research/teams/brain/"
+              }
+            ]
+          },
+          {
+            "text": "LIP6 One day visiting Jean-Yves at the Sorbonne University and discussing deep learning for time series representation learning (2019).",
+            "links": [
+              {
+                "label": "Jean-Yves",
+                "url": "http://perso.ens-lyon.fr/jean-yves.franceschi/"
+              },
+              {
+                "label": "Sorbonne University",
+                "url": "http://sorbonne-universite.fr/en"
+              }
+            ]
+          },
+          {
+            "text": "Welten One day working with Daniele at the Welten Institute on leveraging artificial intelligence techniques for learning analytics (2019).",
+            "links": [
+              {
+                "label": "Daniele",
+                "url": "http://www.dimstudio.org/"
+              },
+              {
+                "label": "Welten Institute",
+                "url": "https://www.ou.nl/nl/welten-instituut"
+              }
+            ]
+          },
+          {
+            "text": "CARES One day visiting Abhilash at the CARES Lab and discussing surgical data science and robotics (2018).",
+            "links": [
+              {
+                "label": "Abhilash",
+                "url": "http://ece.eng.wayne.edu/~apandya/"
+              },
+              {
+                "label": "CARES Lab",
+                "url": "http://ece.eng.wayne.edu/~apandya/caresweb/"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "teaching",
+    "title": "Teaching",
+    "groups": [
+      {
+        "title": "",
+        "items": [
+          {
+            "text": "Deep Learning 20 hours for M.Sc. students in Computer Science.",
+            "links": []
+          },
+          {
+            "text": "Web Programming 24 hours for engineering students in Computer Science.",
+            "links": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "awards",
+    "title": "Awards",
+    "groups": [
+      {
+        "title": "",
+        "items": [
+          {
+            "text": "IEEE BigData'18 Student Travel Award for the IEEE International Conference on Big Data 2018 at Seattle, USA.",
+            "links": [
+              {
+                "label": "Student Travel Award",
+                "url": "http://cci.drexel.edu/bigdata/bigdata2018/StudentTravelAward.html"
+              }
+            ]
+          },
+          {
+            "text": "UAPC'16 First place at the Université Antonine Programming Competition (UAPC) 2016 at Beirut, Lebanon.",
+            "links": [
+              {
+                "label": "Université Antonine Programming Competition (UAPC) 2016",
+                "url": "https://www.facebook.com/events/881156585329299/permalink/892718344173123/"
+              }
+            ]
+          },
+          {
+            "text": "UAPC'15 Second place at the Université Antonine Programming Competition (UAPC) 2015 at Beirut, Lebanon.",
+            "links": [
+              {
+                "label": "Université Antonine Programming Competition (UAPC) 2015",
+                "url": "https://www.facebook.com/events/877528025652937/permalink/878052918933781/"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "grants",
+    "title": "Grants",
+    "groups": [
+      {
+        "title": "",
+        "items": [
+          {
+            "text": "Mesocentre of Strasbourg 1.6 million GPU computing hours (2019) on the Strasbourg HPC.",
+            "links": [
+              {
+                "label": "Strasbourg HPC",
+                "url": "https://services-numeriques.unistra.fr/les-services-aux-usagers/hpc.html"
+              }
+            ]
+          },
+          {
+            "text": "Mesocentre of Strasbourg 1.6 million GPU computing hours (2018) on the Strasbourg HPC.",
+            "links": [
+              {
+                "label": "Strasbourg HPC",
+                "url": "https://services-numeriques.unistra.fr/les-services-aux-usagers/hpc.html"
+              }
+            ]
+          },
+          {
+            "text": "NVIDIA Corporation GPU Grant Quadro P6000 (2017).",
+            "links": [
+              {
+                "label": "Quadro P6000 (2017)",
+                "url": "https://developer.nvidia.com/academic_gpu_seeding"
+              }
+            ]
+          },
+          {
+            "text": "Coursera Financial Aid Deep Learning Speciality (2017).",
+            "links": [
+              {
+                "label": "Deep Learning Speciality (2017)",
+                "url": "https://www.coursera.org/account/accomplishments/certificate/YN8ZWZ6XPWVC"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "certifications",
+    "title": "Certifications",
+    "groups": [
+      {
+        "title": "",
+        "items": [
+          {
+            "text": "MLAI'19 Attending the International Workshop on Machine Learning & Artificial Intelligence (2019).",
+            "links": [
+              {
+                "label": "International Workshop on Machine Learning & Artificial Intelligence (2019)",
+                "url": "https://workshopmlai.wp.imt.fr/"
+              }
+            ]
+          },
+          {
+            "text": "PAISS'19 Attending the PRAIRIE Artificial Intelligence Summer School (2019).",
+            "links": [
+              {
+                "label": "PRAIRIE Artificial Intelligence Summer School (2019)",
+                "url": "https://project.inria.fr/paiss/"
+              }
+            ]
+          },
+          {
+            "text": "FDST'19 Attending the Learning from Data Streams and Time Series (2019).",
+            "links": [
+              {
+                "label": "Learning from Data Streams and Time Series (2019)",
+                "url": "https://fdst2019.sciencesconf.org/?forward-action=index&forward-controller=index&lang=en"
+              }
+            ]
+          },
+          {
+            "text": "CARS'19 Attending the International Conference on Computer Assisted Radiology and Surgery (2019).",
+            "links": [
+              {
+                "label": "International Conference on Computer Assisted Radiology and Surgery (2019)",
+                "url": "https://www.cars2019.org/"
+              }
+            ]
+          },
+          {
+            "text": "IEEE BigData'18 Volunteering at the IEEE International Conference on Big Data (2018).",
+            "links": [
+              {
+                "label": "IEEE International Conference on Big Data (2018)",
+                "url": "http://cci.drexel.edu/bigdata/bigdata2018/index.html"
+              }
+            ]
+          },
+          {
+            "text": "DeepLearn'18 Attending the International Summer School on Deep Learning (2018).",
+            "links": [
+              {
+                "label": "International Summer School on Deep Learning (2018)",
+                "url": "http://grammars.grlmc.com/DeepLearn2018/"
+              }
+            ]
+          },
+          {
+            "text": "CISCO Completing the CISCO CCNA Routing & Switching (2017).",
+            "links": [
+              {
+                "label": "CISCO CCNA Routing & Switching",
+                "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html"
+              }
+            ]
+          },
+          {
+            "text": "LCPC'16 Participating at the Lebanese Collegiate Programming Contest (2016).",
+            "links": [
+              {
+                "label": "Lebanese Collegiate Programming Contest (2016)",
+                "url": "http://www.aou.edu.lb/LCPC16/Participants.aspx"
+              }
+            ]
+          },
+          {
+            "text": "Boot Camp Participating at the Advanced Programming & Algorithms Boot Camp (2016).",
+            "links": [
+              {
+                "label": "Advanced Programming & Algorithms Boot Camp (2016)",
+                "url": "https://gammal.tech/"
+              }
+            ]
+          },
+          {
+            "text": "LCPC'15 Participating at the Lebanese Collegiate Programming Contest (2015).",
+            "links": [
+              {
+                "label": "Lebanese Collegiate Programming Contest (2015)",
+                "url": "http://www.aou.edu.lb/LCPC15/Participants.aspx"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "service",
+    "title": "Service",
+    "groups": [
+      {
+        "title": "Conference Committees",
+        "items": [
+          {
+            "text": "ORASIS'19 Francophone days of young researchers in computer vision 2019.",
+            "links": [
+              {
+                "label": "Francophone days of young researchers in computer vision 2019",
+                "url": "https://orasis2019.sciencesconf.org/resource/page/id/1"
+              }
+            ]
+          },
+          {
+            "text": "EA'19 The 14th Biennial International Conference on Artificial Evolution 2019.",
+            "links": [
+              {
+                "label": "The 14th Biennial International Conference on Artificial Evolution 2019",
+                "url": "https://iscpif.fr/upcomingevents/conferenceae-inria-oct2019/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Workshop Committee",
+        "items": [
+          {
+            "text": "AALTD'19 ECML/PKDD Workshop on Advanced Analytics & Learning on Temporal Data.",
+            "links": [
+              {
+                "label": "ECML/PKDD Workshop on Advanced Analytics & Learning on Temporal Data",
+                "url": "https://project.inria.fr/aaltd19/"
+              }
+            ]
+          },
+          {
+            "text": "OR'19 MICCAI Workshop on OR 2.0 Context-Aware Operating Theaters.",
+            "links": [
+              {
+                "label": "MICCAI Workshop on OR 2.0 Context-Aware Operating Theaters",
+                "url": "https://or20.univ-rennes1.fr/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Reviewer",
+        "items": [
+          {
+            "text": "ECAI European Conference on Artificial Intelligence 2020.",
+            "links": [
+              {
+                "label": "European Conference on Artificial Intelligence 2020",
+                "url": "http://ecai2020.eu/"
+              }
+            ]
+          },
+          {
+            "text": "NEUNET Neural Networks.",
+            "links": [
+              {
+                "label": "Neural Networks",
+                "url": "https://www.journals.elsevier.com/neural-networks"
+              }
+            ]
+          },
+          {
+            "text": "IEEE TKDE IEEE Transactions of Knowledge and Data Engineering.",
+            "links": [
+              {
+                "label": "IEEE Transactions of Knowledge and Data Engineering",
+                "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69"
+              }
+            ]
+          },
+          {
+            "text": "IEEE JBHI IEEE Journal of Biomedical and Health Informatics.",
+            "links": [
+              {
+                "label": "IEEE Journal of Biomedical and Health Informatics",
+                "url": "https://jbhi.embs.org/"
+              }
+            ]
+          },
+          {
+            "text": "MICCAI International Conference on Medical Image Computing and Computer Assisted Intervention 2019.",
+            "links": [
+              {
+                "label": "International Conference on Medical Image Computing and Computer Assisted Intervention 2019",
+                "url": "http://www.miccai2019.org/"
+              }
+            ]
+          },
+          {
+            "text": "IEEE/CAA JAS IEEE/CAA Journal of Automatica Sinica.",
+            "links": [
+              {
+                "label": "IEEE/CAA Journal of Automatica Sinica",
+                "url": "http://www.ieee-jas.org/"
+              }
+            ]
+          },
+          {
+            "text": "AIRE Artificial Intelligence Review.",
+            "links": [
+              {
+                "label": "Artificial Intelligence Review",
+                "url": "https://link.springer.com/journal/10462"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Open Source Projects",
+        "items": [
+          {
+            "text": "Keras.io The first Keras tutorial on deep learning for time series classification.",
+            "links": [
+              {
+                "label": "The first Keras tutorial on deep learning for time series classification",
+                "url": "https://keras.io/examples/timeseries/timeseries_classification_from_scratch/"
+              }
+            ]
+          },
+          {
+            "text": "sktime-dl An extension package for deep learning with Keras for sktime.",
+            "links": [
+              {
+                "label": "An extension package for deep learning with Keras for sktime",
+                "url": "https://github.com/uea-machine-learning/sktime-dl"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

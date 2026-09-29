@@ -1,0 +1,119 @@
+---
+import Icon from '../components/Icon.astro';
+import Layout from '../layouts/Layout.astro';
+import { profile, product } from '../data/profile';
+import academic from '../data/academic.json';
+---
+
+<Layout title="About">
+  <div class="wrap">
+    <header class="page-intro">
+      <p class="eyebrow">THE LONGER STORY</p>
+      <h1>
+        A life of <em>learning.</em>
+      </h1>
+      <p>AI expert. Researcher. Always a student.</p>
+    </header>
+    <div class="about-layout">
+      <aside class="about-sidebar">
+        <p class="eyebrow">ON THIS PAGE</p>
+        <nav aria-label="About sections">
+          <a href="#background">Background</a>
+          {academic.map((section) => (
+            <a href={`#${section.id}`}>{section.title}</a>
+          ))}
+        </nav>
+        <a class="button primary icon-link" href={profile.cv}>
+          <Icon name="pdf" />
+          Download CV (PDF) ↗
+        </a>
+      </aside>
+      <div class="prose">
+        <section id="background">
+          <h2>From research to application.</h2>
+          <p>
+            I’m currently an AI Expert at{' '}
+            <a href={profile.organizationUrl}>GOSI</a> in Riyadh, bringing
+            advances in generative AI into practice. Previously, I worked on
+            large language models and retrieval-augmented generation at Beyond
+            Limits, machine learning for wireless networks at Ericsson, and
+            automatic content moderation at Besedo.
+          </p>
+          <p>
+            I’m also the creator of <a href={product.url}>{product.name}</a>, an
+            AI coaching platform for Rocket League. It turns match replays into
+            specific feedback and helps players track their progress.
+          </p>
+          <p>
+            In September 2020, I earned my PhD in Computer and Data Science at{' '}
+            <a href="http://www.irimas.uha.fr/">IRIMAS</a>,{' '}
+            <a href="https://www.uha.fr/">Université de Haute-Alsace</a>,
+            France. My research focused on deep learning for time series
+            classification, supervised by{' '}
+            <a href="https://germain-forestier.info/">Germain Forestier</a>,{' '}
+            <a href="http://www.jonathan-weber.eu/">Jonathan Weber</a>,{' '}
+            <a href="http://www.mage.fst.uha.fr/idoumghar/">
+              Lhassane Idoumghar
+            </a>
+            , and{' '}
+            <a href="http://pierrealain.muller.free.fr/">Pierre-Alain Muller</a>
+            .
+          </p>
+          <p>
+            I also hold two master’s degrees from 2017: Databases and Artificial
+            Intelligence from Université de Bourgogne in Dijon, and Software
+            Engineering from Université Antonine in Beirut.
+          </p>
+          <p>
+            At Orange Labs in Sophia Antipolis, my master’s thesis combined
+            machine learning and semantic web data to build a recommendation
+            engine for a dataset exchange platform. My final-year engineering
+            project at TICKET Lab in Beirut explored data privacy using linear
+            programming.
+          </p>
+          <p>
+            During my PhD, I was the first instructor of the Deep Learning
+            course at ENSISA. My interests span deep learning, natural language
+            processing, computer vision, transformers, and their practical
+            applications.
+          </p>
+        </section>
+        {academic.map((section) => (
+          <section id={section.id}>
+            <h2>{section.title}</h2>
+            {section.groups.map((group) => (
+              <>
+                {group.title && <h3>{group.title}</h3>}
+                <ul class="academic-list">
+                  {group.items.map((item) => (
+                    <li>
+                      <p>{item.text}</p>
+                      {item.links.length > 0 && (
+                        <div class="record-links">
+                          {item.links.map((link) => (
+                            <a href={link.url}>{link.label} ↗</a>
+                          ))}
+                        </div>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ))}
+          </section>
+        ))}
+        <section>
+          <h2>Find me elsewhere.</h2>
+          <div class="profile-links">
+            {profile.links.map((link) => (
+              <a class="text-link icon-link" href={link.url}>
+                <Icon name={link.icon} />
+                {link.label} ↗
+              </a>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</Layout>

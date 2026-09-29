@@ -1,0 +1,131 @@
+---
+import Icon from '../components/Icon.astro';
+import Layout from '../layouts/Layout.astro';
+import Publication from '../components/Publication.astro';
+import { publications } from '../data/publications';
+import { profile } from '../data/profile';
+import { impact, number, checkedDate } from '../data/impact';
+const years = [...new Set(publications.map((paper) => paper.year))];
+---
+
+<Layout
+  title="Publications"
+  description="Publications by Hassan Ismail Fawaz on deep learning, time series classification, transfer learning, and surgical data science."
+>
+  <div class="wrap">
+    <header class="page-intro">
+      <p class="eyebrow">PAPERS & IDEAS</p>
+      <h1>
+        Research, <em>in writing.</em>
+      </h1>
+      <p>Deep learning, time series, and the questions that connect them.</p>
+      <div class="social-links">
+        <a class="icon-link" href={profile.links[0].url}>
+          <Icon name="scholar" /> Google Scholar ↗
+        </a>
+        <a class="icon-link" href="/references.bib" download>
+          <Icon name="code" />
+          Download all BibTeX ↓
+        </a>
+      </div>
+    </header>
+    <aside class="research-summary" aria-label="Citation statistics">
+      <div>
+        <strong>{number(impact.scholar.citations)}</strong>
+        <span>citations</span>
+      </div>
+      <div>
+        <strong>{impact.scholar.hIndex}</strong>
+        <span>h-index</span>
+      </div>
+      <div>
+        <strong>{impact.scholar.i10Index}</strong>
+        <span>i10-index</span>
+      </div>
+      <p>
+        <a class="icon-link" href={impact.scholar.source}>
+          <Icon name="scholar" /> Google Scholar ↗
+        </a>
+        <br />
+        All-time metrics · checked {checkedDate(impact.scholar.checkedAt)}
+      </p>
+    </aside>
+    <form class="publication-filters" role="search" hidden>
+      <div class="search-field">
+        <label for="paper-search">Search publications</label>
+        <input
+          id="paper-search"
+          type="search"
+          placeholder="Title, author, or research topic…"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="paper-year">Year</label>
+        <select id="paper-year">
+          <option value="">All years</option>
+          {years.map((year) => (
+            <option value={year}>{year}</option>
+          ))}
+        </select>
+      </div>
+      <button class="button secondary" type="reset">
+        Reset
+      </button>
+    </form>
+    <p
+      class="result-count"
+      aria-live="polite"
+      aria-atomic="true"
+      id="paper-count"
+    >
+      {publications.length} publications
+    </p>
+    <div class="publication-list full-list">
+      {publications.map((paper) => (
+        <Publication paper={paper} />
+      ))}
+    </div>
+    <p class="empty-state" id="no-results" hidden>
+      No publications match your search. Try another term or reset the filters.
+    </p>
+  </div>
+</Layout>
+<script>
+  const form = document.querySelector<HTMLFormElement>('.publication-filters');
+  const search = document.querySelector<HTMLInputElement>('#paper-search');
+  const year = document.querySelector<HTMLSelectElement>('#paper-year');
+  const count = document.querySelector<HTMLElement>('#paper-count');
+  const empty = document.querySelector<HTMLElement>('#no-results');
+  const papers = [
+    ...document.querySelectorAll<HTMLElement>('[data-publication]'),
+  ];
+  if (form && search && year && count && empty) {
+    form.hidden = false;
+    const filter = () => {
+      const terms = search.value
+        .trim()
+        .toLocaleLowerCase()
+        .split(/\s+/)
+        .filter(Boolean);
+      let visible = 0;
+      papers.forEach((paper) => {
+        const matches =
+          terms.every((term) => paper.dataset.search?.includes(term)) &&
+          (!year.value || paper.dataset.year === year.value);
+        paper.hidden = !matches;
+        if (matches) visible++;
+      });
+      count.textContent = `${visible} ${visible === 1 ? 'publication' : 'publications'}`;
+      empty.hidden = visible !== 0;
+    };
+    form.addEventListener('submit', (event) => event.preventDefault());
+    search.addEventListener('input', filter);
+    year.addEventListener('change', filter);
+    form.addEventListener('reset', () => {
+      search.value = '';
+      year.value = '';
+      filter();
+    });
+  }
+</script>

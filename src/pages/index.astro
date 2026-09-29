@@ -1,0 +1,162 @@
+---
+import Icon from '../components/Icon.astro';
+import { Image } from 'astro:assets';
+import portrait from '../assets/portrait.png';
+import Layout from '../layouts/Layout.astro';
+import Project from '../components/Project.astro';
+import Publication from '../components/Publication.astro';
+import Impact from '../components/Impact.astro';
+import OpenSource from '../components/OpenSource.astro';
+import { profile, projects, product } from '../data/profile';
+import { selectedPublications } from '../data/publications';
+---
+
+<Layout>
+  <div class="wrap">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow location">
+          <span class="status-dot" aria-hidden="true"></span> RIYADH, SAUDI
+          ARABIA
+        </p>
+        <h1 id="intro-title">
+          Curiosity meets
+          <br />
+          <em>applied AI.</em>
+        </h1>
+        <p class="hero-intro">
+          I’m Hassan, an AI expert and researcher building widely cited
+          research, open-source tools, and practical machine learning systems.
+        </p>
+        <p class="hero-current">
+          Currently {profile.role} at{' '}
+          <a href={profile.organizationUrl}>{profile.organization}</a>.
+          Previously Beyond Limits, Ericsson, and Besedo.
+        </p>
+        <p class="hero-current">
+          Creator of <a href={product.url}>{product.name}</a>, an AI coach that
+          turns Rocket League replays into practical feedback.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="button primary getbetter-button"
+            href={product.url}
+            aria-label="Visit GetBetter"
+          >
+            <img
+              src="/getbetter.svg"
+              alt="GetBetter"
+              width="805"
+              height="375"
+            />
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="button secondary icon-link"
+            href={`mailto:${profile.email}`}
+          >
+            <Icon name="email" /> Get in touch <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="social-links">
+          {profile.links.slice(0, 3).map((link) => (
+            <a class="icon-link" href={link.url}>
+              <Icon name={link.icon} />
+              {link.label} <span aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </div>
+      </div>
+      <div class="portrait-block">
+        <div class="portrait-frame">
+          <Image
+            src={portrait}
+            alt="Hassan Ismail Fawaz"
+            width={520}
+            height={600}
+            widths={[320, 520, 780]}
+            sizes="(max-width: 760px) 85vw, 380px"
+            format="webp"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <span class="portrait-label">
+            A researcher’s mindset.
+            <br />
+            An engineer’s approach.
+          </span>
+        </div>
+        <div class="portrait-caption">
+          <span>Hassan Ismail Fawaz</span>
+          <span>PhD, Computer & Data Science</span>
+        </div>
+      </div>
+    </section>
+    <Impact />
+    <section class="section" id="publications" aria-labelledby="papers-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / RESEARCH IMPACT</p>
+          <h2 id="papers-title">Papers with lasting impact.</h2>
+        </div>
+        <a class="text-link" href="/publications/">
+          All publications <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="publication-list">
+        {selectedPublications.map((paper) => (
+          <Publication paper={paper} compact />
+        ))}
+      </div>
+    </section>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / OPEN-SOURCE PROJECTS</p>
+          <h2 id="work-title">Research you can build on.</h2>
+        </div>
+        <a class="text-link" href="/work/">
+          More about my work <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="project-grid">
+        {projects.map((project) => (
+          <Project project={project} />
+        ))}
+      </div>
+    </section>
+    <OpenSource numbered />
+    <section class="about-band" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">04 / A LITTLE BACKGROUND</p>
+        <h2 id="about-title">
+          Research foundations.
+          <br />
+          <em>Real-world curiosity.</em>
+        </h2>
+      </div>
+      <div>
+        <p>
+          My path has taken me from a PhD in time series classification in
+          France to building machine learning systems across content moderation,
+          telecommunications, and generative AI.
+        </p>
+        <a class="text-link" href="/about/">
+          The longer story <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+    <section class="contact-band">
+      <p class="eyebrow">LET’S CONNECT</p>
+      <h2>
+        Good work starts
+        <br />
+        with a conversation.
+      </h2>
+      <a class="text-link icon-link" href={`mailto:${profile.email}`}>
+        <Icon name="email" />
+        {profile.email} <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </div>
+</Layout>

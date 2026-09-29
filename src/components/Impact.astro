@@ -1,0 +1,50 @@
+---
+import Icon from './Icon.astro';
+import {
+  impact,
+  number,
+  checkedDate,
+  githubStars,
+  datasets,
+} from '../data/impact';
+---
+
+<section class="impact-strip" aria-label="Research and open-source impact">
+  <div class="impact-grid">
+    <a class="impact-stat" href={impact.scholar.source} data-impact="citations">
+      <strong>{number(impact.scholar.citations)}</strong>
+      <span>
+        <Icon name="scholar" /> Research citations{' '}
+        <span aria-hidden="true">↗</span>
+      </span>
+      <small>Google Scholar · all time</small>
+    </a>
+    <a class="impact-stat" href={impact.github.source} data-impact="stars">
+      <strong data-github-total>{number(githubStars)}</strong>
+      <span>
+        <Icon name="github" /> GitHub stars <span aria-hidden="true">↗</span>
+      </span>
+      <small>Across my public repositories</small>
+    </a>
+    <a class="impact-stat" href={impact.scholar.source} data-impact="h-index">
+      <strong>{impact.scholar.hIndex}</strong>
+      <span>
+        <Icon name="scholar" /> h-index <span aria-hidden="true">↗</span>
+      </span>
+      <small>Google Scholar · all time</small>
+    </a>
+    <a class="impact-stat" href="/work/#open-source" data-impact="datasets">
+      <strong>{datasets.length}</strong>
+      <span>
+        <Icon name="huggingface" /> Hugging Face datasets{' '}
+        <span aria-hidden="true">↗</span>
+      </span>
+      <small>Contributed to the datasets library</small>
+    </a>
+  </div>
+  <p class="metrics-note">
+    Citations checked {checkedDate(impact.scholar.checkedAt)} · GitHub stars
+    checked{' '}
+    <span data-github-updated>{checkedDate(impact.github.checkedAt)}</span>
+  </p>
+</section>

@@ -1,0 +1,121 @@
+---
+import Icon from '../components/Icon.astro';
+import '@fontsource-variable/dm-sans';
+import '@fontsource-variable/newsreader';
+import '@fontsource-variable/newsreader/wght-italic.css';
+import '../styles/global.css';
+import { profile } from '../data/profile';
+import { Image } from 'astro:assets';
+import portrait from '../assets/portrait.png';
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description = profile.description } = Astro.props;
+const pageTitle = title
+  ? `${title} · ${profile.name}`
+  : `${profile.name} · AI & Machine Learning`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const navigation = [
+  { label: 'About', href: '/about/', icon: 'about' },
+  { label: 'Work', href: '/work/', icon: 'work' },
+  { label: 'Publications', href: '/publications/', icon: 'publications' },
+] as const;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f7f7f2" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-portrait.svg" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta
+      property="og:image"
+      content={new URL('/social-card.png', Astro.site)}
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="/" aria-label="Hassan Ismail Fawaz home">
+        <Image
+          class="header-portrait"
+          src={portrait}
+          alt=""
+          width={78}
+          height={78}
+          format="webp"
+          loading="eager"
+        />
+        <span>Hassan Ismail Fawaz</span>
+      </a>
+      <nav aria-label="Main navigation">
+        {navigation.map(({ label, href, icon }) => (
+          <a
+            class="icon-link"
+            href={href}
+            aria-current={Astro.url.pathname === href ? 'page' : undefined}
+          >
+            <Icon name={icon} />
+            {label}
+          </a>
+        ))}
+        <a class="nav-cv icon-link" href={profile.cv}>
+          <Icon name="pdf" />
+          CV <span aria-hidden="true">↗</span>
+          <span class="sr-only"> (PDF)</span>
+        </a>
+      </nav>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <a class="footer-name" href="/">
+          Hassan Ismail Fawaz
+        </a>
+        <p>Research, engineering, and everything in between.</p>
+      </div>
+      <div class="footer-links">
+        <a class="icon-link" href={`mailto:${profile.email}`}>
+          <Icon name="email" /> Email ↗
+        </a>
+        <a class="icon-link" href={profile.links[1].url}>
+          <Icon name="github" /> GitHub ↗
+        </a>
+        <a class="icon-link" href={profile.links[2].url}>
+          <Icon name="linkedin" /> LinkedIn ↗
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <span>
+          © {new Date().getFullYear()} · {profile.location}
+        </span>
+        <span>
+          Previous site:{' '}
+          <a href="https://github.com/dmsl/academic-responsive-template">
+            AR template
+          </a>{' '}
+          · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+        </span>
+      </div>
+    </footer>
+    <script>
+      import '../scripts/live-impact';
+    </script>
+  </body>
+</html>

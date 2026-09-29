@@ -1,0 +1,68 @@
+---
+import Icon from './Icon.astro';
+import type { publications } from '../data/publications';
+import { paperImpact, number, checkedDate, impact } from '../data/impact';
+interface Props {
+  paper: (typeof publications)[number];
+  compact?: boolean;
+}
+const { paper, compact = false } = Astro.props;
+const citation = paperImpact(paper.id);
+---
+
+<article
+  class:list={['publication', { compact, 'has-citations': !!citation }]}
+  id={paper.id}
+  data-publication
+  data-search={paper.searchText}
+  data-year={paper.year}
+>
+  <div class="paper-year">
+    {paper.year}
+    <span>{paper.acronym}</span>
+  </div>
+  <div class="paper-body">
+    <h3>{paper.url ? <a href={paper.url}>{paper.title}</a> : paper.title}</h3>
+    {!compact && <p class="authors">{paper.authors}</p>}
+    <p class="venue">{paper.venue}</p>
+    <div class="paper-links">
+      {paper.pdf && (
+        <a
+          class="icon-link"
+          href={paper.pdf}
+          aria-label={`PDF: ${paper.title}`}
+        >
+          <Icon name="pdf" /> PDF <span aria-hidden="true">↗</span>
+        </a>
+      )}
+      {paper.code && (
+        <a
+          class="icon-link"
+          href={paper.code}
+          aria-label={`Code: ${paper.title}`}
+        >
+          <Icon name="code" /> Code <span aria-hidden="true">↗</span>
+        </a>
+      )}
+      {!compact && (
+        <details>
+          <summary>BibTeX</summary>
+          <pre><code>{paper.bibtex}</code></pre>
+        </details>
+      )}
+    </div>
+  </div>
+  {citation && (
+    <a
+      class="paper-impact"
+      href={citation.url}
+      aria-label={`${number(citation.count)} Google Scholar citations for ${paper.title}`}
+      title={`Google Scholar · checked ${checkedDate(impact.scholar.checkedAt)}`}
+    >
+      <strong>{number(citation.count)}</strong>
+      <span>
+        <Icon name="scholar" /> citations <span aria-hidden="true">↗</span>
+      </span>
+    </a>
+  )}
+</article>

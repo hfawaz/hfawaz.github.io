@@ -1,0 +1,61 @@
+---
+import Icon from './Icon.astro';
+import type { projects } from '../data/profile';
+import { repositoryImpact, number, checkedDate, impact } from '../data/impact';
+interface Props {
+  project: (typeof projects)[number];
+}
+const { project } = Astro.props;
+const repository = repositoryImpact(project.url);
+---
+
+<article class="project-card">
+  <figure class="project-figure">
+    <a
+      class="project-art"
+      href={project.url}
+      aria-label={`View ${project.title} code on GitHub`}
+    >
+      <span class="project-number" aria-hidden="true">
+        {project.number} / FROM THE PAPER
+      </span>
+      <img
+        src={project.figure.src}
+        alt={project.figure.alt}
+        width={project.figure.width}
+        height={project.figure.height}
+        loading="lazy"
+        decoding="async"
+      />
+    </a>
+    <figcaption>
+      <a
+        class="icon-link"
+        href={project.figure.pdf}
+        aria-label={`${project.figure.caption} — ${project.title} paper (PDF)`}
+      >
+        <Icon name="pdf" /> {project.figure.caption}{' '}
+        <span aria-hidden="true">↗</span>
+      </a>
+    </figcaption>
+  </figure>
+  <div class="project-content">
+    {repository && (
+      <a
+        class="star-badge"
+        data-github-repo={repository.name}
+        href={`${repository.url}/stargazers`}
+        title={`GitHub stars checked ${checkedDate(impact.github.checkedAt)}`}
+      >
+        <span aria-hidden="true">☆</span>{' '}
+        <span data-github-stars>{number(repository.stars)}</span> stars
+      </a>
+    )}
+    <p class="eyebrow">{project.category}</p>
+    <h3>{project.title}</h3>
+    <p>{project.description}</p>
+    <a class="text-link icon-link" href={project.url}>
+      <Icon name="github" /> {project.label} <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</article>

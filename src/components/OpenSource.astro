@@ -1,0 +1,96 @@
+---
+import Icon from './Icon.astro';
+import { datasets } from '../data/impact';
+interface Props {
+  numbered?: boolean;
+}
+const { numbered = false } = Astro.props;
+---
+
+<section
+  class="section open-source-section"
+  id="open-source"
+  aria-labelledby="open-source-title"
+>
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">{numbered ? '03 / ' : ''}OPEN-SOURCE CONTRIBUTIONS</p>
+      <h2 id="open-source-title">Making knowledge usable.</h2>
+    </div>
+    <a class="text-link icon-link" href="https://github.com/hfawaz">
+      <Icon name="github" /> Find me on GitHub <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+  <div class="contribution-grid">
+    <article class="contribution-card keras-contribution">
+      <div class="contribution-heading">
+        <span class="contribution-symbol" aria-hidden="true">
+          <Icon name="keras" />
+        </span>
+        <span class="eyebrow">KERAS · TUTORIAL AUTHOR</span>
+      </div>
+      <h3>
+        Time series classification,
+        <br />
+        from scratch.
+      </h3>
+      <p>
+        I authored the official Keras example for training a convolutional time
+        series classifier on the FordA dataset, from preparing the data to
+        evaluating the model.
+      </p>
+      <a
+        class="text-link icon-link"
+        href="https://keras.io/examples/timeseries/timeseries_classification_from_scratch/"
+      >
+        <Icon name="keras" /> Read the Keras tutorial{' '}
+        <span aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="contribution-card huggingface-contribution">
+      <div class="contribution-heading">
+        <span class="contribution-symbol" aria-hidden="true">
+          <Icon name="huggingface" />
+        </span>
+        <span class="eyebrow">HUGGING FACE · DATASET CONTRIBUTOR</span>
+      </div>
+      <h3>
+        Three datasets.
+        <br />
+        Ready for the community.
+      </h3>
+      <p>
+        I contributed integrations for three text classification datasets to the
+        Hugging Face datasets library. Each contribution was merged upstream.
+      </p>
+      <ul class="dataset-contributions">
+        {datasets.map((dataset) => (
+          <li>
+            <a class="icon-link" href={dataset.url}>
+              <Icon name="huggingface" />
+              {dataset.name} <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="contribution-proof icon-link"
+              href={dataset.pullRequest}
+              aria-label={`Merged pull request for ${dataset.name}`}
+            >
+              <Icon name="github" /> Merged PR <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </article>
+  </div>
+  <div class="community-note">
+    <span class="eyebrow">ALSO CONTRIBUTED TO</span>
+    <a
+      class="icon-link"
+      href="https://github.com/uea-machine-learning/sktime-dl"
+    >
+      <Icon name="github" />
+      sktime-dl <span aria-hidden="true">↗</span>
+    </a>
+    <p>Deep learning with Keras for the sktime ecosystem.</p>
+  </div>
+</section>
