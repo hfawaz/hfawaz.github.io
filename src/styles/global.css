@@ -809,13 +809,13 @@ em {
   .site-header nav {
     width: 100%;
     justify-content: space-between;
-    gap: 12px;
+    gap: 8px;
   }
   .site-header nav a {
     font-size: 0.75rem;
   }
   .site-header nav .nav-cv {
-    padding: 7px 14px;
+    padding: 7px 8px;
   }
   .hero {
     grid-template-columns: 1fr;

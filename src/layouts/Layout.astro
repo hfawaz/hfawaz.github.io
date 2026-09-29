@@ -17,10 +17,10 @@ const pageTitle = title
   : `${profile.name} · AI & Machine Learning`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const navigation = [
-  { label: 'About', href: '/about/' },
-  { label: 'Work', href: '/work/' },
-  { label: 'Publications', href: '/publications/' },
-];
+  { label: 'About', href: '/about/', icon: 'about' },
+  { label: 'Work', href: '/work/', icon: 'work' },
+  { label: 'Publications', href: '/publications/', icon: 'publications' },
+] as const;
 ---
 
 <!doctype html>
@@ -63,11 +63,13 @@ const navigation = [
         <span>Hassan Ismail Fawaz</span>
       </a>
       <nav aria-label="Main navigation">
-        {navigation.map(({ label, href }) => (
+        {navigation.map(({ label, href, icon }) => (
           <a
+            class="icon-link"
             href={href}
             aria-current={Astro.url.pathname === href ? 'page' : undefined}
           >
+            <Icon name={icon} />
             {label}
           </a>
         ))}
