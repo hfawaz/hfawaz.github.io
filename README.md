@@ -177,9 +177,10 @@ SVGs are committed, so normal website builds need neither Python nor PDF tools.
 
 `src/components/Icon.astro` renders local SVGs with visible text labels. Brand
 assets are stored in `src/assets/icons/`; no icon CDN or client library is needed.
-Google Scholar, GitHub, LinkedIn, and Keras icons come from
+Google Scholar, GitHub, LinkedIn, Keras, ORCID, arXiv, dblp, ResearchGate,
+Semantic Scholar, and X icons come from
 [Simple Icons 11.15.0](https://github.com/simple-icons/simple-icons/tree/11.15.0/icons)
 (CC0; license included). The colored Hugging Face logo comes from
 [Hugging Face](https://huggingface.co/front/assets/huggingface_logo-noborder.svg).
 Brand marks remain the property of their respective owners. The PDF, code,
-email, and globe symbols are small inline vector drawings.
+email, and navigation symbols are small inline vector drawings.

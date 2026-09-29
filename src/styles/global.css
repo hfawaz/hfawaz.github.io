@@ -1431,3 +1431,26 @@ em {
 .impact-stat > span > .icon {
   margin-right: 0.25em;
 }
+
+.icon-orcid {
+  color: #a6ce39;
+}
+.icon-arxiv {
+  color: #b31b1b;
+}
+.icon-dblp {
+  color: #004f9f;
+}
+.icon-researchgate {
+  color: #00ccbb;
+}
+.icon-semanticscholar {
+  color: #1857b6;
+}
+.icon-x {
+  color: #000;
+}
+.profile-links .icon {
+  width: 20px;
+  height: 20px;
+}

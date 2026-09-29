@@ -26,27 +26,27 @@ export const profile = {
     },
     {
       label: 'ORCID',
-      icon: 'globe' as const,
+      icon: 'orcid' as const,
       url: 'https://orcid.org/0000-0003-1384-5996',
     },
     {
       label: 'arXiv',
-      icon: 'globe' as const,
+      icon: 'arxiv' as const,
       url: 'https://arxiv.org/a/ismailfawaz_h_1.html',
     },
     {
       label: 'dblp',
-      icon: 'globe' as const,
+      icon: 'dblp' as const,
       url: 'https://dblp.uni-trier.de/pers/hd/f/Fawaz:Hassan_Ismail',
     },
     {
       label: 'ResearchGate',
-      icon: 'globe' as const,
+      icon: 'researchgate' as const,
       url: 'https://www.researchgate.net/profile/Hassan_Ismail_Fawaz2',
     },
     {
       label: 'Semantic Scholar',
-      icon: 'globe' as const,
+      icon: 'semanticscholar' as const,
       url: 'https://www.semanticscholar.org/author/Hassan-Ismail-Fawaz/19302914',
     },
     {
@@ -56,7 +56,7 @@ export const profile = {
     },
     {
       label: 'X / Twitter',
-      icon: 'globe' as const,
+      icon: 'x' as const,
       url: 'https://twitter.com/hassanfawaz93',
     },
   ],
